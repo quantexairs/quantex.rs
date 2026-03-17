@@ -313,29 +313,38 @@
       const submitBtn = form.querySelector('.form-submit-btn');
       setSubmitLoading(submitBtn, true);
 
-      // Simulacija slanja (zamijeniti sa pravim API pozivom)
-      setTimeout(() => {
-        setSubmitLoading(submitBtn, false);
-        form.reset();
-
-        if (successMsg) {
-          successMsg.removeAttribute('hidden');
-          successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-
-        // Sakrij success poruku nakon 6 sekundi
-        setTimeout(() => {
-          if (successMsg) successMsg.setAttribute('hidden', '');
-        }, 6000);
-
-        // Analytics event
-        if (typeof window.gtag === 'function') {
-          window.gtag('event', 'contact_form_submit', {
-            event_category: 'conversion',
-            event_label: 'schedule_meeting'
-          });
-        }
-      }, 1200);
+      const formData = new FormData(form);
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+        .then(res => res.json())
+        .then(data => {
+          setSubmitLoading(submitBtn, false);
+          if (data.success) {
+            form.reset();
+            if (successMsg) {
+              successMsg.removeAttribute('hidden');
+              successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            setTimeout(() => {
+              if (successMsg) successMsg.setAttribute('hidden', '');
+            }, 6000);
+            if (typeof window.gtag === 'function') {
+              window.gtag('event', 'contact_form_submit', {
+                event_category: 'conversion',
+                event_label: 'schedule_meeting'
+              });
+            }
+          } else {
+            setSubmitLoading(submitBtn, false);
+            alert('Greška pri slanju. Molimo pokušajte ponovo ili nas kontaktirajte direktno.');
+          }
+        })
+        .catch(() => {
+          setSubmitLoading(submitBtn, false);
+          alert('Greška pri slanju. Proverite internet konekciju i pokušajte ponovo.');
+        });
     });
   }
 
