@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060912"/>
+      <stop offset="100%" stop-color="#071828"/>
+    </linearGradient>
+    <radialGradient id="gl" cx="35%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)"/>
+  <rect width="800" height="300" fill="url(#gl)"/>
+
+  <!-- Calendar -->
+  <rect x="80" y="45" width="340" height="220" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <!-- Calendar header -->
+  <rect x="80" y="45" width="340" height="44" rx="12" fill="rgba(59,130,246,0.2)"/>
+  <rect x="80" y="67" width="340" height="22" fill="rgba(59,130,246,0.2)"/>
+  <text x="250" y="72" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="14" fill="white" text-anchor="middle">Mart 2026</text>
+
+  <!-- Day headers -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">
+    <text x="122" y="106">Pon</text><text x="170" y="106">Uto</text><text x="218" y="106">Sre</text>
+    <text x="266" y="106">Čet</text><text x="314" y="106">Pet</text><text x="362" y="106">Sub</text>
+                                              <text x="410" y="106">Ned</text>
+  </g>
+  <!-- Separator -->
+  <line x1="90" y1="110" x2="410" y2="110" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Calendar days grid -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="12" text-anchor="middle">
+    <!-- Row 1 -->
+    <text x="122" y="132" fill="#64748b">1</text>
+    <text x="170" y="132" fill="#64748b">2</text>
+    <text x="218" y="132" fill="#64748b">3</text>
+    <!-- Booked: 4 -->
+    <circle cx="266" cy="127" r="14" fill="rgba(59,130,246,0.25)" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="266" y="132" fill="#93c5fd">4</text>
+    <text x="314" y="132" fill="#64748b">5</text>
+    <!-- Booked: 6 -->
+    <circle cx="362" cy="127" r="14" fill="rgba(59,130,246,0.25)" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="362" y="132" fill="#93c5fd">6</text>
+    <text x="410" y="132" fill="#64748b">7</text>
+
+    <!-- Row 2 -->
+    <!-- Booked: 10 -->
+    <circle cx="122" cy="165" r="14" fill="rgba(6,182,212,0.25)" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="122" y="170" fill="#67e8f9">10</text>
+    <text x="170" y="170" fill="#64748b">11</text>
+    <!-- Booked: 12 -->
+    <circle cx="218" cy="165" r="14" fill="rgba(6,182,212,0.25)" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="218" y="170" fill="#67e8f9">12</text>
+    <text x="266" y="170" fill="#64748b">13</text>
+    <!-- Booked: 14 -->
+    <circle cx="314" cy="165" r="14" fill="rgba(59,130,246,0.25)" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="314" y="170" fill="#93c5fd">14</text>
+    <text x="362" y="170" fill="#64748b">15</text>
+    <!-- Today: 16 -->
+    <circle cx="410" cy="165" r="14" fill="#3b82f6"/>
+    <text x="410" y="170" fill="white" font-weight="700">16</text>
+
+    <!-- Row 3 -->
+    <text x="122" y="208" fill="#64748b">17</text>
+    <circle cx="170" cy="203" r="14" fill="rgba(6,182,212,0.2)" stroke="#06b6d4" stroke-width="1"/>
+    <text x="170" y="208" fill="#67e8f9">18</text>
+    <text x="218" y="208" fill="#64748b">19</text>
+    <text x="266" y="208" fill="#64748b">20</text>
+    <circle cx="314" cy="203" r="14" fill="rgba(59,130,246,0.2)" stroke="#3b82f6" stroke-width="1"/>
+    <text x="314" y="208" fill="#93c5fd">21</text>
+    <text x="362" y="208" fill="#64748b">22</text>
+    <text x="410" y="208" fill="#64748b">23</text>
+  </g>
+
+  <!-- Checkmarks on booked days -->
+  <g stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.7">
+    <polyline points="258,124 263,130 274,120"/><polyline points="354,124 359,130 370,120"/>
+    <polyline points="114,162 119,168 130,158"/><polyline points="210,162 215,168 226,158"/>
+    <polyline points="306,162 311,168 322,158"/>
+  </g>
+
+  <!-- Right side info -->
+  <!-- Clock -->
+  <circle cx="600" cy="120" r="55" fill="rgba(6,182,212,0.08)" stroke="rgba(6,182,212,0.3)" stroke-width="1.5"/>
+  <circle cx="600" cy="120" r="4" fill="#06b6d4"/>
+  <line x1="600" y1="120" x2="600" y2="78" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+  <line x1="600" y1="120" x2="630" y2="135" stroke="#67e8f9" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+  <text x="600" y="200" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="28" fill="white" text-anchor="middle">5 min</text>
+  <text x="600" y="222" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">prosečno vreme</text>
+  <text x="600" y="238" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">za zakazivanje</text>
+
+  <!-- vs old time -->
+  <line x1="490" y1="260" x2="710" y2="260" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="510" y="278" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#64748b">Pre: 11 sati čekanja</text>
+  <text x="640" y="278" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#06b6d4">Posle: odmah</text>
+</svg>

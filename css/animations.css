@@ -1,0 +1,360 @@
+/* ============================================================
+   QUANTEX — Animations & Transitions
+   ============================================================ */
+
+/* ── Keyframes ────────────────────────────────────────────── */
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.05);
+  }
+}
+
+@keyframes dot-pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(16,185,129,0.5);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 0 4px rgba(16,185,129,0);
+  }
+}
+
+@keyframes scroll-line {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 1;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+    opacity: 1;
+  }
+  51% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes count-up {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes border-glow {
+  0%, 100% { border-color: rgba(59,130,246,0.2); }
+  50%       { border-color: rgba(59,130,246,0.5); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes progress-fill {
+  from { width: 0%; }
+  to   { width: var(--target-width, 100%); }
+}
+
+@keyframes faq-open {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes result-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* ── Hero Entrance Animations ─────────────────────────────── */
+.animate-fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ── Scroll-triggered Animations ─────────────────────────── */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-on-scroll.slide-left {
+  transform: translateX(-32px);
+}
+
+.animate-on-scroll.slide-left.in-view {
+  transform: translateX(0);
+}
+
+.animate-on-scroll.slide-right {
+  transform: translateX(32px);
+}
+
+.animate-on-scroll.slide-right.in-view {
+  transform: translateX(0);
+}
+
+/* ── Calculator Results Animation ────────────────────────── */
+.results-content.entering {
+  animation: result-appear 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.result-card {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* ── FAQ Accordion Animation ──────────────────────────────── */
+.faq-answer {
+  animation: none;
+  transition: none;
+}
+
+.faq-answer.opening {
+  animation: faq-open 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ── Number Counter ───────────────────────────────────────── */
+.stat-number.counting {
+  animation: count-up 0.1s ease both;
+}
+
+/* ── Loading Shimmer for Results ──────────────────────────── */
+.result-number.loading {
+  background: linear-gradient(
+    90deg,
+    var(--text-muted) 0%,
+    rgba(255,255,255,0.15) 50%,
+    var(--text-muted) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 1.2s linear infinite;
+}
+
+/* ── Nav Active State ─────────────────────────────────────── */
+.nav-link.active {
+  color: var(--text-primary);
+  background: rgba(59,130,246,0.08);
+}
+
+/* ── Service Card Hover Glow ──────────────────────────────── */
+.service-card::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: var(--gradient);
+  opacity: 0;
+  transition: opacity var(--transition-slow), width var(--transition-slow);
+  border-radius: 1px;
+}
+
+.service-card:hover::after {
+  opacity: 0.6;
+  width: 80%;
+}
+
+/* ── Process Step Reveal ──────────────────────────────────── */
+.process-step .step-number {
+  transition: background var(--transition-slow),
+              border-color var(--transition-slow),
+              box-shadow var(--transition-slow);
+}
+
+.process-step.in-view .step-number {
+  background: rgba(59,130,246,0.15);
+  border-color: rgba(59,130,246,0.4);
+  box-shadow: 0 0 20px rgba(59,130,246,0.2);
+}
+
+/* ── Page Load Progress ───────────────────────────────────── */
+.page-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--gradient);
+  z-index: 9999;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 8px rgba(59,130,246,0.6);
+}
+
+/* ── Mobile Nav Transition ────────────────────────────────── */
+@media (max-width: 768px) {
+  .nav-links {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.35s ease;
+  }
+
+  .nav-links.nav-open {
+    animation: fade-up 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+
+/* ── Back to Top Visibility ───────────────────────────────── */
+.back-to-top {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity var(--transition), transform var(--transition),
+              background var(--transition), color var(--transition),
+              box-shadow var(--transition);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Reduce Motion ────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-bg-glow {
+    animation: none;
+  }
+
+  .badge-dot {
+    animation: none;
+  }
+
+  .hero-scroll-indicator span {
+    animation: none;
+  }
+}
+
+/* ── Focus Styles ─────────────────────────────────────────── */
+.btn:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(59,130,246,0.2);
+}
+
+.faq-question:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  border-radius: var(--radius-lg);
+}
+
+.calc-input:focus-visible,
+.form-input:focus-visible {
+  outline: none;
+}
+
+/* ── Trust Tags Scroll Animation ──────────────────────────── */
+.trust-bar-inner {
+  animation: none;
+}
+
+/* ── Stagger Delays for Service Cards ─────────────────────── */
+.services-grid .service-card:nth-child(1) { transition-delay: 0s; }
+.services-grid .service-card:nth-child(2) { transition-delay: 0.08s; }
+.services-grid .service-card:nth-child(3) { transition-delay: 0.16s; }
+.services-grid .service-card:nth-child(4) { transition-delay: 0.24s; }

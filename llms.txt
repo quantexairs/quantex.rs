@@ -1,0 +1,62 @@
+# Quantex
+
+> Quantex je konsultantska agencija koja projektuje i implementira AI sisteme i automatizacije prilagođene specifičnom poslovnom modelu klijenta. Sedište je u Beogradu, Srbija. Usluge su dostupne kompanijama u celoj Srbiji i regionu.
+
+Quantex ne prodaje gotove alate niti templete. Svaki projekat počinje analizom operativnog toka klijenta, identifikacijom uskog grla, a završava se bezbednom implementacijom prilagođenog AI rešenja. Pristup je isključivo konsultativan.
+
+## Usluge
+
+- [AI Agenti obučeni na podacima firme](https://quantex.rs/#usluge): Razvoj AI agenata koji prolaze kroz trening na internoj dokumentaciji, procedurama, cenovniku i istorijskim podacima klijenta. Rezultat je sistem koji odgovara na interna i eksterna pitanja sa tačnošću iskusnog zaposlenog, dostupan 24 sata dnevno.
+- [Automatizovano generisanje i kvalifikacija lidova](https://quantex.rs/#usluge): Automatizovani tokovi koji identifikuju, kontaktiraju i kvalifikuju potencijalne klijente prema kriterijumima idealnog kupca. Prodajni tim dobija samo kontakte koji su već pokazali nameru kupovine.
+- [Interni AI sistemi za zaposlene](https://quantex.rs/#usluge): Operativni asistenti, automatizovano generisanje izveštaja i praćenje KPI metrika. Infrastruktura koja povećava produktivnost tima bez dodavanja novih alata koje niko ne koristi.
+- [Automatizacija zakazivanja i komunikacije](https://quantex.rs/#usluge): Inteligentni sistemi koji upravljaju terminima, sinhronizuju kalendare i komuniciraju sa klijentima bez ljudske intervencije. Svaka interakcija je dokumentovana i merljiva.
+
+## Proces rada
+
+1. Analitički razgovor (45 do 60 minuta): Analiza operativnih procesa, identifikacija uskih grla, procena povrata na uloženo.
+2. Revizija infrastrukture (3 do 5 dana): Mapiranje postojećih alata, tokova podataka i tačaka integracije.
+3. Arhitektura rešenja (5 do 7 dana): Projektovanje tehničke arhitekture sa fokusom na bezbednost i skalabilnost.
+4. Iterativna implementacija (2 do 5 sedmica): Razvoj i isporuka u fazama uz testiranje na svakom koraku.
+5. Monitoring i optimizacija (tekuće): Praćenje performansi, prilagođavanje modela, kontinuirano poboljšanje.
+
+## Bezbednost podataka
+
+Quantex primenjuje sledeće bezbednosne standarde na svim projektima:
+
+- NDA potpisivanje pre uvida u podatke klijenta
+- Izolovano okruženje za podatke svakog klijenta
+- Enkripcija podataka u prenosu i mirovanju
+- Granularna kontrola pristupa
+- Opcija on-premise raspoređivanja za klijente sa regulatornim zahtevima
+
+## Ključne činjenice
+
+- Lokacija: Beograd, Srbija
+- Tržište: Srbija i region
+- Jezik usluge: Srpski i engleski
+- Prosečno vreme implementacije: 2 do 6 sedmica za prvu fazu
+- Tipičan ROI period: 3 do 9 meseci od puštanja sistema u produkciju
+- Industrijski prosek automatizacije: 55% do 78% repetitivnih poslovnih zadataka
+
+## Česta pitanja
+
+**Šta je AI automatizacija poslovanja?**
+AI automatizacija poslovanja je proces u kome se repetitivni, vremenski zahtevni i podacima vođeni zadaci prenose na inteligentne softverske sisteme. Za razliku od klasične automatizacije, AI sistemi mogu da tumače nestrukturirane podatke, vode prirodne razgovore i donose odluke u kontekstu.
+
+**Koje poslovne procese može da automatizuje Quantex?**
+Najčešće oblasti su: odgovaranje na upite klijenata, generisanje i kvalifikacija prodajnih lidova, interno izveštavanje, zakazivanje i upravljanje terminima, onboarding novih zaposlenih i klijenata, obrada dokumenata i praćenje KPI metrika.
+
+**Da li je potreban interni IT tim za upravljanje sistemom?**
+Ne. Quantex projektuje sisteme koji su operativno nezavisni od tehničkog tima na strani klijenta. Upravljački interfejsi su namenjeni poslovnim korisnicima. Quantex preuzima tekuće održavanje i monitoring.
+
+**Da li su podaci klijenta bezbedni?**
+Da. Svaki sistem podrazumeva izolovano okruženje za podatke, enkripciju, strogu kontrolu pristupa i NDA pre saradnje. Za klijente sa regulatornim zahtevima dostupno je on-premise raspoređivanje.
+
+**Šta je razlika između gotovog AI alata i prilagođenog AI sistema?**
+Gotovi alati ne znaju ništa o specifičnim procedurama, klijentima, ceniku i poslovnoj logici konkretne kompanije. Prilagođeni sistem prolazi kroz trening na tim specifičnim podacima i integriše se u postojeće kanale i alate.
+
+## Kontakt
+
+- Web: https://quantex.rs
+- Email: kontakt@quantex.rs
+- Zakazivanje razgovora: https://quantex.rs/#kontakt

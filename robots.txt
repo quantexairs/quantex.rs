@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://quantex.rs/sitemap.xml
+
+# LLMs.txt (AEO - Answer Engine Optimization)
+# https://llmstxt.org
+LLMs: https://quantex.rs/llms.txt
+
+# Crawl-delay za pristojne botove
+Crawl-delay: 1
+
+# Blokiranje admin i privatnih ruta (dodati kada postoje)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Dozvoli AI botovima pristup (za AEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060912"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <radialGradient id="gl" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)"/>
+  <rect width="800" height="300" fill="url(#gl)"/>
+
+  <!-- 5 process cards -->
+  <!-- Card 1: Odgovaranje na upite -->
+  <rect x="40" y="80" width="124" height="140" rx="10" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.4)" stroke-width="1.5"/>
+  <text x="102" y="113" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="28" fill="#3b82f6" text-anchor="middle">1</text>
+  <text x="102" y="138" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">Odgovaranje</text>
+  <text x="102" y="154" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">klijentima</text>
+  <!-- Chat icon -->
+  <rect x="82" y="163" width="40" height="26" rx="5" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+  <line x1="82" y1="178" x2="82" y2="189" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Arrow 1-->
+  <path d="M 164 150 L 176 150" stroke="#3b82f6" stroke-width="1.5" opacity="0.4"/>
+  <polygon points="176,146 184,150 176,154" fill="#3b82f6" opacity="0.4"/>
+
+  <!-- Card 2: Zakazivanje -->
+  <rect x="184" y="80" width="124" height="140" rx="10" fill="rgba(59,130,246,0.12)" stroke="rgba(59,130,246,0.45)" stroke-width="1.5"/>
+  <text x="246" y="113" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="28" fill="#60a5fa" text-anchor="middle">2</text>
+  <text x="246" y="138" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">Zakazivanje</text>
+  <text x="246" y="154" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">termina</text>
+  <rect x="226" y="163" width="40" height="26" rx="4" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.6"/>
+  <line x1="226" y1="163" x2="266" y2="163" stroke="#60a5fa" stroke-width="1.5" opacity="0.6"/>
+  <line x1="238" y1="163" x2="238" y2="189" stroke="#60a5fa" stroke-width="1" opacity="0.4"/>
+  <line x1="254" y1="163" x2="254" y2="189" stroke="#60a5fa" stroke-width="1" opacity="0.4"/>
+
+  <!-- Arrow 2 -->
+  <path d="M 308 150 L 320 150" stroke="#3b82f6" stroke-width="1.5" opacity="0.4"/>
+  <polygon points="320,146 328,150 320,154" fill="#3b82f6" opacity="0.4"/>
+
+  <!-- Card 3: Izveštaji -->
+  <rect x="328" y="80" width="124" height="140" rx="10" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.45)" stroke-width="1.5"/>
+  <text x="390" y="113" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="28" fill="#06b6d4" text-anchor="middle">3</text>
+  <text x="390" y="138" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#67e8f9" text-anchor="middle">Automatski</text>
+  <text x="390" y="154" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#67e8f9" text-anchor="middle">izveštaji</text>
+  <g stroke="#06b6d4" stroke-width="1.5" opacity="0.65">
+    <line x1="374" y1="189" x2="374" y2="175"/><line x1="390" y1="189" x2="390" y2="163"/><line x1="406" y1="189" x2="406" y2="170"/>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M 452 150 L 464 150" stroke="#3b82f6" stroke-width="1.5" opacity="0.4"/>
+  <polygon points="464,146 472,150 464,154" fill="#3b82f6" opacity="0.4"/>
+
+  <!-- Card 4: Onboarding -->
+  <rect x="472" y="80" width="124" height="140" rx="10" fill="rgba(6,182,212,0.12)" stroke="rgba(6,182,212,0.5)" stroke-width="1.5"/>
+  <text x="534" y="113" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="28" fill="#22d3ee" text-anchor="middle">4</text>
+  <text x="534" y="138" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#67e8f9" text-anchor="middle">Uvođenje</text>
+  <text x="534" y="154" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#67e8f9" text-anchor="middle">zaposlenih</text>
+  <circle cx="534" cy="177" r="12" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.65"/>
+  <line x1="534" y1="165" x2="534" y2="189" stroke="#06b6d4" stroke-width="1" opacity="0.4"/>
+
+  <!-- Arrow 4 -->
+  <path d="M 596 150 L 608 150" stroke="#3b82f6" stroke-width="1.5" opacity="0.4"/>
+  <polygon points="608,146 616,150 608,154" fill="#3b82f6" opacity="0.4"/>
+
+  <!-- Card 5: Lidovi -->
+  <rect x="616" y="80" width="144" height="140" rx="10" fill="rgba(6,182,212,0.18)" stroke="#06b6d4" stroke-width="2"/>
+  <text x="688" y="113" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="28" fill="white" text-anchor="middle">5</text>
+  <text x="688" y="138" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#67e8f9" text-anchor="middle">Pronalaženje</text>
+  <text x="688" y="154" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#67e8f9" text-anchor="middle">novih klijenata</text>
+  <polygon points="675,168 688,162 701,168 701,184 688,190 675,184" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Bottom text -->
+  <text x="400" y="270" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Svaki od ovih procesa može biti automatizovan nezavisno, redom kojim donosi najveću vrednost</text>
+</svg>

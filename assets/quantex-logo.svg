@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 264 66" fill="none" overflow="visible">
+  <defs>
+    <filter id="lg" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="lg2" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Q outer circle -->
+  <circle cx="31" cy="31" r="24" stroke="#3b82f6" stroke-width="1.4" opacity="0.85" filter="url(#lg)"/>
+
+  <!-- Q tail -->
+  <line x1="47" y1="47" x2="58" y2="58" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" filter="url(#lg2)"/>
+
+  <!-- Internal network lines -->
+  <line x1="7"  y1="31" x2="55" y2="31" stroke="#3b82f6" stroke-width="0.6" opacity="0.35"/>
+  <line x1="31" y1="7"  x2="31" y2="55" stroke="#3b82f6" stroke-width="0.6" opacity="0.35"/>
+  <line x1="14" y1="14" x2="48" y2="48" stroke="#3b82f6" stroke-width="0.6" opacity="0.35"/>
+  <line x1="48" y1="14" x2="14" y2="48" stroke="#3b82f6" stroke-width="0.6" opacity="0.35"/>
+
+  <!-- Constellation spokes (brighter) -->
+  <line x1="31" y1="7"  x2="55" y2="31" stroke="#60a5fa" stroke-width="0.85" opacity="0.55"/>
+  <line x1="55" y1="31" x2="31" y2="55" stroke="#60a5fa" stroke-width="0.85" opacity="0.55"/>
+  <line x1="31" y1="7"  x2="7"  y2="31" stroke="#60a5fa" stroke-width="0.85" opacity="0.55"/>
+  <line x1="7"  y1="31" x2="31" y2="55" stroke="#60a5fa" stroke-width="0.75" opacity="0.45"/>
+  <line x1="48" y1="14" x2="31" y2="55" stroke="#60a5fa" stroke-width="0.75" opacity="0.45"/>
+  <line x1="14" y1="14" x2="31" y2="55" stroke="#60a5fa" stroke-width="0.75" opacity="0.45"/>
+  <line x1="7"  y1="31" x2="48" y2="48" stroke="#60a5fa" stroke-width="0.75" opacity="0.45"/>
+  <line x1="31" y1="7"  x2="48" y2="48" stroke="#60a5fa" stroke-width="0.75" opacity="0.45"/>
+
+  <!-- Inner hexagon ring connections -->
+  <line x1="31" y1="18" x2="42" y2="25" stroke="#93c5fd" stroke-width="0.8" opacity="0.5"/>
+  <line x1="31" y1="18" x2="20" y2="25" stroke="#93c5fd" stroke-width="0.8" opacity="0.5"/>
+  <line x1="42" y1="25" x2="42" y2="37" stroke="#93c5fd" stroke-width="0.7" opacity="0.45"/>
+  <line x1="20" y1="25" x2="20" y2="37" stroke="#93c5fd" stroke-width="0.7" opacity="0.45"/>
+  <line x1="42" y1="37" x2="31" y2="44" stroke="#93c5fd" stroke-width="0.7" opacity="0.45"/>
+  <line x1="20" y1="37" x2="31" y2="44" stroke="#93c5fd" stroke-width="0.7" opacity="0.45"/>
+  <line x1="42" y1="25" x2="20" y2="37" stroke="#93c5fd" stroke-width="0.6" opacity="0.35"/>
+  <line x1="20" y1="25" x2="42" y2="37" stroke="#93c5fd" stroke-width="0.6" opacity="0.35"/>
+
+  <!-- Outer nodes (8 around circle) -->
+  <circle cx="31" cy="7"  r="2.5" fill="#bfdbfe" filter="url(#lg2)"/>
+  <circle cx="48" cy="14" r="2"   fill="#93c5fd" filter="url(#lg)"/>
+  <circle cx="55" cy="31" r="2"   fill="#93c5fd" filter="url(#lg)"/>
+  <circle cx="48" cy="48" r="2"   fill="#93c5fd" filter="url(#lg)"/>
+  <circle cx="31" cy="55" r="2"   fill="#93c5fd" filter="url(#lg)"/>
+  <circle cx="14" cy="48" r="2"   fill="#93c5fd" filter="url(#lg)"/>
+  <circle cx="7"  cy="31" r="2"   fill="#93c5fd" filter="url(#lg)"/>
+  <circle cx="14" cy="14" r="2"   fill="#93c5fd" filter="url(#lg)"/>
+
+  <!-- Inner hexagon nodes -->
+  <circle cx="31" cy="18" r="1.8" fill="#dbeafe" filter="url(#lg)"/>
+  <circle cx="42" cy="25" r="1.8" fill="#dbeafe" filter="url(#lg)"/>
+  <circle cx="42" cy="37" r="1.8" fill="#dbeafe" filter="url(#lg)"/>
+  <circle cx="31" cy="44" r="1.8" fill="#dbeafe" filter="url(#lg)"/>
+  <circle cx="20" cy="37" r="1.8" fill="#dbeafe" filter="url(#lg)"/>
+  <circle cx="20" cy="25" r="1.8" fill="#dbeafe" filter="url(#lg)"/>
+
+  <!-- Center node (brightest) -->
+  <circle cx="31" cy="31" r="3.2" fill="white" filter="url(#lg2)"/>
+
+  <!-- Q tail endpoint -->
+  <circle cx="58" cy="58" r="2.2" fill="#60a5fa" filter="url(#lg2)"/>
+
+  <!-- QUANTEX wordmark -->
+  <text x="72" y="37"
+        font-family="Inter, system-ui, -apple-system, sans-serif"
+        font-weight="800"
+        font-size="27"
+        fill="white"
+        letter-spacing="-0.5">QUANTEX</text>
+
+  <!-- Tagline -->
+  <text x="74" y="52"
+        font-family="Inter, system-ui, -apple-system, sans-serif"
+        font-weight="500"
+        font-size="9"
+        fill="#60a5fa"
+        letter-spacing="2.8">AI AUTOMATION AGENCY</text>
+</svg>

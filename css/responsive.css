@@ -1,0 +1,399 @@
+/* ============================================================
+   QUANTEX — Responsive Styles
+   Mobile-first breakpoints
+   ============================================================
+   Breakpoints:
+     xs:   < 480px
+     sm:   480px – 639px
+     md:   640px – 767px
+     lg:   768px – 1023px
+     xl:   1024px – 1279px
+     2xl:  >= 1280px
+   ============================================================ */
+
+/* ── Large screens (1280px+) ──────────────────────────────── */
+@media (min-width: 1280px) {
+  .hero-headline {
+    font-size: 5rem;
+  }
+}
+
+/* ── Below 1024px ─────────────────────────────────────────── */
+@media (max-width: 1023px) {
+
+  /* Services: single column on tablet */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Security section */
+  .security-inner {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .security-pillars {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: var(--space-8);
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── Below 900px ──────────────────────────────────────────── */
+@media (max-width: 899px) {
+
+  /* Capabilities: 2 columns on tablet */
+  .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Slider: 2 cards per group on tablet */
+  .slide-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Testimonials: 2 columns on tablet (fallback) */
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Calculator: stack vertically */
+  .calculator-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-form {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Contact grid: stack */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+}
+
+/* ── Below 768px (Mobile Nav) ─────────────────────────────── */
+@media (max-width: 767px) {
+
+  /* Navigation */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: rgba(6,9,18,0.97);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: var(--space-4) var(--space-6) var(--space-6);
+    display: none;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: var(--space-4) var(--space-4);
+    font-size: var(--text-base);
+    border-radius: var(--radius);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .nav-link:last-of-type {
+    border-bottom: none;
+  }
+
+  .nav-cta-btn {
+    display: block;
+    text-align: center;
+    margin-left: 0;
+    margin-top: var(--space-4);
+    padding: var(--space-4);
+    font-size: var(--text-base);
+  }
+
+  /* Toggle animation when open */
+  .nav-toggle[aria-expanded="true"] .toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .nav-toggle[aria-expanded="true"] .toggle-bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  .nav-toggle[aria-expanded="true"] .toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* Hero */
+  .hero-stats {
+    flex-direction: column;
+    gap: var(--space-6);
+    padding: var(--space-6);
+    width: 100%;
+  }
+
+  .stat-divider {
+    width: 60px;
+    height: 1px;
+    align-self: center;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    justify-content: center;
+  }
+
+  /* Process timeline */
+  .process-step {
+    grid-template-columns: 40px 1fr;
+    column-gap: var(--space-4);
+  }
+
+  .step-connector {
+    left: 19px;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 0.65rem;
+  }
+
+  /* Security section */
+  .security-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .security-icon {
+    margin-inline: auto;
+  }
+
+  .security-pillars {
+    justify-content: center;
+  }
+
+  /* FAQ */
+  .faq-question {
+    padding: var(--space-5) var(--space-6);
+    font-size: var(--text-sm);
+  }
+
+  .faq-answer {
+    padding: 0 var(--space-6) var(--space-5);
+  }
+
+  /* Result cards */
+  .result-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer-brand {
+    grid-column: unset;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-2);
+    text-align: center;
+  }
+
+  /* Back to top */
+  .back-to-top {
+    bottom: var(--space-4);
+    right: var(--space-4);
+  }
+}
+
+/* ── Below 640px ──────────────────────────────────────────── */
+@media (max-width: 639px) {
+
+  /* Capabilities: single column on mobile */
+  .capabilities-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  /* Slider: 1 card per group on mobile */
+  .slide-group {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonials: single column on mobile (fallback) */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-service-tag {
+    display: none;
+  }
+
+  /* Section padding */
+  .section-padding {
+    padding-block: clamp(3rem, 8vw, 5rem);
+  }
+
+  /* Hero */
+  .hero-badge {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.75rem;
+  }
+
+  .hero-subtext {
+    font-size: var(--text-base);
+  }
+
+  /* Services */
+  .service-card {
+    padding: var(--space-6);
+  }
+
+  /* Calculator */
+  .calculator-form {
+    padding: var(--space-6);
+  }
+
+  .calculator-results {
+    padding: var(--space-6);
+  }
+
+  /* Contact form */
+  .contact-form-container {
+    padding: var(--space-6);
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: clamp(var(--text-2xl), 5vw, var(--text-4xl));
+  }
+
+  /* Trust bar */
+  .trust-bar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  /* Stats smaller */
+  .stat-number {
+    font-size: var(--text-4xl);
+  }
+}
+
+/* ── Below 480px ──────────────────────────────────────────── */
+@media (max-width: 479px) {
+
+  .hero-headline {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }
+
+  .contact-title {
+    font-size: clamp(var(--text-2xl), 7vw, var(--text-4xl));
+  }
+
+  .service-card {
+    padding: var(--space-5);
+  }
+
+  .faq-question {
+    font-size: var(--text-sm);
+    padding: var(--space-4) var(--space-5);
+  }
+
+  .faq-answer {
+    padding: 0 var(--space-5) var(--space-4);
+  }
+
+  .hero-stats {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .calc-label {
+    font-size: var(--text-xs);
+  }
+}
+
+/* ── Print Styles ─────────────────────────────────────────── */
+@media print {
+  .site-header,
+  .hero-bg-grid,
+  .hero-bg-glow,
+  .hero-scroll-indicator,
+  .back-to-top,
+  .nav-toggle {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .text-gradient {
+    -webkit-text-fill-color: initial;
+    color: #2563eb;
+    background: none;
+  }
+
+  .section-padding {
+    padding-block: 2rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* ── High contrast mode ───────────────────────────────────── */
+@media (prefers-contrast: high) {
+  :root {
+    --border: rgba(255,255,255,0.2);
+    --border-hover: rgba(99,179,237,0.6);
+    --text-secondary: #c4d0e0;
+    --text-muted: #7a8fa0;
+  }
+
+  .btn-secondary {
+    border-width: 2px;
+  }
+
+  .service-card,
+  .faq-item,
+  .contact-form-container,
+  .calculator-wrapper {
+    border-width: 2px;
+  }
+}

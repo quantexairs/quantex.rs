@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060912"/>
+      <stop offset="100%" stop-color="#0c1c3a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="75%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)"/>
+  <rect width="800" height="300" fill="url(#glow1)"/>
+  <rect width="800" height="300" fill="url(#glow2)"/>
+
+  <!-- dot grid -->
+  <g opacity="0.06">
+    <pattern id="d" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="white"/>
+    </pattern>
+    <rect width="800" height="300" fill="url(#d)"/>
+  </g>
+
+  <!-- Clock face -->
+  <circle cx="220" cy="150" r="100" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
+  <circle cx="220" cy="150" r="90" fill="none" stroke="#1d4ed8" stroke-width="1" opacity="0.3"/>
+
+  <!-- Hour ticks -->
+  <g stroke="#60a5fa" stroke-width="2" opacity="0.7">
+    <line x1="220" y1="60" x2="220" y2="72"/>
+    <line x1="220" y1="228" x2="220" y2="240"/>
+    <line x1="120" y1="150" x2="132" y2="150"/>
+    <line x1="308" y1="150" x2="320" y2="150"/>
+    <line x1="149" y1="79" x2="155" y2="89"/>
+    <line x1="285" y1="211" x2="291" y2="221"/>
+    <line x1="291" y1="79" x2="285" y2="89"/>
+    <line x1="155" y1="211" x2="149" y2="221"/>
+    <line x1="149" y1="221" x2="149" y2="221"/>
+  </g>
+
+  <!-- Clock hands -->
+  <line x1="220" y1="150" x2="220" y2="88" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <line x1="220" y1="150" x2="267" y2="168" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="220" cy="150" r="5" fill="#3b82f6"/>
+
+  <!-- Right side stat -->
+  <text x="440" y="110" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="68" fill="white" opacity="0.95">40%</text>
+  <text x="441" y="148" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="16" fill="#60a5fa" letter-spacing="1">radnog vremena</text>
+  <text x="441" y="172" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="15" fill="#94a3b8">odlazi na repetitivne zadatke</text>
+
+  <!-- Decorative arc -->
+  <path d="M 440 210 Q 560 190 680 220" stroke="#3b82f6" stroke-width="1" fill="none" opacity="0.3"/>
+  <circle cx="440" cy="210" r="3" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="680" cy="220" r="3" fill="#06b6d4" opacity="0.5"/>
+</svg>

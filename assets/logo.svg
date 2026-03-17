@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <defs>
+    <linearGradient id="qGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <!-- Logo mark -->
+  <rect x="0" y="4" width="40" height="40" rx="8" fill="url(#qGrad)"/>
+  <text x="20" y="30" font-family="JetBrains Mono, monospace" font-size="22" font-weight="900" fill="white" text-anchor="middle">Q</text>
+  <!-- Logo text -->
+  <text x="52" y="32" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#f1f5f9" letter-spacing="-0.5">Quantex</text>
+</svg>
