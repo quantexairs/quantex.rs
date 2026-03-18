@@ -58,5 +58,5 @@ Gotovi alati ne znaju ništa o specifičnim procedurama, klijentima, ceniku i po
 ## Kontakt
 
 - Web: https://quantex.rs
-- Email: kontakt@quantex.rs
+- Email: office@quantex.rs
 - Zakazivanje razgovora: https://quantex.rs/#kontakt

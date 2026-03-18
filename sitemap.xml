@@ -5,116 +5,260 @@
   <!-- HOMEPAGE -->
   <url>
     <loc>https://quantex.rs/</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/" />
+  </url>
+
+  <!-- ENGLISH HOMEPAGE -->
+  <url>
+    <loc>https://quantex.rs/en/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/" />
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/" />
   </url>
 
   <!-- USLUGE -->
   <url>
     <loc>https://quantex.rs/usluge/ai-agenti.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/usluge/ai-agenti.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/services/ai-agents.html" />
   </url>
 
   <url>
     <loc>https://quantex.rs/usluge/generisanje-lidova.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/usluge/generisanje-lidova.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/services/lead-generation.html" />
   </url>
 
   <url>
     <loc>https://quantex.rs/usluge/interni-sistemi.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/usluge/interni-sistemi.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/services/internal-systems.html" />
   </url>
 
   <url>
     <loc>https://quantex.rs/usluge/automatizacija-zakazivanja.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/usluge/automatizacija-zakazivanja.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/services/scheduling.html" />
+  </url>
+
+  <!-- ENGLISH SERVICES -->
+  <url>
+    <loc>https://quantex.rs/en/services/ai-agents.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/services/ai-agents.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/usluge/ai-agenti.html" />
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/en/services/lead-generation.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/services/lead-generation.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/usluge/generisanje-lidova.html" />
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/en/services/internal-systems.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/services/internal-systems.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/usluge/interni-sistemi.html" />
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/en/services/scheduling.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/services/scheduling.html" />
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/usluge/automatizacija-zakazivanja.html" />
   </url>
 
   <!-- BLOG INDEX -->
   <url>
     <loc>https://quantex.rs/blog/</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/" />
+  </url>
+
+  <!-- ENGLISH BLOG INDEX -->
+  <url>
+    <loc>https://quantex.rs/en/blog/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/" />
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/" />
   </url>
 
   <!-- BLOG POSTOVI -->
   <url>
     <loc>https://quantex.rs/blog/sati-izgubljeni-na-repetitivne-zadatke.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/sati-izgubljeni-na-repetitivne-zadatke.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/hours-lost-on-repetitive-tasks.html" />
   </url>
 
   <url>
     <loc>https://quantex.rs/blog/ai-agent-vs-chatgpt-razlika.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/ai-agent-vs-chatgpt-razlika.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/ai-agent-vs-chatgpt.html" />
   </url>
 
   <url>
     <loc>https://quantex.rs/blog/automatizacija-generisanja-lidova.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/automatizacija-generisanja-lidova.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/lead-generation-automation.html" />
   </url>
 
   <url>
     <loc>https://quantex.rs/blog/roi-vestacke-inteligencije-poslovanje.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/roi-vestacke-inteligencije-poslovanje.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/roi-of-ai-in-business.html" />
   </url>
 
   <url>
     <loc>https://quantex.rs/blog/kako-uvesti-ai-u-firmu.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/kako-uvesti-ai-u-firmu.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/how-to-implement-ai.html" />
   </url>
 
   <url>
     <loc>https://quantex.rs/blog/poslovni-procesi-za-automatizaciju.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-03-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/poslovni-procesi-za-automatizaciju.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/business-processes-to-automate.html" />
   </url>
 
   <url>
     <loc>https://quantex.rs/blog/automatizacija-zakazivanja-komunikacije.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/automatizacija-zakazivanja-komunikacije.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/scheduling-automation.html" />
   </url>
 
   <url>
     <loc>https://quantex.rs/blog/interni-ai-asistent-zaposleni.html</loc>
-    <lastmod>2026-03-17</lastmod>
+    <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/interni-ai-asistent-zaposleni.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/internal-ai-assistant.html" />
+  </url>
+
+  <!-- ENGLISH BLOG POSTS -->
+  <url>
+    <loc>https://quantex.rs/en/blog/hours-lost-on-repetitive-tasks.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/hours-lost-on-repetitive-tasks.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/sati-izgubljeni-na-repetitivne-zadatke.html" />
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/en/blog/ai-agent-vs-chatgpt.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/ai-agent-vs-chatgpt.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/ai-agent-vs-chatgpt-razlika.html" />
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/en/blog/lead-generation-automation.html</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/lead-generation-automation.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/automatizacija-generisanja-lidova.html" />
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/en/blog/roi-of-ai-in-business.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/roi-of-ai-in-business.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/roi-vestacke-inteligencije-poslovanje.html" />
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/en/blog/how-to-implement-ai.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/how-to-implement-ai.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/kako-uvesti-ai-u-firmu.html" />
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/en/blog/business-processes-to-automate.html</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/business-processes-to-automate.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/poslovni-procesi-za-automatizaciju.html" />
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/en/blog/scheduling-automation.html</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/scheduling-automation.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/automatizacija-zakazivanja-komunikacije.html" />
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/en/blog/internal-ai-assistant.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/internal-ai-assistant.html" />
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/interni-ai-asistent-zaposleni.html" />
   </url>
 
