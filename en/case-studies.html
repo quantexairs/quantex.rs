@@ -525,37 +525,37 @@
 
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-main">
+      <div class="footer-grid">
         <div class="footer-brand">
-          <a href="/en/" class="footer-logo" aria-label="Quantex home">
-            <img src="../assets/quantex-logo.svg" alt="Quantex" height="28" />
-          </a>
-          <p class="footer-tagline">Your business runs even when you don't.</p>
+          <a href="/en/" class="nav-logo footer-logo"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a>
+          <p class="footer-tagline">AI systems tailored to your business model.</p>
+          <address class="footer-contact"><a href="mailto:office@quantex.rs" class="footer-contact-link">office@quantex.rs</a></address>
         </div>
-        <div class="footer-links-group">
-          <div class="footer-col">
-            <span class="footer-col-title">Services</span>
-            <ul class="footer-links">
-              <li><a href="services/ai-agents.html" class="footer-link">AI Agents</a></li>
-              <li><a href="services/lead-generation.html" class="footer-link">Lead Generation</a></li>
-              <li><a href="services/internal-systems.html" class="footer-link">Internal AI Systems</a></li>
-              <li><a href="services/scheduling.html" class="footer-link">Scheduling Automation</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <span class="footer-col-title">Resources</span>
-            <ul class="footer-links">
-              <li><a href="blog/" class="footer-link">Blog</a></li>
-              <li><a href="case-studies.html" class="footer-link">Case Studies</a></li>
-              <li><a href="/vodic.html" class="footer-link">Free Guide</a></li>
-            </ul>
-          </div>
-        </div>
+        <nav class="footer-nav" aria-label="Services">
+          <h4 class="footer-nav-title">Services</h4>
+          <ul role="list">
+            <li><a href="services/ai-agents.html" class="footer-link">AI Agents</a></li>
+            <li><a href="services/lead-generation.html" class="footer-link">Lead Generation</a></li>
+            <li><a href="services/internal-systems.html" class="footer-link">Internal Systems</a></li>
+            <li><a href="services/scheduling.html" class="footer-link">Scheduling Automation</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-label="Resources">
+          <h4 class="footer-nav-title">Resources</h4>
+          <ul role="list">
+            <li><a href="../index.html#process" class="footer-link">Our Process</a></li>
+            <li><a href="blog/index.html" class="footer-link">Blog</a></li>
+            <li><a href="../index.html#calculator" class="footer-link">Calculator</a></li>
+            <li><a href="../index.html#contact" class="footer-link">Contact</a></li>
+            <li><a href="case-studies.html" class="footer-link">Case Studies</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copy">&copy; 2026 Quantex. All rights reserved.</p>
+        <p class="footer-copyright">&copy; <span id="copyright-year"></span> Quantex. All rights reserved.</p>
+        <p class="footer-location">Belgrade, Serbia</p>
       </div>
     </div>
   </footer>
