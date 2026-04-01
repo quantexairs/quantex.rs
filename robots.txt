@@ -11,8 +11,11 @@ LLMs: https://quantex.rs/llms.txt
 # Crawl-delay za pristojne botove
 Crawl-delay: 1
 
-# Privatni direktorijumi
+# Privatni direktorijumi i interni fajlovi
 Disallow: /assets/dl/
+Disallow: /vodic-pdf-src.html
+Disallow: /vodic-sadrzaj.html
+Disallow: /tools/
 
 # Dozvoli AI botovima pristup (za AEO)
 User-agent: GPTBot

@@ -22,23 +22,31 @@
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/" />
   </url>
 
-  <!-- CENOVNIK / PRICING -->
+  <!-- VODIČ -->
   <url>
-    <loc>https://quantex.rs/cenovnik.html</loc>
-    <lastmod>2026-03-19</lastmod>
+    <loc>https://quantex.rs/vodic.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/cenovnik.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/pricing.html" />
+  </url>
+
+  <!-- CASE STUDIES -->
+  <url>
+    <loc>https://quantex.rs/case-studies.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/case-studies.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/case-studies.html" />
   </url>
 
   <url>
-    <loc>https://quantex.rs/en/pricing.html</loc>
-    <lastmod>2026-03-19</lastmod>
+    <loc>https://quantex.rs/en/case-studies.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/pricing.html" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/cenovnik.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/case-studies.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/case-studies.html" />
   </url>
 
   <!-- USLUGE -->
@@ -279,6 +287,21 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/blog/internal-ai-assistant.html" />
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/blog/interni-ai-asistent-zaposleni.html" />
+  </url>
+
+  <!-- NOVI BLOG POSTOVI -->
+  <url>
+    <loc>https://quantex.rs/blog/kako-ai-chatbot-na-sajtu-moze-olaksati-posao.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/blog/zasto-da-uvedem-ai-u-svoj-biznis.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

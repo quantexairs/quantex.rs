@@ -55,6 +55,22 @@ Da. Svaki sistem podrazumeva izolovano okruženje za podatke, enkripciju, strogu
 **Šta je razlika između gotovog AI alata i prilagođenog AI sistema?**
 Gotovi alati ne znaju ništa o specifičnim procedurama, klijentima, ceniku i poslovnoj logici konkretne kompanije. Prilagođeni sistem prolazi kroz trening na tim specifičnim podacima i integriše se u postojeće kanale i alate.
 
+## Resursi
+
+- [Besplatni vodič: 10 poslovnih procesa koji se mogu automatizovati danas](https://quantex.rs/vodic.html): Praktičan pregled 10 procesa koje srpske firme i dalje rade ručno, sa procenom uštede u satima i novcu za svaki.
+- [Studije slučaja](https://quantex.rs/case-studies.html): Realni primeri implementacije AI automatizacije kod klijenata u različitim industrijama.
+
+## Blog (najnovije)
+
+- [Kako AI chatbot na sajtu može olakšati posao](https://quantex.rs/blog/kako-ai-chatbot-na-sajtu-moze-olaksati-posao.html)
+- [Zašto da uvedeš AI u svoj biznis](https://quantex.rs/blog/zasto-da-uvedem-ai-u-svoj-biznis.html)
+- [Koliko sati nedeljno gubite na repetitivne zadatke](https://quantex.rs/blog/sati-izgubljeni-na-repetitivne-zadatke.html)
+- [AI agent vs ChatGPT: u čemu je razlika](https://quantex.rs/blog/ai-agent-vs-chatgpt-razlika.html)
+- [Automatizacija generisanja lidova](https://quantex.rs/blog/automatizacija-generisanja-lidova.html)
+- [ROI veštačke inteligencije u poslovanju](https://quantex.rs/blog/roi-vestacke-inteligencije-poslovanje.html)
+- [Kako uvesti AI u firmu](https://quantex.rs/blog/kako-uvesti-ai-u-firmu.html)
+- [Poslovni procesi za automatizaciju](https://quantex.rs/blog/poslovni-procesi-za-automatizaciju.html)
+
 ## Kontakt
 
 - Web: https://quantex.rs
