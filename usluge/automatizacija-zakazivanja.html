@@ -38,7 +38,10 @@
       <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
       <ul class="nav-links" id="navMenu" role="list">
         <li class="nav-item has-dropdown">
-          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">Usluge <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">
+            Usluge
+            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
           <ul class="nav-dropdown" id="uslugeDropdown" role="menu">
             <li role="none"><a href="ai-agenti.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>AI Agenti za firme</span></a></li>
             <li role="none"><a href="generisanje-lidova.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Generisanje Lidova</span></a></li>
@@ -46,10 +49,17 @@
             <li role="none"><a href="automatizacija-zakazivanja.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Automatizacija Zakazivanja</span></a></li>
           </ul>
         </li>
-        <li><a href="../index.html#proces" class="nav-link">Naš Proces</a></li>
         <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
-        <li><a href="../index.html#kalkulator" class="nav-link">Kalkulator</a></li>
-        <li><a href="../index.html#kontakt" class="nav-cta-btn">Zakažite razgovor</a></li>
+        <li><a href="../case-studies.html" class="nav-link">Studije slučaja</a></li>
+        <li><a href="../vodic.html" class="nav-link" style="color:var(--accent-light);font-weight:600;">Besplatni vodič</a></li>
+        <li>
+          <a href="../index.html#kontakt" class="nav-cta-btn" aria-label="Zakažite analitički razgovor sa Quantex timom">
+            Zakažite razgovor
+          </a>
+        </li>
+        <li>
+          <a href="/en/" class="nav-lang-toggle" aria-label="Switch to English">EN</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -131,6 +141,71 @@
           <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="azfaq4">Da li sistem može da naplaćuje unapred?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="azfaq4" hidden><p>Da. Sistem se integriše sa payment gateway rešenjima i može da naplati depozit ili punu cenu termina u momentu zakazivanja. Ovo značajno smanjuje broj no-show situacija jer je klijent finansijski angažovan.</p></div></div>
           <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="azfaq5">Šta se dešava kada klijent ne dođe na termin?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="azfaq5" hidden><p>Sistem automatski registruje no-show, šalje follow-up poruku klijentu i oslobađa termin. Politika ponašanja u tim situacijama se definiše unapred: automatizovano rescheduling, naplata naknade ili jednostavno evidencija. Vi birate, sistem izvršava.</p></div></div>
         </div>
+      </div>
+    </section>
+
+    <!-- Cenovnik -->
+    <section class="content-section section-padding" style="background: var(--bg-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag animate-on-scroll">Cenovnik</div>
+          <h2 class="section-title animate-on-scroll">Transparentne cene bez <span class="text-gradient">skrivenih troškova</span></h2>
+          <p class="section-sub animate-on-scroll">Svaki paket uključuje postavljanje, inicijalni trening i mesečnu podršku. Mesečna naknada pokriva hosting, monitoring i do 2 sata izmena mesečno.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card animate-on-scroll">
+            <div class="pricing-tier">Starter</div>
+            <div>
+              <span class="pricing-setup">€290 postavljanje</span>
+              <div class="pricing-monthly">
+                <span class="pricing-amount">€59</span>
+                <span class="pricing-period">/mesec</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>1 tip termina i lokacija</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Google/Outlook kalendar sinhronizacija</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Automatski podsetnici (email + SMS)</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Osnovna analitika zakazivanja</li>
+            </ul>
+            <a href="../index.html#kontakt" class="btn btn-secondary pricing-btn">Zakažite razgovor</a>
+          </div>
+          <div class="pricing-card pricing-card-featured animate-on-scroll" style="animation-delay:0.08s">
+            <div class="pricing-badge">Najpopularnije</div>
+            <div class="pricing-tier">Pro</div>
+            <div>
+              <span class="pricing-setup">€590 postavljanje</span>
+              <div class="pricing-monthly">
+                <span class="pricing-amount">€99</span>
+                <span class="pricing-period">/mesec</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Do 5 zaposlenih ili lokacija</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Više tipova termina</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>CRM integracija</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Analitika i mesečni izveštaji</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Prioritetna podrška</li>
+            </ul>
+            <a href="../index.html#kontakt" class="btn btn-primary pricing-btn">Zakažite razgovor</a>
+          </div>
+          <div class="pricing-card animate-on-scroll" style="animation-delay:0.16s">
+            <div class="pricing-tier">Enterprise</div>
+            <div>
+              <span class="pricing-setup">Prilagođena cena</span>
+              <div class="pricing-monthly">
+                <span class="pricing-amount" style="font-size:1.5rem">Po dogovoru</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Neograničene lokacije i tipovi termina</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Lokalno rešenje na vašoj infrastrukturi</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>SLA garancija odziva</li>
+            </ul>
+            <a href="../index.html#kontakt" class="btn btn-secondary pricing-btn">Kontaktirajte nas</a>
+          </div>
+        </div>
+        <p class="pricing-note">Cene su u evrima. <a href="../cenovnik.html" style="color:var(--accent-light)">Pogledajte kompletan cenovnik →</a></p>
       </div>
     </section>
 

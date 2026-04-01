@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8" />
+<title>10 poslovnih procesa koji se mogu automatizovati danas | Quantex</title>
+<style>
+
+/* ================================================================
+   QUANTEX — PDF VODIČ
+   Optimizovano za WeasyPrint / A4 print
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ── Page setup ───────────────────────────────────────────────── */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@page content {
+  size: A4;
+  margin: 22mm 20mm 24mm 20mm;
+
+  @bottom-left {
+    content: "quantex.rs";
+    font-family: 'Inter', sans-serif;
+    font-size: 8pt;
+    color: #94a3b8;
+    padding-bottom: 6mm;
+  }
+
+  @bottom-right {
+    content: counter(page);
+    font-family: 'Inter', sans-serif;
+    font-size: 8pt;
+    color: #94a3b8;
+    padding-bottom: 6mm;
+  }
+}
+
+@page cover {
+  size: A4;
+  margin: 0;
+}
+
+/* ── Reset ────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: 10pt;
+  line-height: 1.65;
+  color: #1e293b;
+  background: #ffffff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ================================================================
+   COVER PAGE
+   ================================================================ */
+.cover {
+  page: cover;
+  page-break-after: always;
+  width: 210mm;
+  height: 297mm;
+  background: #060912;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Background grid pattern */
+.cover-grid {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image:
+    linear-gradient(rgba(59,130,246,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.06) 1px, transparent 1px);
+  background-size: 20mm 20mm;
+}
+
+/* Glow top-right */
+.cover-glow-1 {
+  position: absolute;
+  top: -30mm;
+  right: -20mm;
+  width: 120mm;
+  height: 120mm;
+  background: radial-gradient(circle, rgba(59,130,246,0.22) 0%, transparent 70%);
+}
+
+/* Glow bottom-left */
+.cover-glow-2 {
+  position: absolute;
+  bottom: -20mm;
+  left: -10mm;
+  width: 90mm;
+  height: 90mm;
+  background: radial-gradient(circle, rgba(6,182,212,0.15) 0%, transparent 70%);
+}
+
+/* Top bar */
+.cover-topbar {
+  position: relative;
+  z-index: 2;
+  padding: 12mm 16mm 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cover-logo {
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+}
+
+.cover-logo-mark {
+  width: 9mm;
+  height: 9mm;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  border-radius: 2mm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11pt;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+}
+
+.cover-logo-text {
+  font-size: 14pt;
+  font-weight: 800;
+  color: #f1f5f9;
+  letter-spacing: -0.03em;
+}
+
+.cover-badge {
+  background: rgba(59,130,246,0.18);
+  border: 1pt solid rgba(59,130,246,0.35);
+  border-radius: 100pt;
+  padding: 1.5mm 5mm;
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #93c5fd;
+}
+
+/* Main cover content */
+.cover-body {
+  position: relative;
+  z-index: 2;
+  padding: 0 16mm;
+  margin-top: 28mm;
+  flex: 1;
+}
+
+.cover-eyebrow {
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #06b6d4;
+  margin-bottom: 5mm;
+}
+
+.cover-title {
+  font-size: 34pt;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #f8fafc;
+  margin-bottom: 7mm;
+}
+
+.cover-title-accent {
+  color: #3b82f6;
+}
+
+.cover-subtitle {
+  font-size: 11pt;
+  color: #94a3b8;
+  line-height: 1.7;
+  max-width: 140mm;
+  margin-bottom: 14mm;
+}
+
+/* Accent line */
+.cover-line {
+  width: 18mm;
+  height: 1mm;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  border-radius: 1mm;
+  margin-bottom: 10mm;
+}
+
+/* Meta row */
+.cover-meta {
+  display: flex;
+  gap: 8mm;
+  margin-bottom: 20mm;
+}
+
+.cover-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 2mm;
+  font-size: 8pt;
+  color: #64748b;
+}
+
+.cover-meta-dot {
+  width: 1.5mm;
+  height: 1.5mm;
+  border-radius: 50%;
+  background: #3b82f6;
+  flex-shrink: 0;
+}
+
+/* Bottom visual — 3 metric cards */
+.cover-cards {
+  display: flex;
+  gap: 4mm;
+  margin-bottom: 0;
+}
+
+.cover-card {
+  flex: 1;
+  background: rgba(255,255,255,0.05);
+  border: 1pt solid rgba(255,255,255,0.08);
+  border-radius: 3mm;
+  padding: 5mm 6mm;
+}
+
+.cover-card-value {
+  font-size: 20pt;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: #3b82f6;
+  line-height: 1;
+  margin-bottom: 2mm;
+}
+
+.cover-card-label {
+  font-size: 7.5pt;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* Bottom bar */
+.cover-footer {
+  position: relative;
+  z-index: 2;
+  padding: 6mm 16mm;
+  border-top: 1pt solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cover-footer-text {
+  font-size: 7.5pt;
+  color: #475569;
+}
+
+.cover-footer-url {
+  font-size: 8pt;
+  font-weight: 600;
+  color: #3b82f6;
+}
+
+/* ================================================================
+   TOC PAGE
+   ================================================================ */
+.toc-page {
+  page: content;
+  page-break-after: always;
+  counter-reset: page 1;
+}
+
+.toc-header {
+  margin-bottom: 8mm;
+  padding-bottom: 4mm;
+  border-bottom: 0.5pt solid #e2e8f0;
+}
+
+.toc-tag {
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3b82f6;
+  margin-bottom: 2mm;
+}
+
+.toc-title {
+  font-size: 22pt;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+}
+
+.toc-list {
+  list-style: none;
+  margin-top: 6mm;
+}
+
+.toc-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  padding: 2.5mm 0;
+  border-bottom: 0.5pt solid #f1f5f9;
+}
+
+.toc-item:last-child {
+  border-bottom: none;
+}
+
+.toc-num {
+  font-size: 7.5pt;
+  font-weight: 700;
+  color: #3b82f6;
+  font-variant-numeric: tabular-nums;
+  width: 10mm;
+  flex-shrink: 0;
+}
+
+.toc-text {
+  font-size: 9.5pt;
+  font-weight: 500;
+  color: #1e293b;
+  flex: 1;
+}
+
+.toc-dots {
+  flex: 1;
+  border-bottom: 1pt dotted #cbd5e1;
+  margin: 0 3mm;
+  margin-bottom: 2pt;
+}
+
+.toc-page-num {
+  font-size: 8pt;
+  color: #94a3b8;
+  font-variant-numeric: tabular-nums;
+  width: 6mm;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.toc-section-title {
+  font-size: 8pt;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 5mm 0 2mm;
+}
+
+/* Intro box */
+.intro-box {
+  margin-top: 10mm;
+  background: #f8fafc;
+  border-left: 2pt solid #3b82f6;
+  border-radius: 0 2mm 2mm 0;
+  padding: 5mm 6mm;
+}
+
+.intro-box p {
+  font-size: 9.5pt;
+  color: #334155;
+  line-height: 1.7;
+}
+
+.intro-box p + p {
+  margin-top: 3mm;
+}
+
+.intro-box strong {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* ================================================================
+   CONTENT PAGES — PROCESSES
+   ================================================================ */
+.content-page {
+  page: content;
+}
+
+/* Process section */
+.process-section {
+  page-break-inside: avoid;
+  margin-bottom: 10mm;
+}
+
+.process-section:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Process header row */
+.process-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 5mm;
+  margin-bottom: 4mm;
+}
+
+.process-number {
+  font-size: 28pt;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #3b82f6;
+  flex-shrink: 0;
+  padding-top: 0.5mm;
+  width: 14mm;
+}
+
+.process-header-text {
+  flex: 1;
+}
+
+.process-title {
+  font-size: 14pt;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 1.5mm;
+}
+
+.process-category {
+  display: inline-block;
+  background: rgba(59,130,246,0.08);
+  border: 0.5pt solid rgba(59,130,246,0.2);
+  border-radius: 100pt;
+  padding: 0.8mm 3mm;
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #3b82f6;
+}
+
+.process-divider {
+  width: 100%;
+  height: 0.5pt;
+  background: #e2e8f0;
+  margin-bottom: 4mm;
+}
+
+/* Process body */
+.process-body {
+  margin-left: 19mm;
+}
+
+.process-desc {
+  font-size: 9.5pt;
+  color: #334155;
+  line-height: 1.75;
+  margin-bottom: 4mm;
+}
+
+/* Metrics row */
+.metrics-row {
+  display: flex;
+  gap: 3mm;
+  margin-bottom: 4mm;
+}
+
+.metric-box {
+  flex: 1;
+  background: linear-gradient(135deg, rgba(59,130,246,0.06), rgba(6,182,212,0.04));
+  border: 0.5pt solid rgba(59,130,246,0.15);
+  border-radius: 2mm;
+  padding: 3.5mm 4mm;
+}
+
+.metric-value {
+  font-size: 13pt;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #1e40af;
+  line-height: 1;
+  margin-bottom: 1.5mm;
+}
+
+.metric-label {
+  font-size: 7pt;
+  color: #64748b;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Example box */
+.example-box {
+  background: #f0f9ff;
+  border: 0.5pt solid #bae6fd;
+  border-radius: 2mm;
+  padding: 3.5mm 5mm;
+  margin-bottom: 4mm;
+}
+
+.example-label {
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0891b2;
+  margin-bottom: 2mm;
+}
+
+.example-text {
+  font-size: 9pt;
+  color: #0c4a6e;
+  line-height: 1.6;
+}
+
+/* Separator between processes */
+.process-sep {
+  height: 0.5pt;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, transparent);
+  margin: 8mm 0;
+  opacity: 0.3;
+}
+
+/* ================================================================
+   CHAPTER HEADINGS (section breaks)
+   ================================================================ */
+.chapter-header {
+  page-break-before: always;
+  padding-top: 0;
+  margin-bottom: 8mm;
+}
+
+.chapter-tag {
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #3b82f6;
+  margin-bottom: 2.5mm;
+}
+
+.chapter-title {
+  font-size: 22pt;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+  line-height: 1.15;
+  margin-bottom: 3mm;
+}
+
+.chapter-subtitle {
+  font-size: 10pt;
+  color: #64748b;
+  max-width: 130mm;
+  line-height: 1.65;
+  margin-bottom: 5mm;
+}
+
+.chapter-rule {
+  height: 0.5pt;
+  background: #e2e8f0;
+}
+
+/* ================================================================
+   CHECKLIST PAGE
+   ================================================================ */
+.checklist-section {
+  page-break-before: always;
+  margin-bottom: 10mm;
+}
+
+.checklist-intro {
+  font-size: 9.5pt;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 6mm;
+}
+
+.checklist-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 4mm;
+  padding: 4mm 0;
+  border-bottom: 0.5pt solid #f1f5f9;
+}
+
+.check-item:last-child {
+  border-bottom: none;
+}
+
+.check-box-wrap {
+  flex-shrink: 0;
+  padding-top: 0.5mm;
+}
+
+.check-box {
+  width: 4.5mm;
+  height: 4.5mm;
+  border: 1.5pt solid #3b82f6;
+  border-radius: 1mm;
+  background: #fff;
+  display: block;
+}
+
+.check-content strong {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #0f172a;
+  display: block;
+  margin-bottom: 1mm;
+}
+
+.check-content p {
+  font-size: 9pt;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Score box */
+.score-legend {
+  background: #f8fafc;
+  border: 0.5pt solid #e2e8f0;
+  border-radius: 2mm;
+  padding: 5mm 6mm;
+  margin-top: 6mm;
+  display: flex;
+  gap: 6mm;
+}
+
+.score-item {
+  text-align: center;
+  flex: 1;
+}
+
+.score-value {
+  font-size: 16pt;
+  font-weight: 900;
+  color: #3b82f6;
+  line-height: 1;
+  margin-bottom: 1.5mm;
+}
+
+.score-label {
+  font-size: 7.5pt;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* ================================================================
+   MISTAKES PAGE
+   ================================================================ */
+.mistakes-section {
+  page-break-before: always;
+}
+
+.mistake-item {
+  display: flex;
+  gap: 4mm;
+  margin-bottom: 5mm;
+  page-break-inside: avoid;
+}
+
+.mistake-icon-wrap {
+  width: 9mm;
+  height: 9mm;
+  background: rgba(239,68,68,0.08);
+  border: 0.5pt solid rgba(239,68,68,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 11pt;
+  line-height: 1;
+  padding-top: 0.5mm;
+}
+
+.mistake-content h4 {
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.5mm;
+}
+
+.mistake-content p {
+  font-size: 9pt;
+  color: #475569;
+  line-height: 1.65;
+}
+
+.mistake-sep {
+  height: 0.5pt;
+  background: #f1f5f9;
+  margin: 4mm 0;
+}
+
+/* ================================================================
+   CTA / BACK PAGE
+   ================================================================ */
+.cta-page {
+  page: cover;
+  page-break-before: always;
+  width: 210mm;
+  height: 297mm;
+  background: #060912;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cta-page-grid {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image:
+    linear-gradient(rgba(59,130,246,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.05) 1px, transparent 1px);
+  background-size: 20mm 20mm;
+}
+
+.cta-page-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140mm;
+  height: 140mm;
+  background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, transparent 70%);
+}
+
+.cta-page-body {
+  position: relative;
+  z-index: 2;
+  padding: 20mm;
+}
+
+.cta-page-eyebrow {
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #06b6d4;
+  margin-bottom: 5mm;
+}
+
+.cta-page-title {
+  font-size: 28pt;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #f8fafc;
+  line-height: 1.15;
+  margin-bottom: 6mm;
+}
+
+.cta-page-title span {
+  color: #3b82f6;
+}
+
+.cta-page-desc {
+  font-size: 11pt;
+  color: #94a3b8;
+  line-height: 1.7;
+  max-width: 130mm;
+  margin: 0 auto 10mm;
+}
+
+.cta-box {
+  background: rgba(59,130,246,0.1);
+  border: 1pt solid rgba(59,130,246,0.3);
+  border-radius: 3mm;
+  padding: 6mm 10mm;
+  display: inline-block;
+  margin-bottom: 8mm;
+}
+
+.cta-box-label {
+  font-size: 8pt;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 2mm;
+}
+
+.cta-box-url {
+  font-size: 14pt;
+  font-weight: 800;
+  color: #60a5fa;
+  letter-spacing: -0.01em;
+}
+
+.cta-box-url span {
+  color: #22d3ee;
+}
+
+.cta-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+  margin-bottom: 10mm;
+}
+
+.cta-bullets li {
+  font-size: 9pt;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2mm;
+}
+
+.cta-bullets li::before {
+  content: "✓";
+  color: #22d3ee;
+  font-weight: 700;
+  font-size: 9pt;
+}
+
+.cta-page-footer {
+  position: absolute;
+  bottom: 8mm;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 7.5pt;
+  color: #334155;
+}
+
+</style>
+</head>
+<body>
+
+<!-- ================================================================
+     COVER PAGE
+     ================================================================ -->
+<div class="cover">
+  <div class="cover-grid"></div>
+  <div class="cover-glow-1"></div>
+  <div class="cover-glow-2"></div>
+
+  <div class="cover-topbar">
+    <div class="cover-logo">
+      <div class="cover-logo-mark">Q</div>
+      <span class="cover-logo-text">Quantex</span>
+    </div>
+    <span class="cover-badge">Besplatni vodič · 2025</span>
+  </div>
+
+  <div class="cover-body">
+    <div class="cover-eyebrow">AI automatizacija za srpske firme</div>
+
+    <div class="cover-title">
+      10 poslovnih procesa<br/>
+      koji se mogu<br/>
+      <span class="cover-title-accent">automatizovati danas</span>
+    </div>
+
+    <div class="cover-subtitle">
+      Praktičan pregled procesa koje srpske firme i dalje rade ručno, koliko to košta u satima i novcu, i kako izgleda kad sistem preuzme taj posao.
+    </div>
+
+    <div class="cover-line"></div>
+
+    <div class="cover-meta">
+      <div class="cover-meta-item">
+        <div class="cover-meta-dot"></div>
+        12 minuta čitanja
+      </div>
+      <div class="cover-meta-item">
+        <div class="cover-meta-dot"></div>
+        Za direktore i vlasnike firmi
+      </div>
+      <div class="cover-meta-item">
+        <div class="cover-meta-dot"></div>
+        Odmah primenjivo
+      </div>
+    </div>
+
+    <div class="cover-cards">
+      <div class="cover-card">
+        <div class="cover-card-value">78%</div>
+        <div class="cover-card-label">repetitivnih zadataka može biti automatizovano</div>
+      </div>
+      <div class="cover-card">
+        <div class="cover-card-value">14h</div>
+        <div class="cover-card-label">prosečno izgubljenih sati nedeljno u firmama</div>
+      </div>
+      <div class="cover-card">
+        <div class="cover-card-value">4 mes.</div>
+        <div class="cover-card-label">prosečan period povrata investicije</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-footer">
+    <span class="cover-footer-text">© 2025 Quantex · Sva prava zadržana</span>
+    <span class="cover-footer-url">quantex.rs</span>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     TABLE OF CONTENTS
+     ================================================================ -->
+<div class="toc-page">
+  <div class="toc-header">
+    <div class="toc-tag">Sadržaj</div>
+    <div class="toc-title">Šta ćete naći u ovom vodiču</div>
+  </div>
+
+  <div class="toc-section-title">Procesi</div>
+  <ul class="toc-list">
+    <li class="toc-item">
+      <span class="toc-num">01</span>
+      <span class="toc-text">Odgovaranje na upite klijenata</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">4</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">02</span>
+      <span class="toc-text">Zakazivanje termina i podsetnici</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">4</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">03</span>
+      <span class="toc-text">Pronalaženje i kvalifikacija novih klijenata</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">5</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">04</span>
+      <span class="toc-text">Obrada mejlova i interne poruke</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">5</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">05</span>
+      <span class="toc-text">Nedeljni i mesečni izveštaji</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">6</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">06</span>
+      <span class="toc-text">Uvođenje novih zaposlenih</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">6</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">07</span>
+      <span class="toc-text">Fakturisanje i praćenje naplate</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">7</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">08</span>
+      <span class="toc-text">Interni Q&amp;A sistem za tim</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">7</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">09</span>
+      <span class="toc-text">Upravljanje društvenim mrežama</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">8</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">10</span>
+      <span class="toc-text">Unos i obrada podataka između sistema</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">8</span>
+    </li>
+  </ul>
+
+  <div class="toc-section-title" style="margin-top: 5mm;">Alati za odlučivanje</div>
+  <ul class="toc-list">
+    <li class="toc-item">
+      <span class="toc-num" style="color:#64748b">→</span>
+      <span class="toc-text">Koji proces automatizovati prvi: cheklista</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">9</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num" style="color:#64748b">→</span>
+      <span class="toc-text">4 greške koje firme najčešće prave</span>
+      <span class="toc-dots"></span>
+      <span class="toc-page-num">10</span>
+    </li>
+  </ul>
+
+  <div class="intro-box" style="margin-top: 8mm;">
+    <p>
+      <strong>Prosečna srpska firma od 10 do 50 zaposlenih gubi između 800 i 3.000 sati godišnje na zadatke koje sistem može da obavi.</strong> To je ekvivalent jednog do dva zaposlena koji rade isključivo repetitivne zadatke.
+    </p>
+    <p>
+      Ovaj vodič ne govori o budućnosti AI. Govori o tome šta postoji danas, šta je implementirano kod firmi poput vaše, i kako izgleda u praksi. Svaki od 10 procesa opisan je kroz realni scenario, sa procenom uštede u satima i novcu.
+    </p>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     PROCESSES — PAGE 1 (01-02)
+     ================================================================ -->
+<div class="content-page">
+
+  <div class="chapter-header">
+    <div class="chapter-tag">Procesi 01–10</div>
+    <div class="chapter-title">Šta možete automatizovati<br/>već ovog meseca</div>
+    <div class="chapter-subtitle">Za svaki proces navedeni su realni primeri, tipična ušteda u satima i procena perioda povrata investicije.</div>
+    <div class="chapter-rule"></div>
+  </div>
+
+  <!-- PROCESS 01 -->
+  <div class="process-section">
+    <div class="process-header">
+      <div class="process-number">01</div>
+      <div class="process-header-text">
+        <div class="process-title">Odgovaranje na upite klijenata</div>
+        <span class="process-category">Korisnička podrška · AI Agent</span>
+      </div>
+    </div>
+    <div class="process-divider"></div>
+    <div class="process-body">
+      <p class="process-desc">
+        Svaka firma prima iste ili slične upite: cena, rok isporuke, dostupnost, radno vreme, procedura naručivanja. Vaš tim provodi sate svake nedelje odgovarajući ručno. AI agent obučen na vašim podacima odgovara za sekunde, tačno i konzistentno, 24 sata dnevno, bez grešaka i bez strpljenja koje nestaje.
+      </p>
+      <div class="metrics-row">
+        <div class="metric-box">
+          <div class="metric-value">8–20 sati</div>
+          <div class="metric-label">prosečna ušteda nedeljno</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">94%+</div>
+          <div class="metric-label">tačnost odgovora</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">3–5 mes.</div>
+          <div class="metric-label">povrat investicije</div>
+        </div>
+      </div>
+      <div class="example-box">
+        <div class="example-label">Primer iz prakse</div>
+        <p class="example-text">Stomatološka klinika uvela AI agenta koji preuzima 85% pitanja o cenama i terminima. Broj poziva na recepciji pao za 60%. Osoblje sada provodi vreme sa pacijentima, ne telefonom.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="process-sep"></div>
+
+  <!-- PROCESS 02 -->
+  <div class="process-section">
+    <div class="process-header">
+      <div class="process-number">02</div>
+      <div class="process-header-text">
+        <div class="process-title">Zakazivanje termina i podsetnici</div>
+        <span class="process-category">Operacije · Automatizacija zakazivanja</span>
+      </div>
+    </div>
+    <div class="process-divider"></div>
+    <div class="process-body">
+      <p class="process-desc">
+        Ručno zakazivanje je jedna od najvećih gubljenja vremena u uslužnim firmama. Svaka promena termina zahteva mejl ili poziv, obe strane moraju biti dostupne, a podsetnici se šalju ručno. Sistem preuzima sve: klijent sam bira termin, dobija automatski potvrdu i dva podsetnika pre termina, a otkazani termin se sam nudi na čekaocu.
+      </p>
+      <div class="metrics-row">
+        <div class="metric-box">
+          <div class="metric-value">do 65%</div>
+          <div class="metric-label">smanjenje ne-dolazaka</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">5–12 sati</div>
+          <div class="metric-label">admin ušteda nedeljno</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">2–4 mes.</div>
+          <div class="metric-label">povrat investicije</div>
+        </div>
+      </div>
+      <div class="example-box">
+        <div class="example-label">Primer iz prakse</div>
+        <p class="example-text">Agencija za nekretnine eliminisala 10 mejlova po klijentu za koordinaciju obilazaka. U prvoj nedelji sistem je automatski potvrdio 43 termina bez ijednog ručnog poziva.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ================================================================
+     PROCESSES — PAGE 2 (03-04)
+     ================================================================ -->
+<div class="content-page" style="page-break-before: always;">
+
+  <!-- PROCESS 03 -->
+  <div class="process-section">
+    <div class="process-header">
+      <div class="process-number">03</div>
+      <div class="process-header-text">
+        <div class="process-title">Pronalaženje i kvalifikacija novih klijenata</div>
+        <span class="process-category">Prodaja · Generisanje lidova</span>
+      </div>
+    </div>
+    <div class="process-divider"></div>
+    <div class="process-body">
+      <p class="process-desc">
+        Ručno istraživanje tržišta, identifikacija potencijalnih klijenata, slanje prvog kontakta i praćenje odgovora troši više sati dnevno vašeg prodajnog tima. Automatizovani sistem pronalazi firme koje odgovaraju vašem idealnom profilu, stupa u personalizovani kontakt i prosleđuje zainteresovane prodajnom timu sa svim relevantnim informacijama. Tim se bavi samo zagrejanim lidovima.
+      </p>
+      <div class="metrics-row">
+        <div class="metric-box">
+          <div class="metric-value">15–25</div>
+          <div class="metric-label">kvalifikovanih lidova nedeljno</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">2–4x</div>
+          <div class="metric-label">poboljšanje konverzije</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">4–6 mes.</div>
+          <div class="metric-label">povrat investicije</div>
+        </div>
+      </div>
+      <div class="example-box">
+        <div class="example-label">Primer iz prakse</div>
+        <p class="example-text">Distributer prehrambenih proizvoda sa 15 do 20 kvalifikovanih lidova nedeljno. Prodajni tim se sada bavi isključivo firmama koje su već pokazale interes, umesto da hladno zove ceo dan.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="process-sep"></div>
+
+  <!-- PROCESS 04 -->
+  <div class="process-section">
+    <div class="process-header">
+      <div class="process-number">04</div>
+      <div class="process-header-text">
+        <div class="process-title">Obrada mejlova i interne poruke</div>
+        <span class="process-category">Produktivnost · AI obrada teksta</span>
+      </div>
+    </div>
+    <div class="process-divider"></div>
+    <div class="process-body">
+      <p class="process-desc">
+        Prosečan zaposleni potroši 2,5 sata dnevno na mejlove. Veliki deo tih mejlova su tipični: upiti, prosleđivanja, potvrde. AI čita svaki dolazni mejl, kategorizuje ga, šalje automatski odgovor na tipične, ili prosleđuje odgovarajućoj osobi sa sažetkom situacije. Ništa se ne gubi, ništa ne čeka.
+      </p>
+      <div class="metrics-row">
+        <div class="metric-box">
+          <div class="metric-value">60–80%</div>
+          <div class="metric-label">mejlova automatski obrađeno</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">1–1,5 sat</div>
+          <div class="metric-label">ušteda po zaposlenom dnevno</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">3–5 mes.</div>
+          <div class="metric-label">povrat investicije</div>
+        </div>
+      </div>
+      <div class="example-box">
+        <div class="example-label">Primer iz prakse</div>
+        <p class="example-text">Logistička firma automatizovala obradu 450 mejlova dnevno. Svaki mejl se kategorizuje i prosleđuje za 3 sekunde. Nema više propuštenih hitnih zahteva koji su nekad čekali do sledećeg jutra.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="process-sep"></div>
+
+  <!-- PROCESS 05 -->
+  <div class="process-section">
+    <div class="process-header">
+      <div class="process-number">05</div>
+      <div class="process-header-text">
+        <div class="process-title">Nedeljni i mesečni izveštaji</div>
+        <span class="process-category">Upravljanje · Automatizacija podataka</span>
+      </div>
+    </div>
+    <div class="process-divider"></div>
+    <div class="process-body">
+      <p class="process-desc">
+        Svaki ponedeljak neko provede jutro skupljajući podatke iz različitih sistema, kucajući ih u tabelu i šaljući direktoru. Ovaj zadatak se ponavlja 52 puta godišnje. Sistem automatski prikuplja podatke iz svih alata, formatira izveštaj i šalje ga u vaše prijemno sanduče, gotov za čitanje.
+      </p>
+      <div class="metrics-row">
+        <div class="metric-box">
+          <div class="metric-value">80–200 sati</div>
+          <div class="metric-label">godišnja ušteda</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">100%</div>
+          <div class="metric-label">tačnost podataka</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">2–3 mes.</div>
+          <div class="metric-label">povrat investicije</div>
+        </div>
+      </div>
+      <div class="example-box">
+        <div class="example-label">Primer iz prakse</div>
+        <p class="example-text">E-commerce firma: integracija WooCommerce, Gmail i Google Sheets. Svaki ponedeljak u 7h direktor dobija izveštaj o prodaji, zalihama i otvorenim narudžbinama. Ranije je pripremanje trajalo 2,5 sata.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ================================================================
+     PROCESSES — PAGE 3 (06-08)
+     ================================================================ -->
+<div class="content-page" style="page-break-before: always;">
+
+  <!-- PROCESS 06 -->
+  <div class="process-section">
+    <div class="process-header">
+      <div class="process-number">06</div>
+      <div class="process-header-text">
+        <div class="process-title">Uvođenje novih zaposlenih</div>
+        <span class="process-category">HR · Onboarding automatizacija</span>
+      </div>
+    </div>
+    <div class="process-divider"></div>
+    <div class="process-body">
+      <p class="process-desc">
+        Svaki novi zaposleni prolazi kroz iste korake i pita ista pitanja. Šalju se isti dokumenti, čeka se na iste odgovore, HR tim gubi sate na individualnom uvođenju. Automatizovani sistem vodi svakog novog zaposlenog kroz strukturisan program i odgovara na pitanja iz baze znanja — dok vi radite drugi posao.
+      </p>
+      <div class="metrics-row">
+        <div class="metric-box">
+          <div class="metric-value">70%+</div>
+          <div class="metric-label">pitanja rešena automatski</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">40–60%</div>
+          <div class="metric-label">skraćeno vreme uvođenja</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">3–5 mes.</div>
+          <div class="metric-label">povrat investicije</div>
+        </div>
+      </div>
+      <div class="example-box">
+        <div class="example-label">Primer iz prakse</div>
+        <p class="example-text">Firma sa 120 zaposlenih uvela AI asistenta za onboarding. HR tim prima 70% manje internih pitanja od novih zaposlenih. Isti asistent dostupan 24 sata, odgovara za sekunde.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="process-sep"></div>
+
+  <!-- PROCESS 07 -->
+  <div class="process-section">
+    <div class="process-header">
+      <div class="process-number">07</div>
+      <div class="process-header-text">
+        <div class="process-title">Fakturisanje i praćenje naplate</div>
+        <span class="process-category">Finansije · Automatizacija toka novca</span>
+      </div>
+    </div>
+    <div class="process-divider"></div>
+    <div class="process-body">
+      <p class="process-desc">
+        Generisanje faktura, slanje, podsetnici za nenaplaćene, evidentiranje uplata — svaki korak se radi ručno u većini srpskih firmi. Sistem generiše fakturu posle svake završene usluge, šalje klijentu, prati status i šalje podsetnike ako plaćanje kasni. Vi dobijate obaveštenje samo kad je potrebna vaša intervencija.
+      </p>
+      <div class="metrics-row">
+        <div class="metric-box">
+          <div class="metric-value">35–50%</div>
+          <div class="metric-label">ubrzanje naplate</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">3–8 sati</div>
+          <div class="metric-label">admin ušteda nedeljno</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">2–4 mes.</div>
+          <div class="metric-label">povrat investicije</div>
+        </div>
+      </div>
+      <div class="example-box">
+        <div class="example-label">Primer iz prakse</div>
+        <p class="example-text">IT firma sa 25 klijenata: fakturisanje i praćenje plaćanja oduzimalo 5 sati nedeljno. Sada se sve dešava automatski, a upozorenja stižu samo kad je potrebna ljudska intervencija.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="process-sep"></div>
+
+  <!-- PROCESS 08 -->
+  <div class="process-section">
+    <div class="process-header">
+      <div class="process-number">08</div>
+      <div class="process-header-text">
+        <div class="process-title">Interni Q&amp;A sistem za tim</div>
+        <span class="process-category">Znanje · Interni AI asistent</span>
+      </div>
+    </div>
+    <div class="process-divider"></div>
+    <div class="process-body">
+      <p class="process-desc">
+        Zaposleni koji traže interne informacije gube vreme na pretraživanje dokumenata, pitanje kolega ili slanje mejlova HR-u. Interni AI asistent obučen na vašim pravilnicima, procedurama i dokumentima odgovara za sekunde na sva interna pitanja — dostupan 24 sata, nikad nije na odsustvu.
+      </p>
+      <div class="metrics-row">
+        <div class="metric-box">
+          <div class="metric-value">75–90%</div>
+          <div class="metric-label">internih upita rešenih</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">15 min → 10 sek</div>
+          <div class="metric-label">vreme pronalaska info</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">3–5 mes.</div>
+          <div class="metric-label">povrat investicije</div>
+        </div>
+      </div>
+      <div class="example-box">
+        <div class="example-label">Primer iz prakse</div>
+        <p class="example-text">Distribucijska firma sa 80 zaposlenih: tim svakodnevno slao mejlove HR-u za procedure i benefite. Asistent sada odgovara za sekunde iz baze od 200+ dokumenata.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ================================================================
+     PROCESSES — PAGE 4 (09-10)
+     ================================================================ -->
+<div class="content-page" style="page-break-before: always;">
+
+  <!-- PROCESS 09 -->
+  <div class="process-section">
+    <div class="process-header">
+      <div class="process-number">09</div>
+      <div class="process-header-text">
+        <div class="process-title">Upravljanje društvenim mrežama</div>
+        <span class="process-category">Marketing · Automatizacija komunikacije</span>
+      </div>
+    </div>
+    <div class="process-divider"></div>
+    <div class="process-body">
+      <p class="process-desc">
+        Odgovaranje na komentare, poruke, prikupljanje recenzija, praćenje pominjanja brenda. Svaki od ovih zadataka zahteva svakodnevnu pažnju i brzu reakciju. Automatizovani sistem odgovara na standardne komentare, prosleđuje kompleksne, šalje zahteve za recenzijama i upozorava vas na negativne pomenute pre nego što eskaliraju.
+      </p>
+      <div class="metrics-row">
+        <div class="metric-box">
+          <div class="metric-value">3–5x</div>
+          <div class="metric-label">rast broja recenzija</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">12h → 2 min</div>
+          <div class="metric-label">vreme odgovora</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">3–4 mes.</div>
+          <div class="metric-label">povrat investicije</div>
+        </div>
+      </div>
+      <div class="example-box">
+        <div class="example-label">Primer iz prakse</div>
+        <p class="example-text">Restoran: broj Google recenzija porastao sa 40 na 180 za tri meseca. Negativne recenzije se otkrivaju odmah, menadžer reaguje pre nego što problem postane vidljiv svim posetiocima profila.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="process-sep"></div>
+
+  <!-- PROCESS 10 -->
+  <div class="process-section">
+    <div class="process-header">
+      <div class="process-number">10</div>
+      <div class="process-header-text">
+        <div class="process-title">Unos i obrada podataka između sistema</div>
+        <span class="process-category">Operacije · RPA automatizacija</span>
+      </div>
+    </div>
+    <div class="process-divider"></div>
+    <div class="process-body">
+      <p class="process-desc">
+        Prepisivanje podataka iz jednog sistema u drugi, popunjavanje formulara, ažuriranje tabela, sinhronizacija baza. Ovo je najčistiji primer posla koji sistem može obaviti savršenije i brže od čoveka. Svaki put. Bez grešaka. Bez zamora. Bez odlaska na odsustvo u pogrešnom trenutku.
+      </p>
+      <div class="metrics-row">
+        <div class="metric-box">
+          <div class="metric-value">99,9%</div>
+          <div class="metric-label">eliminacija grešaka</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">100x brže</div>
+          <div class="metric-label">od ručnog unosa</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">2–4 mes.</div>
+          <div class="metric-label">povrat investicije</div>
+        </div>
+      </div>
+      <div class="example-box">
+        <div class="example-label">Primer iz prakse</div>
+        <p class="example-text">Računovodstvena agencija ručno prepisivala podatke iz klijentskih sistema. Automatizacija eliminisala 15 sati nedeljnog ručnog unosa i sve greške koje su nastajale u procesu — ušteda odmah vidljiva u prvom mesecu.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ================================================================
+     CHECKLIST PAGE
+     ================================================================ -->
+<div class="checklist-section">
+  <div class="chapter-header">
+    <div class="chapter-tag">Alat za odlučivanje</div>
+    <div class="chapter-title">Koji proces automatizovati prvi?</div>
+    <div class="chapter-subtitle">Odgovorite na ova pitanja za svaki proces koji razmatrate. Proces koji dobije najviše potvrdnih odgovora ima prioritet.</div>
+    <div class="chapter-rule"></div>
+  </div>
+
+  <p class="checklist-intro" style="margin-top: 5mm;">
+    Ne treba automatizovati sve odjednom. Firme koje pokušaju to završe sa skupim sistemima koji ne rade dobro ni jedan zadatak. Koristite ovu cheklistu da izaberete prvi — i najvažniji — korak.
+  </p>
+
+  <div class="checklist-grid">
+
+    <div class="check-item">
+      <div class="check-box-wrap"><span class="check-box"></span></div>
+      <div class="check-content">
+        <strong>Dešava se više od 5 puta nedeljno?</strong>
+        <p>Procesi koji se retko dešavaju nisu dobri kandidati. Vreme potrebno za podešavanje nije opravdano retkim uštedama.</p>
+      </div>
+    </div>
+
+    <div class="check-item">
+      <div class="check-box-wrap"><span class="check-box"></span></div>
+      <div class="check-content">
+        <strong>Sledi predvidivi redosled koraka svaki put?</strong>
+        <p>Što je proces konzistentniji, lakše se automatizuje i greške su manje moguće. Procesi koji zavise od procene slučaj po slučaj su kompleksniji za automatizaciju.</p>
+      </div>
+    </div>
+
+    <div class="check-item">
+      <div class="check-box-wrap"><span class="check-box"></span></div>
+      <div class="check-content">
+        <strong>Teko je naći ili zadržati osobu koja to radi?</strong>
+        <p>Ako imate problem s popunjavanjem te pozicije ili visoku fluktuaciju, automatizacija uklanja taj rizik i stabilizuje operacije.</p>
+      </div>
+    </div>
+
+    <div class="check-item">
+      <div class="check-box-wrap"><span class="check-box"></span></div>
+      <div class="check-content">
+        <strong>Postoji digitalni input i output?</strong>
+        <p>Procesi koji počinju i završavaju u digitalnim sistemima (mejl, forma, CRM, tabela) lako se automatizuju. Procesi koji zahtevaju fizičku manipulaciju su kompleksniji.</p>
+      </div>
+    </div>
+
+    <div class="check-item">
+      <div class="check-box-wrap"><span class="check-box"></span></div>
+      <div class="check-content">
+        <strong>Greške u ovom procesu imaju vidljive posledice?</strong>
+        <p>Automatizacija eliminiše greške nastale umorom ili nepažnjom. Posebno vredna u procesima gde greška znači gubitak klijenta, novčanu štetu ili pravni rizik.</p>
+      </div>
+    </div>
+
+    <div class="check-item">
+      <div class="check-box-wrap"><span class="check-box"></span></div>
+      <div class="check-content">
+        <strong>Tim se žali na ovaj zadatak?</strong>
+        <p>Procesi koji frustriraju tim prvi su kandidati. Automatizacijom povećavate zadovoljstvo zaposlenih, smanjujete fluktuaciju i oslobađate energiju za kreativniji rad.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="score-legend">
+    <div class="score-item">
+      <div class="score-value">1–2</div>
+      <div class="score-label">Niska prioritetnost, nije još vreme</div>
+    </div>
+    <div class="score-item">
+      <div class="score-value">3–4</div>
+      <div class="score-label">Dobar kandidat, wertuje razmatranje</div>
+    </div>
+    <div class="score-item">
+      <div class="score-value">5–6</div>
+      <div class="score-label">Visok prioritet — automatizujte odmah</div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ================================================================
+     MISTAKES PAGE
+     ================================================================ -->
+<div class="mistakes-section">
+  <div class="chapter-header">
+    <div class="chapter-tag">Česte greške</div>
+    <div class="chapter-title">Šta firme najčešće rade pogrešno</div>
+    <div class="chapter-subtitle">Ovo su četiri greške koje vidimo kod gotovo svake firme koja prvi put ulazi u automatizaciju.</div>
+    <div class="chapter-rule"></div>
+  </div>
+
+  <div style="margin-top: 6mm;">
+
+    <div class="mistake-item">
+      <div class="mistake-icon-wrap">✕</div>
+      <div class="mistake-content">
+        <h4>Pokušavaju da automatizuju previše odjednom</h4>
+        <p>Firme koje žele sve i odmah završe sa skupim, komplikovanim sistemima koji ne rade dobro ni jedan zadatak. Počnite sa jednim procesom koji ima jasan ROI, implementirajte ga do kraja i izmerite rezultate. Pa tek onda idite dalje.</p>
+      </div>
+    </div>
+    <div class="mistake-sep"></div>
+
+    <div class="mistake-item">
+      <div class="mistake-icon-wrap">✕</div>
+      <div class="mistake-content">
+        <h4>Biraju alat pre nego što razumeju problem</h4>
+        <p>Kupiti ChatGPT pretplatu i čekati da se nešto desi nije strategija. Automatizacija kreće od analize procesa, ne od alata. Koji problem rešavamo? Gde se gubi vreme? Ko pati od toga? Alati su poslednji korak, ne prvi.</p>
+      </div>
+    </div>
+    <div class="mistake-sep"></div>
+
+    <div class="mistake-item">
+      <div class="mistake-icon-wrap">✕</div>
+      <div class="mistake-content">
+        <h4>Ne prate rezultate nakon implementacije</h4>
+        <p>Automatizacija bez merenja nije automatizacija, to je nada. Svaki implementirani proces mora imati jasne metrike: broj obrađenih zahteva, vreme odgovora, stopa grešaka, ušteda sati. Bez merenja ne znate da li ste zaradili ili potrošili novac.</p>
+      </div>
+    </div>
+    <div class="mistake-sep"></div>
+
+    <div class="mistake-item">
+      <div class="mistake-icon-wrap">✕</div>
+      <div class="mistake-content">
+        <h4>Zaboravljaju da informišu tim</h4>
+        <p>Zaposleni koji ne razumeju zašto sistem radi ono što radi neće ga koristiti ili će ga zaobilaziti. Onboarding tima nije opcija — to je deo implementacije. Svaka uspešna automatizacija ima i internu komunikacijsku komponentu.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ================================================================
+     BACK / CTA PAGE
+     ================================================================ -->
+<div class="cta-page">
+  <div class="cta-page-grid"></div>
+  <div class="cta-page-glow"></div>
+
+  <div class="cta-page-body">
+    <div class="cta-page-eyebrow">Sledeći korak</div>
+    <div class="cta-page-title">
+      Koji procesi gube<br/>
+      novac u <span>vašoj firmi?</span>
+    </div>
+    <div class="cta-page-desc">
+      Ovaj vodič daje opštu sliku. Razgovor od 45 minuta analizira vaše konkretne procese, daje prioritete i okvirnu procenu troškova i ušteda. Bez obaveze. Bez žargona.
+    </div>
+
+    <ul class="cta-bullets">
+      <li>Analiza gde vaš tim gubi vreme</li>
+      <li>Top 3 prilike za automatizaciju</li>
+      <li>Okvirna procena troškova i ušteda</li>
+      <li>Bez obaveze i bez žargona</li>
+    </ul>
+
+    <div class="cta-box">
+      <div class="cta-box-label">Zakažite besplatan razgovor</div>
+      <div class="cta-box-url">quantex<span>.rs</span></div>
+    </div>
+
+    <div style="font-size:9pt; color:#475569; margin-top:3mm;">
+      ili pišite na office@quantex.rs
+    </div>
+  </div>
+
+  <div class="cta-page-footer">
+    © 2025 Quantex · quantex.rs · office@quantex.rs
+  </div>
+</div>
+
+</body>
+</html>

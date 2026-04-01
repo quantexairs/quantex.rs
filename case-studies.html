@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studije slučaja | Quantex AI Automatizacija</title>
+  <meta name="description" content="Konkretni rezultati AI automatizacije kod srpskih firmi. Kako Quantex implementira sisteme koji štede stotine sati i povećavaju prihode. Stvarni projekti, stvarni brojevi." />
+  <link rel="canonical" href="https://quantex.rs/case-studies.html" />
+  <meta property="og:title" content="Studije slučaja | Quantex AI Automatizacija" />
+  <meta property="og:description" content="Konkretni rezultati: stomatološka klinika, agencija za nekretnine, distributer. Stvarni projekti, stvarni brojevi." />
+  <meta property="og:url" content="https://quantex.rs/case-studies.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0VB7R2391"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B0VB7R2391');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Početna", "item": "https://quantex.rs/"},
+      {"@type": "ListItem", "position": 2, "name": "Studije slučaja"}
+    ]
+  }
+  </script>
+
+  <style>
+    /* ── Case Studies Page ─────────────────────────────────── */
+    .cs-hero {
+      padding: clamp(6rem, 10vw, 10rem) 0 clamp(3rem, 6vw, 5rem);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cs-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(59,130,246,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cs-hero-inner {
+      max-width: 680px;
+    }
+
+    .cs-intro {
+      font-size: var(--text-base);
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-top: var(--space-6);
+      max-width: 580px;
+    }
+
+    /* ── Stats bar ─────────────────────────────────────────── */
+    .cs-statsbar {
+      background: var(--bg-elevated);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: var(--space-8) 0;
+      margin-bottom: clamp(3rem, 6vw, 5rem);
+    }
+
+    .cs-statsbar-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-6);
+    }
+
+    .cs-stat {
+      text-align: center;
+    }
+
+    .cs-stat-value {
+      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+    }
+
+    .cs-stat-label {
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+      margin-top: var(--space-1);
+      display: block;
+    }
+
+    /* ── Featured Case Study ───────────────────────────────── */
+    .cs-featured {
+      background: linear-gradient(145deg, #0d1a3a 0%, #060e24 100%);
+      border: 1px solid rgba(59,130,246,0.15);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      margin-bottom: clamp(3rem, 5vw, 4rem);
+      position: relative;
+    }
+
+    .cs-featured::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--gradient);
+    }
+
+    .cs-featured-inner {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+    }
+
+    .cs-featured-body {
+      padding: clamp(2rem, 4vw, 3.5rem);
+      border-right: 1px solid var(--border);
+    }
+
+    .cs-tag-row {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      margin-bottom: var(--space-6);
+      flex-wrap: wrap;
+    }
+
+    .cs-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-1) var(--space-3);
+      border-radius: 100px;
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .cs-tag-industry {
+      background: rgba(59,130,246,0.1);
+      border: 1px solid rgba(59,130,246,0.2);
+      color: #60a5fa;
+    }
+
+    .cs-tag-service {
+      background: rgba(6,182,212,0.08);
+      border: 1px solid rgba(6,182,212,0.2);
+      color: #22d3ee;
+    }
+
+    .cs-featured-title {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      line-height: 1.25;
+      margin-bottom: var(--space-5);
+    }
+
+    .cs-challenge {
+      margin-bottom: var(--space-6);
+    }
+
+    .cs-section-label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: var(--space-3);
+    }
+
+    .cs-challenge p,
+    .cs-solution p {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    .cs-solution {
+      margin-bottom: var(--space-6);
+    }
+
+    .cs-solution-list {
+      list-style: none;
+      padding: 0;
+      margin: var(--space-3) 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .cs-solution-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .cs-solution-list li svg {
+      color: var(--accent-light);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .cs-quote {
+      background: rgba(255,255,255,0.03);
+      border-left: 3px solid rgba(59,130,246,0.4);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: var(--space-5) var(--space-6);
+      margin-top: var(--space-6);
+    }
+
+    .cs-quote-text {
+      font-size: var(--text-base);
+      color: var(--text-primary);
+      font-style: italic;
+      line-height: 1.7;
+      margin-bottom: var(--space-3);
+    }
+
+    .cs-quote-author {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* Results sidebar */
+    .cs-featured-results {
+      padding: clamp(2rem, 3vw, 3rem) clamp(1.5rem, 2.5vw, 2.5rem);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-6);
+    }
+
+    .cs-results-title {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cs-result-item {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+
+    .cs-result-number {
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      font-weight: 900;
+      letter---spacing: -0.04em;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+    }
+
+    .cs-result-desc {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .cs-result-divider {
+      height: 1px;
+      background: var(--border);
+    }
+
+    .cs-roi-badge {
+      background: rgba(16,185,129,0.08);
+      border: 1px solid rgba(16,185,129,0.2);
+      border-radius: var(--radius);
+      padding: var(--space-4);
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .cs-roi-label {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      display: block;
+      margin-bottom: var(--space-1);
+    }
+
+    .cs-roi-value {
+      font-size: var(--text-xl);
+      font-weight: 800;
+      color: var(--success);
+    }
+
+    /* ── Secondary case studies grid ──────────────────────── */
+    .cs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: var(--space-6);
+      margin-bottom: clamp(3rem, 6vw, 5rem);
+    }
+
+    .cs-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: border-color var(--transition), transform var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cs-card:hover {
+      border-color: rgba(59,130,246,0.25);
+      transform: translateY(-2px);
+    }
+
+    .cs-card-header {
+      padding: var(--space-6) var(--space-6) var(--space-5);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cs-card-body {
+      padding: var(--space-6);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cs-card-title {
+      font-size: var(--text-lg);
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      margin-top: var(--space-4);
+      margin-bottom: var(--space-3);
+    }
+
+    .cs-card-desc {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      line-height: 1.7;
+      flex: 1;
+    }
+
+    .cs-card-metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3);
+      margin-top: var(--space-6);
+      padding-top: var(--space-5);
+      border-top: 1px solid var(--border);
+    }
+
+    .cs-metric {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .cs-metric-value {
+      font-size: var(--text-xl);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .cs-metric-label {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ── Process timeline ──────────────────────────────────── */
+    .cs-process {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: clamp(2rem, 4vw, 3.5rem);
+      margin-bottom: clamp(3rem, 6vw, 5rem);
+    }
+
+    .cs-process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0;
+      margin-top: var(--space-10);
+      position: relative;
+    }
+
+    .cs-process-grid::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: calc(100% / 5 / 2);
+      right: calc(100% / 5 / 2);
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(59,130,246,0.3), rgba(6,182,212,0.3), transparent);
+    }
+
+    .cs-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 var(--space-4);
+      position: relative;
+    }
+
+    .cs-step-num {
+      width: 56px;
+      height: 56px;
+      background: var(--bg-card);
+      border: 2px solid rgba(59,130,246,0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--accent-light);
+      margin-bottom: var(--space-4);
+      position: relative;
+      z-index: 1;
+      background: var(--bg-elevated);
+    }
+
+    .cs-step-title {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: var(--space-2);
+    }
+
+    .cs-step-desc {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ── Bottom CTA ────────────────────────────────────────── */
+    .cs-cta {
+      background: linear-gradient(145deg, #0d1a3a 0%, #060e24 100%);
+      border: 1px solid rgba(59,130,246,0.15);
+      border-radius: var(--radius-xl);
+      padding: clamp(2.5rem, 5vw, 4rem);
+      text-align: center;
+      margin-bottom: clamp(3rem, 6vw, 5rem);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cs-cta::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gradient);
+    }
+
+    .cs-cta h2 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      margin-bottom: var(--space-4);
+    }
+
+    .cs-cta p {
+      font-size: var(--text-base);
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto var(--space-8);
+      line-height: 1.7;
+    }
+
+    .cs-cta-buttons {
+      display: flex;
+      gap: var(--space-4);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ── Responsive ────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .cs-featured-inner {
+        grid-template-columns: 1fr;
+      }
+      .cs-featured-body {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+      .cs-statsbar-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .cs-process-grid::before { display: none; }
+    }
+
+    @media (max-width: 640px) {
+      .cs-statsbar-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .cs-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav-container" aria-label="Glavna navigacija">
+      <a href="index.html" class="nav-logo" aria-label="Quantex početna strana">
+        <img src="assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navMenu" role="list">
+        <li class="nav-item has-dropdown">
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">
+            Usluge
+            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="nav-dropdown" id="uslugeDropdown" role="menu">
+            <li role="none"><a href="usluge/ai-agenti.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>AI Agenti za firme</span></a></li>
+            <li role="none"><a href="usluge/generisanje-lidova.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Generisanje Lidova</span></a></li>
+            <li role="none"><a href="usluge/interni-sistemi.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Interni AI Sistemi</span></a></li>
+            <li role="none"><a href="usluge/automatizacija-zakazivanja.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Automatizacija Zakazivanja</span></a></li>
+          </ul>
+        </li>
+        <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+        <li><a href="case-studies.html" class="nav-link">Studije slučaja</a></li>
+        <li><a href="vodic.html" class="nav-link" style="color:var(--accent-light);font-weight:600;">Besplatni vodič</a></li>
+        <li>
+          <a href="index.html#kontakt" class="nav-cta-btn" aria-label="Zakažite analitički razgovor sa Quantex timom">
+            Zakažite razgovor
+          </a>
+        </li>
+        <li>
+          <a href="/en/" class="nav-lang-toggle" aria-label="Switch to English">EN</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Putanja">
+          <a href="index.html">Početna</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span class="breadcrumb-current">Studije slučaja</span>
+        </nav>
+        <div class="cs-hero-inner">
+          <div class="section-tag animate-on-scroll">Studije slučaja</div>
+          <h1 class="section-title animate-on-scroll" style="margin-top: var(--space-4)">
+            Stvarni projekti.<br />
+            <span class="text-gradient">Stvarni brojevi.</span>
+          </h1>
+          <p class="cs-intro animate-on-scroll">
+            Svaka studija slučaja opisuje konkretan poslovni problem, rešenje koje smo implementirali i izmerene rezultate. Bez marketinških uopštavanja.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         STATS BAR
+    ============================================================ -->
+    <div class="cs-statsbar">
+      <div class="container">
+        <div class="cs-statsbar-grid">
+          <div class="cs-stat">
+            <span class="cs-stat-value">35+</span>
+            <span class="cs-stat-label">implementiranih projekata</span>
+          </div>
+          <div class="cs-stat">
+            <span class="cs-stat-value">12.000+</span>
+            <span class="cs-stat-label">sati uštede mesečno kod klijenata</span>
+          </div>
+          <div class="cs-stat">
+            <span class="cs-stat-value">4.2x</span>
+            <span class="cs-stat-label">prosečan ROI u prvoj godini</span>
+          </div>
+          <div class="cs-stat">
+            <span class="cs-stat-value">4 mes.</span>
+            <span class="cs-stat-label">prosečan period povrata investicije</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         FEATURED CASE STUDY
+    ============================================================ -->
+    <section class="section-padding" aria-labelledby="cs-featured-title">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag animate-on-scroll">Istaknuta studija</div>
+        </div>
+
+        <div class="cs-featured animate-on-scroll">
+          <div class="cs-featured-inner">
+
+            <!-- Body -->
+            <div class="cs-featured-body">
+              <div class="cs-tag-row">
+                <span class="cs-tag cs-tag-industry">Prehrambena industrija</span>
+                <span class="cs-tag cs-tag-service">Prilagođena aplikacija za generisanje lidova</span>
+              </div>
+
+              <h2 id="cs-featured-title" class="cs-featured-title">
+                Od lokalne firme do zastupljenosti u skoro svakoj prodavnici u Srbiji
+              </h2>
+
+              <div class="cs-challenge">
+                <div class="cs-section-label">Problem</div>
+                <p>
+                  Srpski proizvođač zdrave hrane imao je odlične proizvode ali minimalan distribucijski doseg. Prodaja je zavisila od ličnih veza i sporog ručnog procesa: neko iz tima bi svaki dan ručno zvao ili pisao prodavnicama, bez praćenja odgovora, bez pipeline-a, bez sistema. Mesečno bi kontaktirali 40 do 60 prodajnih mesta, od čega bi manje od 10% konvertovalo. Rast je bio blokiran kapacitetom tima, ne kvalitetom proizvoda.
+                </p>
+              </div>
+
+              <div class="cs-solution">
+                <div class="cs-section-label">Rešenje</div>
+                <p>Razvili smo prilagođenu web aplikaciju za automatizovano generisanje i upravljanje lidovima u maloprodaji:</p>
+                <ul class="cs-solution-list">
+                  <li>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Automatsko mapiranje i kontaktiranje maloprodajnih objekata po regionima i kategorijama širom Srbije</span>
+                  </li>
+                  <li>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Personalizovane ponude prilagođene tipu prodajnog mesta, automatski follow-up sekvence</span>
+                  </li>
+                  <li>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>CRM pipeline koji prati svaki kontakt od prvog mejla do potpisanog ugovora o distribuciji</span>
+                  </li>
+                  <li>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Prodajni tim prima samo zagrejane lidove koji su pokazali interes, bez hladnih poziva</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="cs-quote">
+                <p class="cs-quote-text">"Za šest meseci naš proizvod se pojavio na policama prodavnica od Subotice do Vranja. Pre toga bi nam trebalo nekoliko godina da dođemo do tog broja ručno."</p>
+                <div class="cs-quote-author">Direktor prodaje, srpski proizvođač zdrave hrane</div>
+              </div>
+            </div>
+
+            <!-- Results sidebar -->
+            <div class="cs-featured-results">
+              <div class="cs-results-title">Izmereni rezultati</div>
+
+              <div class="cs-result-item">
+                <span class="cs-result-number">~100%</span>
+                <span class="cs-result-desc">maloprodajnih regiona u Srbiji pokriveno u 6 meseci</span>
+              </div>
+
+              <div class="cs-result-divider"></div>
+
+              <div class="cs-result-item">
+                <span class="cs-result-number">8x</span>
+                <span class="cs-result-desc">više kontaktiranih prodajnih mesta mesečno bez povećanja tima</span>
+              </div>
+
+              <div class="cs-result-divider"></div>
+
+              <div class="cs-result-item">
+                <span class="cs-result-number">3.2x</span>
+                <span class="cs-result-desc">poboljšanje stope konverzije zahvaljujući zagrejanim lidovima</span>
+              </div>
+
+              <div class="cs-result-divider"></div>
+
+              <div class="cs-result-item">
+                <span class="cs-result-number">6 mes.</span>
+                <span class="cs-result-desc">od prve implementacije do pune distribucije širom Srbije</span>
+              </div>
+
+              <div class="cs-roi-badge">
+                <span class="cs-roi-label">Povrat investicije za</span>
+                <span class="cs-roi-value">3.5 meseca</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CASE STUDIES GRID
+    ============================================================ -->
+    <section class="section-padding-sm" aria-labelledby="cs-grid-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="cs-grid-title" class="section-title animate-on-scroll">Više studija slučaja</h2>
+        </div>
+
+        <div class="cs-grid">
+
+          <!-- Case 2: Nekretnine -->
+          <article class="cs-card animate-on-scroll" aria-labelledby="cs-2-title">
+            <div class="cs-card-header">
+              <div class="cs-tag-row">
+                <span class="cs-tag cs-tag-industry">Nekretnine</span>
+                <span class="cs-tag cs-tag-service">Automatizacija zakazivanja</span>
+              </div>
+              <h3 id="cs-2-title" class="cs-card-title">Agencija za nekretnine: eliminisano 10 mejlova po klijentu za koordinaciju obilazaka</h3>
+            </div>
+            <div class="cs-card-body">
+              <p class="cs-card-desc">
+                Agencija za nekretnine sa 8 agenata gubila je ogromne količine vremena na koordinaciju obilazaka nekretnina, telefonske pozive i mejlove za potvrdu. Svaki klijent zahtevao je prosečno 10 do 15 mejlova samo da se dogovori obihod jedne nekretnine.
+              </p>
+              <p class="cs-card-desc" style="margin-top: 12px;">
+                Rešenje: sistem za automatsko zakazivanje obilazaka direktno iz oglasa, sa kalendarom agenta u realnom vremenu, automatskim potvrdama i podsetnicima. Agenti sada primaju samo obaveštenje o zakazanom terminu.
+              </p>
+              <div class="cs-card-metrics">
+                <div class="cs-metric">
+                  <span class="cs-metric-value">0</span>
+                  <span class="cs-metric-label">mejlova za koordinaciju obilaska</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">6 sat.</span>
+                  <span class="cs-metric-label">uštede nedeljno po agentu</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">40%</span>
+                  <span class="cs-metric-label">više obilazaka u istom vremenu</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">4.5 mes.</span>
+                  <span class="cs-metric-label">povrat investicije</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 3: Distribucija -->
+          <article class="cs-card animate-on-scroll" aria-labelledby="cs-3-title">
+            <div class="cs-card-header">
+              <div class="cs-tag-row">
+                <span class="cs-tag cs-tag-industry">Distribucija</span>
+                <span class="cs-tag cs-tag-service">Generisanje lidova</span>
+              </div>
+              <h3 id="cs-3-title" class="cs-card-title">Distributer prehrambenih proizvoda: sa 3 na 15 kvalifikovanih lidova nedeljno bez povećanja tima</h3>
+            </div>
+            <div class="cs-card-body">
+              <p class="cs-card-desc">
+                Prodajni direktor distributivne kompanije provodio je 60% radnog vremena na hladne pozive i istraživanje potencijalnih klijenata. Rezultat bio 3 do 5 kvalifikovanih razgovora nedeljno. Tim je bio iscrpljen, morale loše, a rast spor.
+              </p>
+              <p class="cs-card-desc" style="margin-top: 12px;">
+                Implementirali smo automatizovan sistem pronalaska i prvog kontakta: sistem identifikuje firme po profilu, šalje personalizovane poruke i prosleđuje zainteresovane prodajnom timu sa svim relevantnim informacijama.
+              </p>
+              <div class="cs-card-metrics">
+                <div class="cs-metric">
+                  <span class="cs-metric-value">15-20</span>
+                  <span class="cs-metric-label">kvalifikovanih lidova nedeljno</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">3x</span>
+                  <span class="cs-metric-label">poboljšanje konverzije</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">4 mes.</span>
+                  <span class="cs-metric-label">do prvih merljivih rezultata</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">5.1 mes.</span>
+                  <span class="cs-metric-label">povrat investicije</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 4: IT firma -->
+          <article class="cs-card animate-on-scroll" aria-labelledby="cs-4-title">
+            <div class="cs-card-header">
+              <div class="cs-tag-row">
+                <span class="cs-tag cs-tag-industry">IT usluge</span>
+                <span class="cs-tag cs-tag-service">Interni AI sistem + Izveštaji</span>
+              </div>
+              <h3 id="cs-4-title" class="cs-card-title">E-commerce kompanija: automatski nedeljni izveštaji i interni Q&A sistem za tim od 35</h3>
+            </div>
+            <div class="cs-card-body">
+              <p class="cs-card-desc">
+                Osnivač e-commerce kompanije ručno je svake nedelje skupljao podatke iz pet različitih sistema da bi napravio izveštaj za tim. Paralelno, zaposleni su svakodnevno slali mejlove i Slack poruke sa istim internim pitanjima o procedurama i politikama.
+              </p>
+              <p class="cs-card-desc" style="margin-top: 12px;">
+                Rešenje: automatizovani sistem prikupljanja podataka koji generiše izveštaj svake nedelje, plus interni AI asistent obučen na celoj internoj dokumentaciji firme.
+              </p>
+              <div class="cs-card-metrics">
+                <div class="cs-metric">
+                  <span class="cs-metric-value">2.5 sat.</span>
+                  <span class="cs-metric-label">nedeljno ušteda na izveštajima</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">70%</span>
+                  <span class="cs-metric-label">manje internih upita na HR</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">10 sek.</span>
+                  <span class="cs-metric-label">vreme pronalaska interne info (ranije 15 min)</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">3.8 mes.</span>
+                  <span class="cs-metric-label">povrat investicije</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 5: Dental Studio -->
+          <article class="cs-card animate-on-scroll" aria-labelledby="cs-5-title">
+            <div class="cs-card-header">
+              <div class="cs-tag-row">
+                <span class="cs-tag cs-tag-industry">Zdravstvo</span>
+                <span class="cs-tag cs-tag-service">AI Agent + Automatizacija zakazivanja</span>
+              </div>
+              <h3 id="cs-5-title" class="cs-card-title">Stomatološka klinika u Beogradu: sa 22% propuštenih termina na 8% za 60 dana</h3>
+            </div>
+            <div class="cs-card-body">
+              <p class="cs-card-desc">
+                Stomatološka klinika gubila je 22% termina na otkazivanja i nedolazke. Recepcija je trošila 3 do 4 sata dnevno na telefonsku koordinaciju, potvrde i preknjižavanja.
+              </p>
+              <p class="cs-card-desc" style="margin-top: 12px;">
+                AI agent preuzeo 85% upita pacijenata. Automatski podsetnici 48h i 2h pre termina drastično smanjili nedolazke. Otkazani termini automatski ponuđeni čekaocu.
+              </p>
+              <div class="cs-card-metrics">
+                <div class="cs-metric">
+                  <span class="cs-metric-value">22%→8%</span>
+                  <span class="cs-metric-label">stopa propuštenih termina</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">3.5 sat.</span>
+                  <span class="cs-metric-label">dnevno uštede recepcije</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">85%</span>
+                  <span class="cs-metric-label">upita rešava AI agent</span>
+                </div>
+                <div class="cs-metric">
+                  <span class="cs-metric-value">3.2 mes.</span>
+                  <span class="cs-metric-label">povrat investicije</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         OUR PROCESS
+    ============================================================ -->
+    <section class="section-padding-sm">
+      <div class="container">
+        <div class="cs-process animate-on-scroll">
+          <div class="section-tag">Kako radimo</div>
+          <h2 class="section-title" style="margin-top: var(--space-4)">
+            Od problema do rezultata:<br />
+            <span class="text-gradient">naš proces u 5 koraka</span>
+          </h2>
+
+          <div class="cs-process-grid">
+            <div class="cs-step">
+              <div class="cs-step-num">01</div>
+              <div class="cs-step-title">Analitički razgovor</div>
+              <div class="cs-step-desc">Mapiramo procese i identifikujemo gde firma gubi najviše vremena i novca</div>
+            </div>
+            <div class="cs-step">
+              <div class="cs-step-num">02</div>
+              <div class="cs-step-title">Revizija infrastrukture</div>
+              <div class="cs-step-desc">Pregledamo alate i sisteme koje firma već koristi da bismo se na njih nadovezali</div>
+            </div>
+            <div class="cs-step">
+              <div class="cs-step-num">03</div>
+              <div class="cs-step-title">Arhitektura rešenja</div>
+              <div class="cs-step-desc">Projektujemo prilagođeno rešenje sa jasnom projekcijom troškova i ušteda</div>
+            </div>
+            <div class="cs-step">
+              <div class="cs-step-num">04</div>
+              <div class="cs-step-title">Implementacija</div>
+              <div class="cs-step-desc">Postavljamo sistem iterativno uz redovne provere i prilagođavanja</div>
+            </div>
+            <div class="cs-step">
+              <div class="cs-step-num">05</div>
+              <div class="cs-step-title">Monitoring i podrška</div>
+              <div class="cs-step-desc">Pratimo performanse, optimizujemo i ostajemo dostupni za sve izmene</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA
+    ============================================================ -->
+    <section class="section-padding-sm">
+      <div class="container">
+        <div class="cs-cta animate-on-scroll">
+          <h2>Hoćete ovakve rezultate <span class="text-gradient">za vašu firmu?</span></h2>
+          <p>
+            Počnite sa besplatnim razgovorom od 45 minuta. Analiziramo vaše procese, identifikujemo tri glavne prilike za automatizaciju i dajemo okvirnu procenu troškova i ušteda. Bez obaveze.
+          </p>
+          <div class="cs-cta-buttons">
+            <a href="index.html#kontakt" class="btn btn-primary">
+              Zakažite besplatan razgovor
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="vodic.html" class="btn btn-secondary">
+              Preuzmite besplatni vodič
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo" aria-label="Quantex početna">
+            <img src="assets/quantex-logo.svg" alt="Quantex" height="28" />
+          </a>
+          <p class="footer-tagline">Vaše poslovanje radi i kada vi ne radite.</p>
+        </div>
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <span class="footer-col-title">Usluge</span>
+            <ul class="footer-links">
+              <li><a href="usluge/ai-agenti.html" class="footer-link">AI Agenti</a></li>
+              <li><a href="usluge/generisanje-lidova.html" class="footer-link">Generisanje Lidova</a></li>
+              <li><a href="usluge/interni-sistemi.html" class="footer-link">Interni AI Sistemi</a></li>
+              <li><a href="usluge/automatizacija-zakazivanja.html" class="footer-link">Automatizacija Zakazivanja</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Resursi</span>
+            <ul class="footer-links">
+              <li><a href="blog/index.html" class="footer-link">Blog</a></li>
+              <li><a href="vodic.html" class="footer-link">Besplatni vodič</a></li>
+              <li><a href="case-studies.html" class="footer-link">Studije slučaja</a></li>
+              <li><a href="cenovnik.html" class="footer-link">Cenovnik</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Quantex. Sva prava zadržana.</p>
+        <a href="https://www.linkedin.com/company/quantex-rs" class="footer-social" aria-label="Quantex na LinkedIn-u" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

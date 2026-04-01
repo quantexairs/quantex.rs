@@ -42,7 +42,10 @@
       <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
       <ul class="nav-links" id="navMenu" role="list">
         <li class="nav-item has-dropdown">
-          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">Usluge <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">
+            Usluge
+            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
           <ul class="nav-dropdown" id="uslugeDropdown" role="menu">
             <li role="none"><a href="ai-agenti.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>AI Agenti za firme</span></a></li>
             <li role="none"><a href="generisanje-lidova.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Generisanje Lidova</span></a></li>
@@ -50,10 +53,17 @@
             <li role="none"><a href="automatizacija-zakazivanja.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Automatizacija Zakazivanja</span></a></li>
           </ul>
         </li>
-        <li><a href="../index.html#proces" class="nav-link">Naš Proces</a></li>
         <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
-        <li><a href="../index.html#kalkulator" class="nav-link">Kalkulator</a></li>
-        <li><a href="../index.html#kontakt" class="nav-cta-btn">Zakažite razgovor</a></li>
+        <li><a href="../case-studies.html" class="nav-link">Studije slučaja</a></li>
+        <li><a href="../vodic.html" class="nav-link" style="color:var(--accent-light);font-weight:600;">Besplatni vodič</a></li>
+        <li>
+          <a href="../index.html#kontakt" class="nav-cta-btn" aria-label="Zakažite analitički razgovor sa Quantex timom">
+            Zakažite razgovor
+          </a>
+        </li>
+        <li>
+          <a href="/en/" class="nav-lang-toggle" aria-label="Switch to English">EN</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -133,6 +143,71 @@
           <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="glfaq4">Šta se dešava sa nekvalifikovanim kontaktima?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="glfaq4" hidden><p>Nekvalifikovani kontakti ulaze u negovanje kontakata sekvencu gde sistem nastavlja da gradi odnos u dužem vremenskom periodu. Kada kontakt pokaže signale pojačanog interesovanja, sistem ga automatski preklasifikuje i obaveštava vaš prodajni tim.</p></div></div>
           <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="glfaq5">Kako se integriše sa našim CRM sistem-om?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="glfaq5" hidden><p>Sistem se integriše sa svim popularnim CRM sistem platformama putem API veze. Svaki kvalifikovani lid automatski ulazi u vaš CRM sistem sa punim kontekstom konverzacije, statusom kvalifikacije i preporučenim sledećim korakom za prodajni tim.</p></div></div>
         </div>
+      </div>
+    </section>
+
+    <!-- Cenovnik -->
+    <section class="content-section section-padding" style="background: var(--bg-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag animate-on-scroll">Cenovnik</div>
+          <h2 class="section-title animate-on-scroll">Transparentne cene bez <span class="text-gradient">skrivenih troškova</span></h2>
+          <p class="section-sub animate-on-scroll">Svaki paket uključuje postavljanje, inicijalni trening i mesečnu podršku. Mesečna naknada pokriva hosting, monitoring i do 2 sata izmena mesečno.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card animate-on-scroll">
+            <div class="pricing-tier">Starter</div>
+            <div>
+              <span class="pricing-setup">€390 postavljanje</span>
+              <div class="pricing-monthly">
+                <span class="pricing-amount">€99</span>
+                <span class="pricing-period">/mesec</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Do 500 kontakata mesečno</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>1 kanal (email ili LinkedIn)</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Osnovna kvalifikacija potencijalnih klijenata</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Mesečni izveštaj performansi</li>
+            </ul>
+            <a href="../index.html#kontakt" class="btn btn-secondary pricing-btn">Zakažite razgovor</a>
+          </div>
+          <div class="pricing-card pricing-card-featured animate-on-scroll" style="animation-delay:0.08s">
+            <div class="pricing-badge">Najpopularnije</div>
+            <div class="pricing-tier">Pro</div>
+            <div>
+              <span class="pricing-setup">€790 postavljanje</span>
+              <div class="pricing-monthly">
+                <span class="pricing-amount">€179</span>
+                <span class="pricing-period">/mesec</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Do 2.000 kontakata mesečno</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Multichannel (email + LinkedIn)</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Napredna kvalifikacija i skorovanje</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>A/B testiranje poruka</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Nedeljni izveštaji</li>
+            </ul>
+            <a href="../index.html#kontakt" class="btn btn-primary pricing-btn">Zakažite razgovor</a>
+          </div>
+          <div class="pricing-card animate-on-scroll" style="animation-delay:0.16s">
+            <div class="pricing-tier">Enterprise</div>
+            <div>
+              <span class="pricing-setup">Prilagođena cena</span>
+              <div class="pricing-monthly">
+                <span class="pricing-amount" style="font-size:1.5rem">Po dogovoru</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Neograničen obim kampanja</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Prilagođeni kvalifikacioni modeli</li>
+              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Dedikovan menadžer naloga</li>
+            </ul>
+            <a href="../index.html#kontakt" class="btn btn-secondary pricing-btn">Kontaktirajte nas</a>
+          </div>
+        </div>
+        <p class="pricing-note">Cene su u evrima. <a href="../cenovnik.html" style="color:var(--accent-light)">Pogledajte kompletan cenovnik →</a></p>
       </div>
     </section>
 

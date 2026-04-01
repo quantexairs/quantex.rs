@@ -393,6 +393,22 @@ input, textarea, select {
   transform: translateY(-1px);
 }
 
+.nav-lang-toggle {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.05em;
+  transition: all var(--transition);
+}
+
+.nav-lang-toggle:hover {
+  color: var(--text-primary);
+  border-color: rgba(255,255,255,0.15);
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -1288,6 +1304,145 @@ input, textarea, select {
   font-size: var(--text-sm);
   color: var(--text-secondary);
   line-height: 1.7;
+}
+
+/* ── Calc Email Capture ───────────────────────────────────── */
+.calc-email-capture {
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border);
+}
+
+.calc-email-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+  font-weight: 500;
+}
+
+.calc-email-row {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.calc-email-input {
+  flex: 1;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.calc-email-input:focus {
+  border-color: rgba(59,130,246,0.5);
+}
+
+.calc-email-input::placeholder {
+  color: var(--text-muted);
+}
+
+.calc-email-btn {
+  background: rgba(59,130,246,0.12);
+  border: 1px solid rgba(59,130,246,0.25);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--accent-light);
+  font-family: var(--font-body);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition);
+}
+
+.calc-email-btn:hover:not(:disabled) {
+  background: rgba(59,130,246,0.2);
+  border-color: rgba(59,130,246,0.4);
+}
+
+.calc-email-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.calc-email-sent {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--success);
+  margin-top: var(--space-3);
+  font-weight: 500;
+}
+
+/* ── Social Stats Section ─────────────────────────────────── */
+.social-stats-section {
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-10) 0;
+}
+
+.social-stats-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.social-stat {
+  text-align: center;
+  padding: var(--space-6) var(--space-12);
+  flex: 1;
+  min-width: 180px;
+}
+
+.social-stat-value {
+  display: block;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: var(--space-2);
+}
+
+.social-stat-label {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.social-stat-divider {
+  width: 1px;
+  height: 60px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .social-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .social-stat-divider {
+    display: none;
+  }
+  .social-stat {
+    padding: var(--space-5) var(--space-6);
+  }
 }
 
 /* ── FAQ ──────────────────────────────────────────────────── */

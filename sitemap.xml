@@ -22,6 +22,25 @@
     <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/" />
   </url>
 
+  <!-- CENOVNIK / PRICING -->
+  <url>
+    <loc>https://quantex.rs/cenovnik.html</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/cenovnik.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/pricing.html" />
+  </url>
+
+  <url>
+    <loc>https://quantex.rs/en/pricing.html</loc>
+    <lastmod>2026-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quantex.rs/en/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://quantex.rs/cenovnik.html" />
+  </url>
+
   <!-- USLUGE -->
   <url>
     <loc>https://quantex.rs/usluge/ai-agenti.html</loc>

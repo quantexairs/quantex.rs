@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 1080px; height: 1080px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+  .slide {
+    width: 1080px; height: 1080px;
+    position: relative;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    text-align: center;
+    padding: 88px 96px;
+    background: #060912;
+    overflow: hidden;
+  }
+  /* Background glow */
+  .slide::before {
+    content: '';
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px; height: 700px;
+    background: radial-gradient(ellipse, rgba(59,130,246,0.15) 0%, rgba(6,182,212,0.06) 45%, transparent 70%);
+    pointer-events: none;
+  }
+  /* Decorative ring */
+  .ring {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 540px; height: 540px;
+    border: 1px solid rgba(59,130,246,0.1);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .ring-2 {
+    width: 700px; height: 700px;
+    border-color: rgba(59,130,246,0.05);
+  }
+  .headline {
+    font-size: 30px; font-weight: 600;
+    color: #94a3b8; text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    position: relative; z-index: 1;
+  }
+  .stat-number {
+    font-size: 220px; font-weight: 900;
+    line-height: 0.85; letter-spacing: -0.04em;
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative; z-index: 1;
+    margin-bottom: 28px;
+  }
+  .stat-label {
+    font-size: 32px; font-weight: 500;
+    color: #f1f5f9; line-height: 1.4;
+    max-width: 700px;
+    position: relative; z-index: 1;
+    margin-bottom: 20px;
+  }
+  .stat-source {
+    font-size: 22px; color: #64748b;
+    position: relative; z-index: 1;
+    max-width: 780px; line-height: 1.5;
+  }
+  /* Bottom branding */
+  .branding {
+    position: absolute;
+    bottom: 52px; left: 96px; right: 96px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 22px;
+    z-index: 2;
+  }
+  .brand-name {
+    font-size: 19px; font-weight: 700;
+    letter-spacing: 0.1em; color: #64748b;
+    text-transform: uppercase;
+  }
+  .slide-dots {
+    display: flex; gap: 7px; align-items: center;
+  }
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%; background: #1e293b;
+  }
+  .dot.active {
+    width: 24px; border-radius: 4px;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  }
+  .brand-site { font-size: 19px; color: #64748b; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="ring"></div>
+  <div class="ring ring-2"></div>
+
+  
+  <p class="headline">Od razgovora do živog sistema</p>
+  
+
+  <div class="stat-number">30 dana</div>
+  <p class="stat-label">od prvog razgovora do implementacije</p>
+
+  
+  <p class="stat-source">Analitički razgovor → revizija → arhitektura → implementacija → monitoring. Merljiv ROI od prvog meseca.</p>
+  
+
+  <div class="branding">
+    <span class="brand-name">QUANTEX</span>
+    <div class="slide-dots">
+      
+      <div class="dot "></div>
+      
+      <div class="dot "></div>
+      
+      <div class="dot "></div>
+      
+      <div class="dot "></div>
+      
+      <div class="dot "></div>
+      
+      <div class="dot active"></div>
+      
+      <div class="dot "></div>
+      
+    </div>
+    <span class="brand-site">quantex.rs</span>
+  </div>
+</div>
+</body>
+</html>

@@ -244,16 +244,16 @@
             <li role="none"><a href="usluge/automatizacija-zakazivanja.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Automatizacija Zakazivanja</span></a></li>
           </ul>
         </li>
-        <li><a href="#proces" class="nav-link">Naš Proces</a></li>
         <li><a href="blog/index.html" class="nav-link">Blog</a></li>
-        <li><a href="#kalkulator" class="nav-link">Kalkulator</a></li>
+        <li><a href="case-studies.html" class="nav-link">Studije slučaja</a></li>
+        <li><a href="vodic.html" class="nav-link" style="color:var(--accent-light);font-weight:600;">Besplatni vodič</a></li>
         <li>
           <a href="#kontakt" class="nav-cta-btn" aria-label="Zakažite analitički razgovor sa Quantex timom">
             Zakažite razgovor
           </a>
         </li>
         <li>
-          <a href="/en/" class="nav-link" style="font-size:0.8rem;opacity:0.6;" aria-label="Switch to English">EN</a>
+          <a href="/en/" class="nav-lang-toggle" aria-label="Switch to English">EN</a>
         </li>
       </ul>
     </nav>
@@ -678,6 +678,35 @@
             <div class="security-pillar" role="listitem">
               <span class="pillar-label">Granularna kontrola pristupa</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         STATS SECTION
+    ============================================================ -->
+    <section class="social-stats-section" aria-label="Quantex u brojevima">
+      <div class="container">
+        <div class="social-stats-grid">
+          <div class="social-stat animate-on-scroll">
+            <span class="social-stat-value">35+</span>
+            <span class="social-stat-label">implementiranih projekata</span>
+          </div>
+          <div class="social-stat-divider" aria-hidden="true"></div>
+          <div class="social-stat animate-on-scroll">
+            <span class="social-stat-value">12.000+</span>
+            <span class="social-stat-label">sati uštede mesečno kod klijenata</span>
+          </div>
+          <div class="social-stat-divider" aria-hidden="true"></div>
+          <div class="social-stat animate-on-scroll">
+            <span class="social-stat-value">20+</span>
+            <span class="social-stat-label">firmi koristi Quantex rešenja</span>
+          </div>
+          <div class="social-stat-divider" aria-hidden="true"></div>
+          <div class="social-stat animate-on-scroll">
+            <span class="social-stat-value">4 mes.</span>
+            <span class="social-stat-label">prosečan period povrata investicije</span>
           </div>
         </div>
       </div>
@@ -1147,6 +1176,29 @@
               </div>
             </div>
 
+            <div class="calc-field">
+              <label class="calc-label" for="calc-service">Koja usluga vas zanima? <span style="font-weight:400;color:var(--text-muted)">(opciono)</span></label>
+              <select id="calc-service" class="calc-select">
+                <option value="">Nisam siguran/a — automatska procena</option>
+                <optgroup label="Automatizacija zakazivanja">
+                  <option value="scheduling-starter">Starter — €290 postavljanje + €59/mes</option>
+                  <option value="scheduling-pro">Pro — €590 postavljanje + €99/mes</option>
+                </optgroup>
+                <optgroup label="Generisanje lidova">
+                  <option value="lead-starter">Starter — €390 postavljanje + €99/mes</option>
+                  <option value="lead-pro">Pro — €790 postavljanje + €179/mes</option>
+                </optgroup>
+                <optgroup label="AI agent za firmu">
+                  <option value="agent-starter">Starter — €490 postavljanje + €79/mes</option>
+                  <option value="agent-pro">Pro — €990 postavljanje + €149/mes</option>
+                </optgroup>
+                <optgroup label="Interni AI sistemi">
+                  <option value="internal-starter">Starter — €590 postavljanje + €89/mes</option>
+                  <option value="internal-pro">Pro — €1.190 postavljanje + €169/mes</option>
+                </optgroup>
+              </select>
+            </div>
+
             <button class="btn btn-primary calc-submit-btn" id="calcBtn" type="button" aria-label="Izračunaj uštedu">
               Izračunaj uštedu
               <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -1213,6 +1265,30 @@
                   Zakažite besplatan razgovor
                   <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
+              </div>
+
+              <div class="calc-email-capture" id="calcEmailCapture">
+                <p class="calc-email-label">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  Pošaljite mi ovaj izveštaj na email
+                </p>
+                <form class="calc-email-form" id="calcEmailForm" novalidate>
+                  <input type="hidden" name="access_key" value="ff48da32-3c66-4dfc-8cd7-71925e739c76" />
+                  <input type="hidden" name="subject" value="Izveštaj kalkulatora uštede" />
+                  <input type="hidden" name="from_name" value="Quantex Kalkulator" />
+                  <input type="hidden" name="calc_report" id="calcEmailReport" value="" />
+                  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+                  <div class="calc-email-row">
+                    <input type="email" name="email" id="calcEmailInput" placeholder="vas@email.rs" aria-label="Vaša email adresa" class="calc-email-input" required />
+                    <button type="submit" class="calc-email-btn" id="calcEmailBtn">
+                      Pošalji
+                    </button>
+                  </div>
+                </form>
+                <div class="calc-email-sent" id="calcEmailSent" hidden>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Izveštaj je poslat na vaš email.
+                </div>
               </div>
             </div>
           </div>
@@ -1509,7 +1585,9 @@
             <li><a href="#usluge" class="footer-link">Usluge</a></li>
             <li><a href="#proces" class="footer-link">Naš Proces</a></li>
             <li><a href="#kalkulator" class="footer-link">Kalkulator uštede</a></li>
-            <li><a href="#faq" class="footer-link">FAQ</a></li>
+            <li><a href="blog/index.html" class="footer-link">Blog</a></li>
+            <li><a href="case-studies.html" class="footer-link">Studije slučaja</a></li>
+            <li><a href="vodic.html" class="footer-link">Besplatni vodič</a></li>
             <li><a href="#kontakt" class="footer-link">Kontakt</a></li>
           </ul>
         </nav>

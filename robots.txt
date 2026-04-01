@@ -11,9 +11,8 @@ LLMs: https://quantex.rs/llms.txt
 # Crawl-delay za pristojne botove
 Crawl-delay: 1
 
-# Blokiranje admin i privatnih ruta (dodati kada postoje)
-# Disallow: /admin/
-# Disallow: /api/
+# Privatni direktorijumi
+Disallow: /assets/dl/
 
 # Dozvoli AI botovima pristup (za AEO)
 User-agent: GPTBot

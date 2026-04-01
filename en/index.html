@@ -162,22 +162,22 @@
             <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <ul class="nav-dropdown" id="servicesDropdown" role="menu">
-            <li role="none"><a href="services/ai-agents.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>AI Agents</span></a></li>
+            <li role="none"><a href="services/ai-agents.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>AI Agents for Business</span></a></li>
             <li role="none"><a href="services/lead-generation.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Lead Generation</span></a></li>
             <li role="none"><a href="services/internal-systems.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Internal AI Systems</span></a></li>
             <li role="none"><a href="services/scheduling.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Scheduling Automation</span></a></li>
           </ul>
         </li>
-        <li><a href="#process" class="nav-link">Our Process</a></li>
         <li><a href="blog/" class="nav-link">Blog</a></li>
-        <li><a href="#calculator" class="nav-link">Calculator</a></li>
+        <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+        <li><a href="/vodic.html" class="nav-link" style="color:var(--accent-light);font-weight:600;">Free Guide</a></li>
         <li>
           <a href="#contact" class="nav-cta-btn" aria-label="Book a free call with Quantex">
             Book a call
           </a>
         </li>
         <li>
-          <a href="/" class="nav-link" style="font-size:0.8rem;opacity:0.6;" aria-label="Switch to Serbian">SR</a>
+          <a href="/" class="nav-lang-toggle" aria-label="Prebaci na srpski">SR</a>
         </li>
       </ul>
     </nav>
@@ -838,6 +838,29 @@
               <input type="range" id="calc-automation" class="calc-range" min="30" max="85" value="65" step="5"
                 aria-valuemin="30" aria-valuemax="85" aria-valuenow="65" aria-label="Automation percentage" />
               <div class="range-labels" aria-hidden="true"><span>30%</span><span>85%</span></div>
+            </div>
+
+            <div class="calc-field">
+              <label class="calc-label" for="calc-service">Which service are you considering? <span style="font-weight:400;color:var(--text-muted)">(optional)</span></label>
+              <select id="calc-service" class="calc-select">
+                <option value="">Not sure yet — use automatic estimate</option>
+                <optgroup label="Scheduling Automation">
+                  <option value="scheduling-starter">Starter — €290 setup + €59/mo</option>
+                  <option value="scheduling-pro">Pro — €590 setup + €99/mo</option>
+                </optgroup>
+                <optgroup label="Lead Generation">
+                  <option value="lead-starter">Starter — €390 setup + €99/mo</option>
+                  <option value="lead-pro">Pro — €790 setup + €179/mo</option>
+                </optgroup>
+                <optgroup label="AI Agent">
+                  <option value="agent-starter">Starter — €490 setup + €79/mo</option>
+                  <option value="agent-pro">Pro — €990 setup + €149/mo</option>
+                </optgroup>
+                <optgroup label="Internal AI Systems">
+                  <option value="internal-starter">Starter — €590 setup + €89/mo</option>
+                  <option value="internal-pro">Pro — €1,190 setup + €169/mo</option>
+                </optgroup>
+              </select>
             </div>
 
             <button class="btn btn-primary calc-submit-btn" id="calcBtn" type="button" aria-label="Calculate savings">

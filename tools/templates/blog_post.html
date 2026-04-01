@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../assets/favicon.ico" sizes="any" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../assets/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ post.meta_title }} | Quantex Blog</title>
+  <meta name="description" content="{{ post.meta_description }}" />
+  <link rel="canonical" href="https://quantex.rs/blog/{{ post.slug }}.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <script type="application/ld+json">
+  {{ post.schema_article }}
+  </script>
+  <script type="application/ld+json">
+  {{ post.schema_breadcrumb }}
+  </script>
+  {% if post.faq %}
+  <script type="application/ld+json">
+  {{ post.schema_faq }}
+  </script>
+  {% endif %}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0VB7R2391"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B0VB7R2391');
+  </script>
+</head>
+<body>
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav-container" aria-label="Glavna navigacija">
+      <a href="../index.html" class="nav-logo"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+      <ul class="nav-links" id="navMenu" role="list">
+        <li class="nav-item has-dropdown"><button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">Usluge <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="nav-dropdown" id="uslugeDropdown" role="menu"><li role="none"><a href="../usluge/ai-agenti.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>AI Agenti za firme</span></a></li><li role="none"><a href="../usluge/generisanje-lidova.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Generisanje Lidova</span></a></li><li role="none"><a href="../usluge/interni-sistemi.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Interni AI Sistemi</span></a></li><li role="none"><a href="../usluge/automatizacija-zakazivanja.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Automatizacija Zakazivanja</span></a></li></ul></li>
+        <li><a href="../index.html#proces" class="nav-link">Naš Proces</a></li>
+        <li><a href="index.html" class="nav-link active">Blog</a></li>
+        <li><a href="../index.html#kalkulator" class="nav-link">Kalkulator</a></li>
+        <li><a href="../cenovnik.html" class="nav-link">Cenovnik</a></li>
+        <li><a href="../index.html#kontakt" class="nav-cta-btn">Zakažite razgovor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="post-hero">
+        <nav class="breadcrumb" aria-label="Putanja"><a href="../index.html">Početna</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a href="index.html">Blog</a><span class="breadcrumb-sep" aria-hidden="true">›</span><span class="breadcrumb-current">{{ post.breadcrumb_short }}</span></nav>
+        <div class="post-meta">
+          <span class="post-category">{{ post.category }}</span>
+          <span class="post-date">{{ post.date_display }}</span>
+          <span class="post-read-time">{{ post.reading_time }} min čitanja</span>
+        </div>
+        <h1 class="post-h1">{{ post.title }}</h1>
+        <p class="post-lead">{{ post.lead }}</p>
+      </section>
+
+      <div class="post-layout">
+        <article class="post-content">
+
+          {{ post.body_html }}
+
+          {% if post.faq %}
+          <section class="post-faq-section" aria-labelledby="faq-naslov">
+            <h2 id="faq-naslov">Česta pitanja</h2>
+            <div class="faq-list">
+              {% for item in post.faq %}
+              <details class="faq-item">
+                <summary class="faq-q">{{ item.question }}</summary>
+                <div class="faq-a"><p>{{ item.answer }}</p></div>
+              </details>
+              {% endfor %}
+            </div>
+          </section>
+          {% endif %}
+
+          <div class="post-footer">
+            <div class="post-tags" aria-label="Tagovi">
+              {% for tag in post.tags %}
+              <span class="post-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            <div class="post-cta-box">
+              <h3>Zakažite besplatan analitički razgovor</h3>
+              <p>45 minuta, konkretni zaključci za vaš poslovni kontekst. Bez obaveza.</p>
+              <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+                <a href="../index.html#kalkulator" class="btn btn-secondary">Otvorite kalkulator</a>
+                <a href="../index.html#kontakt" class="btn btn-primary">Zakažite razgovor <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+              </div>
+            </div>
+          </div>
+
+        </article>
+
+        <aside class="post-sidebar" aria-label="Sadržaj i srodne teme">
+          <div class="sidebar-card">
+            <h2 class="sidebar-card-title">Sadržaj teksta</h2>
+            <nav class="toc-list" aria-label="Navigacija kroz tekst">
+              {% for item in post.toc %}
+              <a href="#{{ item.id }}">{{ item.text }}</a>
+              {% endfor %}
+              {% if post.faq %}
+              <a href="#faq-naslov">Česta pitanja</a>
+              {% endif %}
+            </nav>
+          </div>
+          <div class="sidebar-card">
+            <h2 class="sidebar-card-title">Srodni tekstovi</h2>
+            <div class="related-posts">
+              {% for rp in post.related_posts %}
+              <a href="{{ rp.href }}" class="related-post-link">{{ rp.title }}</a>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="sidebar-card" style="background: var(--gradient-glow); border-color: rgba(59,130,246,0.2);">
+            <h2 class="sidebar-card-title">Brza procena</h2>
+            <p style="font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:var(--space-4);line-height:1.6">Unesite podatke o timu i vidite okvirnu procenu godišnje uštede.</p>
+            <a href="../index.html#kalkulator" class="btn btn-primary" style="width:100%;justify-content:center;font-size:var(--text-sm)">Otvori kalkulator</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index.html" class="nav-logo footer-logo"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a><p class="footer-tagline">AI sistemi prilagođeni vašem poslovnom modelu.</p><address class="footer-contact"><a href="mailto:office@quantex.rs" class="footer-contact-link">office@quantex.rs</a></address></div><nav class="footer-nav" aria-label="Usluge"><h4 class="footer-nav-title">Usluge</h4><ul role="list"><li><a href="../usluge/ai-agenti.html" class="footer-link">AI Agenti</a></li><li><a href="../usluge/generisanje-lidova.html" class="footer-link">Generisanje Lidova</a></li><li><a href="../usluge/interni-sistemi.html" class="footer-link">Interni Sistemi</a></li><li><a href="../usluge/automatizacija-zakazivanja.html" class="footer-link">Automatizacija Zakazivanja</a></li></ul></nav><nav class="footer-nav" aria-label="Blog"><h4 class="footer-nav-title">Blog</h4><ul role="list"><li><a href="index.html" class="footer-link">Svi tekstovi</a></li><li><a href="ai-agent-vs-chatgpt-razlika.html" class="footer-link">AI agent vs ChatGPT</a></li><li><a href="kako-uvesti-ai-u-firmu.html" class="footer-link">Kako uvesti AI u firmu</a></li></ul></nav></div><div class="footer-bottom"><p class="footer-copyright">&copy; <span id="copyright-year"></span> Quantex.</p><p class="footer-location">Beograd, Srbija</p></div></div></footer>
+  <script src="../js/animations.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

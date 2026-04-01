@@ -1,0 +1,130 @@
+╔══════════════════════════════════════════════════════════════════╗
+║         QUANTEX GENERATOR — UPUTSTVO ZA UPOTREBU               ║
+╚══════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PRIPREMA (jednom)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Instaliraj Python zavisnosti (ako nisu vec instalirane):
+
+     pip3 install anthropic jinja2 beautifulsoup4 pyyaml playwright pillow
+
+2. Instaliraj Chromium za Playwright (samo jednom):
+
+     python3 -m playwright install chromium
+
+3. Postavi API kljuc u environment:
+
+     export ANTHROPIC_API_KEY=sk-ant-api03-...
+
+   Da bi kljuc bio trajno dostupan, dodaj gornji red u ~/.bashrc ili
+   ~/.zshrc i restartuj terminal.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  GUI (preporuceno)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Pokreni graficki interfejs:
+
+     cd /home/aceman/Documents/quantex.rs
+     python3 tools/gui.py
+
+Ili jednom napraviti shortcut i pokretati dvoklikom:
+     bash tools/pokreni.sh       (videti dno ovog fajla)
+
+U GUI:
+  - Unesi temu u text polje (srpski, konkretno)
+  - Cekiraj sta zelis: Blog post i/ili Instagram karuzel
+  - Klikni "Generisite"
+  - Prati terminal output uzivo
+  - Po zavrsetku: klikni link do blog posta ili klikni na slike slajdova
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CLI (napredna upotreba)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Pozicioniraj se u root direktorijum projekta:
+
+     cd /home/aceman/Documents/quantex.rs
+
+GENERISANJE BLOG POSTA + KARUZELA (podrazumevano):
+
+     python3 tools/generate.py --topic "tema blog posta"
+
+SAMO BLOG POST (bez karuzela):
+
+     python3 tools/generate.py --topic "tema" --blog-only
+
+SAMO KARUZEL (bez blog posta):
+
+     python3 tools/generate.py --topic "tema" --carousel-only
+
+PRIMERI TEMA:
+
+     python3 tools/generate.py --topic "kako AI chatbot smanjuje broj upita korisnickog servisa za 70 procenata"
+     python3 tools/generate.py --topic "zasto prodajni tim gubi vreme na CRM unos i kako to automatizovati"
+     python3 tools/generate.py --topic "automatizacija onboardinga novih zaposlenih u firmama od 20 do 100 ljudi"
+     python3 tools/generate.py --topic "kako mali retaileri koriste AI za personalizovane preporuke bez IT tima"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  IZLAZNI FAJLOVI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Blog post:
+  blog/{slug}.html              — novi HTML fajl spreman za objavu
+  blog/index.html               — automatski azuriran (nova kartica dodana)
+  blog/index.html.bak           — backup pre izmene
+
+Karuzel slajdovi:
+  tools/output/{slug}/slide_01.png    — naslovna slika (cover)
+  tools/output/{slug}/slide_02.png    — text/stat slajd
+  ...
+  tools/output/{slug}/slide_0N.png    — poslednji (CTA)
+  tools/output/{slug}/slide_0N.html   — HTML fajlovi slajdova (debug)
+
+Instagram caption:
+  Ispisuje se u terminalu. Kopiraj pre zatvaranja prozora.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  OBJAVA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Blog post je spreman u blog/ folderu. Da bi bio vidljiv na quantex.rs:
+
+     git add blog/{slug}.html blog/index.html
+     git commit -m "blog: dodaj post {slug}"
+     git push
+
+GitHub Pages ce automatski objaviti u roku od ~60 sekundi.
+
+Za Instagram:
+  1. Otpakuj PNG fajlove iz tools/output/{slug}/
+  2. Ucitaj ih kao Instagram karuzel u aplikaciji
+  3. Nalepite caption iz terminala
+  4. Dodaj relevantne hashtagove
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  KONFIGURACIJA (tools/config.yaml)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+claude.model        — Claude model (podrazumevano: claude-opus-4-6)
+claude.max_tokens   — Maksimalan broj tokena (podrazumevano: 8000)
+carousel.width/height — Dimenzije slajdova u pikselima (podrazumevano: 1080x1080)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SHORTCUT SKRIPT (opcionalno)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Napravi tools/pokreni.sh:
+
+     #!/bin/bash
+     export ANTHROPIC_API_KEY=sk-ant-api03-TVOJ_KLJUC_OVDE
+     cd /home/aceman/Documents/quantex.rs
+     python3 tools/gui.py
+
+     chmod +x tools/pokreni.sh
+
+Zatim pokreni sa:  bash tools/pokreni.sh
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
