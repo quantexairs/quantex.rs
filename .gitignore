@@ -2,3 +2,6 @@ plan.txt
 *.DS_Store
 .DS_Store
 node_modules/
+
+# Interni alati — ne ide na GitHub
+tools/
