@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 1080px; height: 1080px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+  .slide {
+    width: 1080px; height: 1080px;
+    position: relative;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 88px 96px;
+    background: #0d1322;
+  }
+  /* Subtle top gradient */
+  .slide::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4, transparent);
+  }
+  .tip-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-bottom: 36px;
+    font-size: 13px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #06b6d4;
+  }
+  .tip-badge .num {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; font-weight: 800; color: white;
+  }
+  .headline {
+    font-size: 58px; font-weight: 900;
+    line-height: 1.1; letter-spacing: -0.025em;
+    color: #f1f5f9;
+    margin-bottom: 28px;
+    max-width: 860px;
+  }
+  .body-text {
+    font-size: 26px; font-weight: 400;
+    color: #94a3b8; line-height: 1.65;
+    max-width: 840px;
+  }
+  .body-text strong {
+    color: #f1f5f9; font-weight: 600;
+  }
+  /* Bottom branding */
+  .branding {
+    position: absolute;
+    bottom: 56px; left: 96px; right: 96px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 24px;
+  }
+  .brand-name {
+    font-size: 19px; font-weight: 700;
+    letter-spacing: 0.1em; color: #64748b;
+    text-transform: uppercase;
+  }
+  .brand-site {
+    font-size: 19px; color: #64748b;
+  }
+  .slide-dots {
+    display: flex; gap: 7px; align-items: center;
+  }
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%; background: #1e293b;
+  }
+  .dot.active {
+    width: 24px; border-radius: 4px;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  
+
+  <h2 class="headline">Šta AI radi umesto HR tima?</h2>
+
+  
+  <p class="body-text">✅ Odgovara na pitanja 24/7
+✅ Šalje zadatke po rasporedu
+✅ Prilagođava obuku poziciji
+✅ Prati napredak u realnom vremenu
+
+HR tim se fokusira na kulturu i mentorstvo.</p>
+  
+
+  <div class="branding">
+    <span class="brand-name">QUANTEX</span>
+    <div class="slide-dots">
+      
+      <div class="dot "></div>
+      
+      <div class="dot "></div>
+      
+      <div class="dot "></div>
+      
+      <div class="dot "></div>
+      
+      <div class="dot active"></div>
+      
+      <div class="dot "></div>
+      
+      <div class="dot "></div>
+      
+    </div>
+    <span class="brand-site">quantex.rs</span>
+  </div>
+</div>
+</body>
+</html>
