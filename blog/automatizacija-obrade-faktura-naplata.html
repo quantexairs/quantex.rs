@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../assets/favicon.ico" sizes="any" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../assets/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kako automatizovati obradu faktura i naplatu: Praktični vodič za firme koje gube vreme na ručni rad | Quantex Blog</title>
+  <meta name="description" content="Otkrijte kako Quantex smanjuje vreme obrade faktura za 80% i ubrzava naplatu. Konkretni primeri implementacije AI automatizacije." />
+  <link rel="canonical" href="https://quantex.rs/blog/automatizacija-obrade-faktura-naplata.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Article", "headline": "Kako automatizovati obradu faktura i naplatu: Praktični vodič za firme koje gube vreme na ručni rad", "datePublished": "2026-05-07", "dateModified": "2026-05-07", "author": {"@type": "Organization", "name": "Quantex"}, "publisher": {"@type": "Organization", "name": "Quantex", "logo": {"@type": "ImageObject", "url": "https://quantex.rs/assets/logo.svg"}}, "description": "Otkrijte kako Quantex smanjuje vreme obrade faktura za 80% i ubrzava naplatu. Konkretni primeri implementacije AI automatizacije."}
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Početna", "item": "https://quantex.rs/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://quantex.rs/blog/"}, {"@type": "ListItem", "position": 3, "name": "Kako automatizovati obradu faktura i naplatu: Praktični vodič za firme koje gube vreme na ručni rad"}]}
+  </script>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0VB7R2391"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B0VB7R2391');
+  </script>
+</head>
+<body>
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav-container" aria-label="Glavna navigacija">
+      <a href="../index.html" class="nav-logo"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+      <ul class="nav-links" id="navMenu" role="list">
+        <li class="nav-item has-dropdown"><button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">Usluge <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="nav-dropdown" id="uslugeDropdown" role="menu"><li role="none"><a href="../usluge/ai-agenti.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>AI Agenti za firme</span></a></li><li role="none"><a href="../usluge/generisanje-lidova.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Generisanje Lidova</span></a></li><li role="none"><a href="../usluge/interni-sistemi.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Interni AI Sistemi</span></a></li><li role="none"><a href="../usluge/automatizacija-zakazivanja.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Automatizacija Zakazivanja</span></a></li></ul></li>
+        <li><a href="../index.html#proces" class="nav-link">Naš Proces</a></li>
+        <li><a href="index.html" class="nav-link active">Blog</a></li>
+        <li><a href="../index.html#kalkulator" class="nav-link">Kalkulator</a></li>
+
+        <li><a href="../index.html#kontakt" class="nav-cta-btn">Zakažite razgovor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="post-hero">
+        <nav class="breadcrumb" aria-label="Putanja"><a href="../index.html">Početna</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a href="index.html">Blog</a><span class="breadcrumb-sep" aria-hidden="true">›</span><span class="breadcrumb-current">Automatizacija obrade faktura naplata</span></nav>
+        <div class="post-meta">
+          <span class="post-category">Produktivnost</span>
+          <span class="post-date">7. maj 2026.</span>
+          <span class="post-read-time">5 min čitanja</span>
+        </div>
+        <h1 class="post-h1">Kako automatizovati obradu faktura i naplatu: Praktični vodič za firme koje gube vreme na ručni rad</h1>
+        <p class="post-lead">Vaš tim troši 15 do 20 sati nedeljno na ručno unošenje faktura, proveru podataka i praćenje dospelih potraživanja? To nije administracija, to je direktan gubitak novca. U našem radu sa preko 50 firmi u Srbiji, identifikovali smo da ručna obrada faktura košta prosek od 12 do 18 evra po dokumentu kada se uračuna vreme zaposlenih, greške i kašnjenja u naplati. AI automatizacija ovog procesa smanjuje taj trošak na manje od 2 evra po fakturi, sa vremenom obrade od minuta umesto dana.</p>
+      </section>
+
+      <div class="post-layout">
+        <article class="post-content">
+
+          <p>Vaš tim troši 15 do 20 sati nedeljno na ručno unošenje faktura, proveru podataka i praćenje dospelih potraživanja? To nije administracija, to je direktan gubitak novca. U našem radu sa preko 50 firmi u Srbiji, identifikovali smo da ručna obrada faktura košta prosek od 12 do 18 evra po dokumentu kada se uračuna vreme zaposlenih, greške i kašnjenja u naplati. AI automatizacija ovog procesa smanjuje taj trošak na manje od 2 evra po fakturi, sa vremenom obrade od minuta umesto dana.</p>
+<h2 id="gde-firme-najvise-gube-novac">Gde firme najviše gube novac na ručnoj obradi faktura</h2>
+<p>Pre nego što pređemo na rešenja, precizno mapirajmo probleme. U 80% firmi koje smo analizirali, isti obrasci se ponavljaju:</p>
+<p><strong>Dupliranje podataka.</strong> Zaposleni unose iste podatke u CRM, ERP, Excel i bankarski portal. Svako dupliranje je šansa za grešku. Naš tim je u jednoj proizvodnoj firmi iz Novog Sada otkrio da se 23% faktura vraća na korekciju zbog netačnih IBAN brojeva ili poreskih podataka, unetih ručno u tri različita sistema.</p>
+<p><strong>Zakašnjela naplata zbog nepraćenja rokova.</strong> Bez automatizovanih podsetnika, dospela potraživanja stare preko 90 dana čine prosečno 18% ukupnog prometa srpskih firmi. Svaki dan kašnjenja u naplati košta 0,05% od iznosa fakture u kamatama i oportunitetnom trošku.</p>
+<p><strong>Nepostojanje centralizovanog uvida.</strong> Direktor ne može za 30 sekundi da sazna koliko faktura je izdato, koliko dospelo i koliko naplaćeno. Finansijski izveštaj se priprema ručno, jednom mesečno, sa zakašnjenjem od 10 do 15 dana.</p>
+<h2 id="kako-ai-automatizacija-faktura-funkcionise-u-praksi">Kako AI automatizacija faktura funkcioniše u praksi</h2>
+<p>Quantex implementira automatizaciju obrade faktura u tri sloja, koji se pokreću sekvencijalno ili paralelno, zavisno od infrastrukture klijenta.</p>
+<p><strong>Sloj 1: Ekstrakcija i validacija podataka.</strong> AI agent čita fakturu u bilo kom formatu (PDF, slika, email, skenirani dokument) i ekstrahuje 25 ključnih polja: poreski identifikacioni broj, IBAN, iznos sa i bez poreza, rok dospeća, broj narudžbenice, šifra artikla. Tačnost ekstrakcije na srpskom jeziku iznosi 97,3% po našim merenjima, sa kontinuiranim učenjem na specifičnim dokumentima klijenta.</p>
+<p><strong>Sloj 2: Ruting i matching.</strong> Sistem automatski uparuje fakturu sa narudžbenicom i otpremnicom. U slučaju neslaganja, kreira tiket odgovornom zaposlenom sa preciznim opisom problema, ne generičkim upozorenjem. Prosečno vreme rešavanja neslaganja smanjuje se sa 3 dana na 45 minuta.</p>
+<p><strong>Sloj 3: Automatizovana naplata i praćenje.</strong> Sistem generiše uplate, šalje podsetnike kupcima 3 dana pre dospeća, 1 dan posle i svakih 7 dana nakon toga. Svaka komunikacija je personalizovana i beleži se u centralnom logu. U slučaju kašnjenja preko 30 dana, kreira se predlog za aktivniju naplatu i obaveštava odgovorno lice.</p>
+<h2 id="konkretni-rezultati-nakon-30-dana-implementacije">Konkretni rezultati nakon 30 dana implementacije</h2>
+<p>Ne pričamo o hipotetičkim scenarijima. Evo šta smo dostigli u tri reprezentativna projekta tokom 2024:</p>
+<p><strong>IT firma iz Beograda, 45 zaposlenih.</strong> Pre implementacije, dva zaposlena su trošila 32 sata nedeljno na obradu 140 faktura. Nakon implementacije Quantex rešenja, isti obim rada zahteva 4,5 sata, a zaposleni su preusmereni na analitičke poslove. Vreme od izdavanja fakture do knjiženja uplate skraćeno je sa 5,2 dana na 1,3 dana.</p>
+<p><strong>Trgovinska firma sa 4 lokacije.</strong> Centralizovana je obrada faktura iz svih filijala. Pre toga, svaka lokacija koristila je različite Excel šablone, a konsolidacija je trajala 4 dana. Sada je konsolidacija trenutna, a greške u unosu smanjene za 91%.</p>
+<p><strong>Proizvodna firma sa izvozom u EU.</strong> Implementirana je automatska provera valutnih kurseva, generisanje INTRASTAT izveštaja i usklađenost sa fakturisanjem u evrima. Vreme pripreme izvozne dokumentacije smanjeno je sa 6 sati na 35 minuta po fakturi.</p>
+<h2 id="tehnicka-arhitektura-koju-gradimo">Tehnička arhitektura koju gradimo</h2>
+<p>Naš tim ne nudi generički softver. Svako rešenje gradimo na postojećoj infrastrukturi klijenta, sa maksimalnom pažnjom na bezbednost i skalabilnost.</p>
+<p><strong>Integracija sa postojećim sistemima.</strong> Povezujemo se sa bilo kojim ERP-om ili računovodstvenim softverom koji ima API (Microsoft Dynamics, SAP, Pantheon, Oracle, ili custom rešenja). Ako API ne postoji, gradimo middleware koji simulira ljudske akcije na interfejsu, uz logovanje svakog koraka za reviziju.</p>
+<p><strong>Obrada u cloud-u ili on-premise.</strong> Za firme koje rade sa osetljivim podacima, nudimo potpuno on-premise implementaciju. AI model se obučava lokalno, podaci ne napuštaju servere klijenta. Za ostale, koristimo Azure ili AWS infrastrukturu sa enkripcijom na nivou baze i u tranzitu.</p>
+<p><strong>Human-in-the-loop kontrola.</strong> AI ne donosi odluke o transferima novca bez ljudske potvrde. Sistem predlaže, zaposleni odobravaju jednim klikom. Granica poverenja se podešava: za fakture ispod određenog iznosa, automatizacija može biti potpuna; za veće, obavezna je dvostruka kontrola.</p>
+<h2 id="koje-firme-prvo-implementiraju-ovu-automatizaciju">Koje firme prvo implementiraju ovu automatizaciju</h2>
+<p>Na osnovu našeg iskustva, ROI je najbrži i najizraženiji u sledećim scenarijima:</p>
+<p><strong>Firme sa više od 50 faktura mesečno.</strong> Isplativost postaje očigledna na ovom obimu. Troškovi implementacije se amortizuju u proseku za 4 do 6 meseci.</p>
+<p><strong>Firme sa kompleksnim lancom odobravanja.</strong> Ako faktura mora proći kroz 3 ili više odobravalaca pre plaćanja, automatizacija rutinga štednju vreme množi.</p>
+<p><strong>Firme sa međunarodnim poslovanjem.</strong> Automatska konverzija valuta, provera poreskih propisa zemlje kupca i generisanje potrebnih priloga eliminiše potrebu za eksternim konsultantima.</p>
+<p><strong>Firme koje rade na projektnoj osnovi.</strong> Povezivanje faktura sa fazama projekta, praćenje budžeta po ugovoru i automatsko upozorenje na prekoračenje su funkcionalnosti koje ručno ne možete održati bez grešaka.</p>
+<h2 id="proces-implementacije-od-prvog-razgovora-do-zivog-sistema">Proces implementacije: od prvog razgovora do živog sistema</h2>
+<p>Quantex proces je dizajniran da minimizira prekid postojećih operacija:</p>
+<p><strong>Analitički razgovor (60 minuta).</strong> Mapiramo trenutni tok dokumenata, identifikujemo bottleneck-ove i kvantifikujemo troškove. Dobijate dokument sa procenom uštede pre nego što potpišete bilo šta.</p>
+<p><strong>Revizija infrastrukture (3 do 5 radnih dana).</strong> Naš tim analizira vaše sisteme, API dokumentaciju i bezbednosne protokole. Identifikujemo sve tačke integracije i potencijalne rizike.</p>
+<p><strong>Arhitektura rešenja (5 do 7 radnih dana).</strong> Dobijate tehničku specifikaciju sa dijagramom toka podataka, planom migracije i planom testiranja. Svaka funkcionalnost je ocenjena po prioritetu i kompleksnosti.</p>
+<p><strong>Iterativna implementacija (15 do 20 radnih dana).</strong> Gradimo rešenje u sprintovima od 5 dana. Na kraju svakog sprinta, imate funkcionalni deo sistema koji možete testirati. Nema situacije da čekate mesec dana da vidite bilo šta.</p>
+<p><strong>Monitoring i podrška.</strong> Nakon puštanja u rad, pratimo performanse sistema u realnom vremenu. AI model se kontinuirano obučava na novim dokumentima, sa tačnošću koja raste tokom prvih 90 dana.</p>
+<h2 id="najcesca-pitanja-o-automatizaciji-faktura">Najčešća pitanja o automatizaciji faktura</h2>
+<h3 id="faq-da-li-ai-prepoznaje-srpske-fakture-sa-pecom">Da li AI prepoznaje srpske fakture sa pečatom i potpisom?</h3>
+<p>Da. Naš sistem obrađuje skenirane fakture, slike mobilnim telefonom i PDF dokumente. Pečat i potpis se detektuju kao vizuelni elementi, ali ključni finansijski podaci se ekstrahuju iz strukturisanih zona dokumenta. Tačnost na srpskim fakturama iznosi 97,3%, a za specifične formate klijenata raste na preko 99% nakon 2 nedelje korišćenja.</p>
+<h3 id="faq-sta-ako-nas-erp-nema-api">Šta ako naš ERP nema API?</h3>
+<p>Više od 30% naših klijenata koristi zastarele ili custom ERP sisteme bez modernog API-ja. U tim slučajevima gradimo RPA (Robotic Process Automation) sloj koji interaguje sa korisničkim interfejsom isto kao zaposleni, ali 24 sata dnevno bez grešaka od umora. Svaka akcija se loguje, a sistem može biti pauziran u bilo kom trenutku.</p>
+<h3 id="faq-koliko-traje-obuka-zaposlenih">Koliko traje obuka zaposlenih?</h3>
+<p>Interfejs za zaposlene je jednostavan dashboard, ne kompleksan softver. Prosečno vreme obuke iznosi 45 minuta za operatere i 15 minuta za odobravaoce. Većina zaposlenih ne mora da menja svoje navike; sistem ih obaveštava emailom ili notifikacijom kada je njihova akcija potrebna, isto kao prethodno, ali bez ručnog pretraživanja dokumenata.</p>
+<h3 id="faq-da-li-je-automatizacija-odrziva-za-malu-firmu">Da li je automatizacija održiva za malu firmu?</h3>
+<p>Za firme sa manje od 30 faktura mesečno, ručna obrada može još uvek biti ekonomična. Međutim, ako planirate rast ili ako vaš tim već kasni sa drugim obavezama zbog administracije, ranija implementacija daje prednost. Quantex nudi modularna rešenja; možete početi samo sa ekstrakcijom podataka, bez punog toka naplate, i širiti po potrebi.</p>
+<h3 id="faq-kako-se-racuna-roi">Kako se računa ROI ove investicije?</h3>
+<p>Direktna ušteda uključuje: smanjenje vremena zaposlenih (prosečno 25 sati mesečno po osobi uključenoj u proces), smanjenje grešaka (91% manje korekcija), ubrzanje naplate (prosečno 12 dana ranije) i eliminaciju penala zbog kašnjenja u plaćanjima dobavljačima. Većina naših klijenata dostigne pozitivan ROI za 4 do 6 meseci. Detaljan proračun dobijate u analitičkom razgovoru, prilagođen vašim specifičnim brojkama.</p>
+<h2 id="sledeci-korak-besplatan-analiticki-razgovor">Sledeći korak: besplatan analitički razgovor</h2>
+<p>Ne nudimo vam softver na probu. Nudimo vam preciznu mapu toga koliko vaša firma gubi na ručnoj obradi faktura i koliko može da uštedi. Tokom 60-minutnog razgovora, naš tim će:</p>
+<ul>
+<li>Analizirati trenutni tok vaših dokumenata</li>
+<li>Identifikovati konkretne tačke gubitka vremena i novca</li>
+<li>Dati procenu uštede sa tačnim brojevima</li>
+<li>Predložiti arhitekturu rešenja prilagođenu vašoj infrastrukturi</li>
+</ul>
+<p>Od prvog razgovora do živog sistema proći će 30 dana. Prvih 30 dana podrške su bez dodatnog troška.</p>
+<p>Zakažite razgovor putem forme na quantex.rs ili direktnim kontaktom. Ne odlažite; svaki mesec bez automatizacije je mesec u kojem plaćate više nego što morate.</p>
+
+          
+
+          <div class="post-footer">
+            <div class="post-tags" aria-label="Tagovi">
+              
+              <span class="post-tag">produktivnost</span>
+              
+              <span class="post-tag">automatizacija</span>
+              
+              <span class="post-tag">obrade</span>
+              
+              <span class="post-tag">faktura</span>
+              
+              <span class="post-tag">AI automatizacija</span>
+              
+            </div>
+            <div class="post-cta-box">
+              <h3>Zakažite besplatan analitički razgovor</h3>
+              <p>45 minuta, konkretni zaključci za vaš poslovni kontekst. Bez obaveza.</p>
+              <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+                <a href="../index.html#kalkulator" class="btn btn-secondary">Otvorite kalkulator</a>
+                <a href="../index.html#kontakt" class="btn btn-primary">Zakažite razgovor <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+              </div>
+            </div>
+          </div>
+
+        </article>
+
+        <aside class="post-sidebar" aria-label="Sadržaj i srodne teme">
+          <div class="sidebar-card">
+            <h2 class="sidebar-card-title">Sadržaj teksta</h2>
+            <nav class="toc-list" aria-label="Navigacija kroz tekst">
+              
+              <a href="#gde-firme-najvise-gube-novac">Gde firme najviše gube novac na ručnoj obradi faktura</a>
+              
+              <a href="#kako-ai-automatizacija-faktura-funkcionise-u-praksi">Kako AI automatizacija faktura funkcioniše u praksi</a>
+              
+              <a href="#konkretni-rezultati-nakon-30-dana-implementacije">Konkretni rezultati nakon 30 dana implementacije</a>
+              
+              <a href="#tehnicka-arhitektura-koju-gradimo">Tehnička arhitektura koju gradimo</a>
+              
+              <a href="#koje-firme-prvo-implementiraju-ovu-automatizaciju">Koje firme prvo implementiraju ovu automatizaciju</a>
+              
+              <a href="#proces-implementacije-od-prvog-razgovora-do-zivog-sistema">Proces implementacije: od prvog razgovora do živog sistema</a>
+              
+              <a href="#najcesca-pitanja-o-automatizaciji-faktura">Najčešća pitanja o automatizaciji faktura</a>
+              
+              <a href="#sledeci-korak-besplatan-analiticki-razgovor">Sledeći korak: besplatan analitički razgovor</a>
+              
+              
+            </nav>
+          </div>
+          <div class="sidebar-card">
+            <h2 class="sidebar-card-title">Srodni tekstovi</h2>
+            <div class="related-posts">
+              
+              <a href="sati-izgubljeni-na-repetitivne-zadatke.html" class="related-post-link">Koliko sati mesečno vaš tim gubi na zadatke koje AI može da uradi</a>
+              
+              <a href="ai-agent-vs-chatgpt-razlika.html" class="related-post-link">AI agent i ChatGPT nisu ista stvar: šta je razlika i zašto je to bitno</a>
+              
+              <a href="automatizacija-generisanja-lidova.html" class="related-post-link">Automatizacija generisanja lidova: kako firme pune prodajni levak bez hladnih poziva</a>
+              
+            </div>
+          </div>
+          <div class="sidebar-card" style="background: var(--gradient-glow); border-color: rgba(59,130,246,0.2);">
+            <h2 class="sidebar-card-title">Brza procena</h2>
+            <p style="font-size:var(--text-sm);color:var(--text-secondary);margin-bottom:var(--space-4);line-height:1.6">Unesite podatke o timu i vidite okvirnu procenu godišnje uštede.</p>
+            <a href="../index.html#kalkulator" class="btn btn-primary" style="width:100%;justify-content:center;font-size:var(--text-sm)">Otvori kalkulator</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index.html" class="nav-logo footer-logo"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a><p class="footer-tagline">AI sistemi prilagođeni vašem poslovnom modelu.</p><address class="footer-contact"><a href="mailto:office@quantex.rs" class="footer-contact-link">office@quantex.rs</a></address></div><nav class="footer-nav" aria-label="Usluge"><h4 class="footer-nav-title">Usluge</h4><ul role="list"><li><a href="../usluge/ai-agenti.html" class="footer-link">AI Agenti</a></li><li><a href="../usluge/generisanje-lidova.html" class="footer-link">Generisanje Lidova</a></li><li><a href="../usluge/interni-sistemi.html" class="footer-link">Interni Sistemi</a></li><li><a href="../usluge/automatizacija-zakazivanja.html" class="footer-link">Automatizacija Zakazivanja</a></li></ul></nav><nav class="footer-nav" aria-label="Blog"><h4 class="footer-nav-title">Blog</h4><ul role="list"><li><a href="index.html" class="footer-link">Svi tekstovi</a></li><li><a href="ai-agent-vs-chatgpt-razlika.html" class="footer-link">AI agent vs ChatGPT</a></li><li><a href="kako-uvesti-ai-u-firmu.html" class="footer-link">Kako uvesti AI u firmu</a></li></ul></nav></div><div class="footer-bottom"><p class="footer-copyright">&copy; <span id="copyright-year"></span> Quantex.</p><p class="footer-location">Beograd, Srbija</p></div></div></footer>
+  <script src="../js/animations.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
