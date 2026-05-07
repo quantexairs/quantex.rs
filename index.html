@@ -245,7 +245,7 @@
         <li><a href="case-studies.html" class="nav-link">Studije slučaja</a></li>
         <li><a href="vodic.html" class="nav-link" style="color:var(--accent-light);font-weight:600;">Besplatni vodič</a></li>
         <li>
-          <a href="#kontakt" class="nav-cta-btn" aria-label="Zakažite analitički razgovor sa Quantex timom">
+          <a href="#ai-audit" class="nav-cta-btn" aria-label="Zakažite analitički razgovor sa Quantex timom">
             Zakažite razgovor
           </a>
         </li>
@@ -281,7 +281,7 @@
         </p>
 
         <div class="hero-actions animate-fade-up" style="animation-delay: 0.3s">
-          <a href="#kontakt" class="btn btn-primary" aria-label="Zakažite besplatan analitički razgovor">
+          <a href="#ai-audit" class="btn btn-primary" aria-label="Zakažite besplatan analitički razgovor">
             Zakažite besplatan razgovor
             <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -542,9 +542,99 @@
 
         <div class="services-cta animate-on-scroll">
           <p>Nemate gotov opis problema? To je u redu. Razgovor je prvi korak.</p>
-          <a href="#kontakt" class="btn btn-primary">Razgovarajmo o vašem poslovanju</a>
+          <a href="#ai-audit" class="btn btn-primary">Razgovarajmo o vašem poslovanju</a>
         </div>
 
+      </div>
+    </section>
+
+    <!-- ============================================================
+         AI AUDIT SECTION
+    ============================================================ -->
+    <section id="ai-audit" class="audit-wrapper section-padding" aria-labelledby="ai-audit-h2">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag animate-on-scroll">Brza procena</div>
+          <h2 id="ai-audit-h2" class="section-title animate-on-scroll">
+            Otkrijte koliko vremena gubite na zadatke koje može raditi AI
+          </h2>
+          <p class="section-subtitle animate-on-scroll">
+            5 pitanja. 30 sekundi. Instant rezultat.
+          </p>
+        </div>
+
+        <div id="audit-form">
+
+          <div class="audit-step" data-step="1">
+            <h3>Koliko zaposlenih imate?</h3>
+            <p>Izaberite broj koji najbolje opisuje vaš tim.</p>
+            <div class="audit-options">
+              <button class="audit-btn" data-value="5">5</button>
+              <button class="audit-btn" data-value="15">15</button>
+              <button class="audit-btn" data-value="50">50</button>
+              <button class="audit-btn" data-value="200">200</button>
+            </div>
+          </div>
+
+          <div class="audit-step hidden" data-step="2">
+            <h3>Koliko sati dnevno trošite na mejlove i komunikaciju?</h3>
+            <p>Ukupno za ceo tim, prosečno dnevno.</p>
+            <div class="audit-options">
+              <button class="audit-btn" data-value="1">1 sat</button>
+              <button class="audit-btn" data-value="2.5">2.5 sata</button>
+              <button class="audit-btn" data-value="4.5">4.5 sata</button>
+              <button class="audit-btn" data-value="7">7 sati</button>
+            </div>
+          </div>
+
+          <div class="audit-step hidden" data-step="3">
+            <h3>Da li neko radi ručni unos podataka (fakture, CRM, Excel)?</h3>
+            <p>Procenat zaposlenih koji dnevno unose podatke ručno.</p>
+            <div class="audit-options">
+              <button class="audit-btn" data-value="10">10%</button>
+              <button class="audit-btn" data-value="25">25%</button>
+              <button class="audit-btn" data-value="45">45%</button>
+              <button class="audit-btn" data-value="70">70%</button>
+            </div>
+          </div>
+
+          <div class="audit-step hidden" data-step="4">
+            <h3>Koliko vremena odlazi na zakazivanje sastanaka i koordinaciju?</h3>
+            <p>Ukupno za ceo tim, prosečno dnevno.</p>
+            <div class="audit-options">
+              <button class="audit-btn" data-value="2">2 sata</button>
+              <button class="audit-btn" data-value="10">10 sati</button>
+              <button class="audit-btn" data-value="20">20 sati</button>
+              <button class="audit-btn" data-value="35">35 sati</button>
+            </div>
+          </div>
+
+          <div class="audit-step hidden" data-step="5">
+            <h3>Da li imate korisnički servis koji radi 24/7?</h3>
+            <p>Koliko sati dnevno vaš tim troši na korisničku podršku.</p>
+            <div class="audit-options">
+              <button class="audit-btn" data-value="0">Ne, nema podrške</button>
+              <button class="audit-btn" data-value="15">15 sati dnevno</button>
+              <button class="audit-btn" data-value="40">40 sati dnevno</button>
+              <button class="audit-btn" data-value="60">60+ sati dnevno</button>
+            </div>
+          </div>
+
+          <div id="audit-result" class="result-box hidden">
+            <h3>Vaša procena</h3>
+            <span class="result-number" id="result-hours">0 sati</span>
+            <span class="result-money" id="result-money">€0 mesečno</span>
+            <p class="result-explanation">
+              Ovoliko vremena vaš tim gubi mesečno na zadatke koje AI može da obavi brže, tačnije i jeftinije.
+              Po ceni od 15 EUR po satu, ovo je direktan trošak koji se može eliminisati.
+            </p>
+            <a href="#kontakt" class="btn btn-primary" aria-label="Zakažite besplatan analitički razgovor">
+              Zakažite besplatan audit
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </div>
       </div>
     </section>
 
