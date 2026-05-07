@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#bg)" rx="12"/>
+  <circle cx="680" cy="150" r="80" fill="none" stroke="#3b82f6" stroke-width="3" opacity="0.15"/>
+  <circle cx="680" cy="150" r="55" fill="none" stroke="#10b981" stroke-width="2.5" opacity="0.2"/>
+  <circle cx="120" cy="60" r="30" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.1"/>
+  <text x="60" y="130" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="26" fill="#e2e8f0">Kako AI smanjuje troškove korisničke podrške</text>
+  <text x="60" y="165" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="26" fill="#e2e8f0"></text>
+  <text x="60" y="210" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="16" fill="#3b82f6">AI korisnička podrška</text>
+  <text x="60" y="260" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="14" fill="#e2e8f0" opacity="0.5">quantex.rs</text>
+  <rect x="60" y="275" width="40" height="3" fill="#3b82f6" rx="1.5"/>
+</svg>
