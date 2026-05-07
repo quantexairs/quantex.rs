@@ -2105,3 +2105,60 @@ input, textarea, select {
     transform: translateY(0);
   }
 }
+
+/* ============================================================
+   STATS SECTION
+   ============================================================ */
+
+.stats-section {
+  background: var(--bg-base);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+.stat-item {
+  text-align: center;
+  padding: var(--space-8) var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.stat-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+}
+
+.stat-value {
+  display: block;
+  font-size: var(--text-5xl);
+  font-weight: 800;
+  line-height: 1.1;
+  background: linear-gradient(135deg, var(--accent), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-3);
+}
+
+.stat-label {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
