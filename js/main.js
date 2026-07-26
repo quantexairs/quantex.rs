@@ -540,6 +540,81 @@
     startAuto();
   }
 
+  /* ── Portfolio Preview Frames ───────────────────────────── */
+  function initPortfolioFrames() {
+    const frames = Array.from(document.querySelectorAll('.portfolio-mockup-frame'));
+    if (!frames.length) return;
+
+    const FRAME_WIDTH = 1600;
+
+    function scaleFrame(frame) {
+      const scale = frame.offsetWidth / FRAME_WIDTH;
+      frame.style.setProperty('--frame-scale', scale);
+    }
+
+    frames.forEach(scaleFrame);
+
+    if ('ResizeObserver' in window) {
+      const ro = new ResizeObserver(entries => {
+        entries.forEach(entry => scaleFrame(entry.target));
+      });
+      frames.forEach(f => ro.observe(f));
+    } else {
+      window.addEventListener('resize', () => frames.forEach(scaleFrame));
+    }
+  }
+
+  /* ── Portfolio Slider ───────────────────────────────────── */
+  function initPortfolioSlider() {
+    const slider = document.querySelector('.portfolio-slider');
+    if (!slider) return;
+
+    const track = slider.querySelector('.portfolio-track');
+    const slides = Array.from(slider.querySelectorAll('.portfolio-slide'));
+    const dotsWrap = slider.querySelector('.portfolio-dots');
+    const prevBtn = slider.querySelector('.portfolio-prev');
+    const nextBtn = slider.querySelector('.portfolio-next');
+    if (!track || !slides.length || !dotsWrap) return;
+
+    const dots = [];
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Projekat ' + (i + 1));
+      dot.addEventListener('click', () => { goTo(i); startAuto(); });
+      dotsWrap.appendChild(dot);
+      dots.push(dot);
+    });
+
+    let current = 0;
+    let autoTimer;
+
+    function goTo(index) {
+      current = ((index % slides.length) + slides.length) % slides.length;
+      track.style.transform = 'translateX(-' + (current * slider.offsetWidth) + 'px)';
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    function startAuto() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(() => goTo(current + 1), 6000);
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => { goTo(current - 1); startAuto(); });
+    if (nextBtn) nextBtn.addEventListener('click', () => { goTo(current + 1); startAuto(); });
+
+    slider.addEventListener('mouseenter', () => clearInterval(autoTimer));
+    slider.addEventListener('mouseleave', startAuto);
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => goTo(current), 150);
+    });
+
+    startAuto();
+  }
+
   /* ── Init All ───────────────────────────────────────────── */
   function init() {
     initDropdowns();
@@ -551,6 +626,8 @@
     initLazyImages();
     initSkipLink();
     initTestimonialsSlider();
+    initPortfolioFrames();
+    initPortfolioSlider();
   }
 
   if (document.readyState === 'loading') {

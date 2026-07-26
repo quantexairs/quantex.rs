@@ -62,6 +62,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Portfolio: stack visual and info on tablet */
+  .portfolio-slide {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
   /* Testimonials: 2 columns on tablet (fallback) */
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
