@@ -844,6 +844,23 @@ input, textarea, select {
   border-radius: 50%;
 }
 
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--accent-light);
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+  transition: border-color var(--transition);
+}
+
+.service-link:hover {
+  border-color: var(--accent-light);
+}
+
 .services-cta {
   text-align: center;
   display: flex;
@@ -2067,12 +2084,19 @@ input, textarea, select {
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  text-decoration: none;
   color: var(--accent);
   background: rgba(59,130,246,0.1);
   border: 1px solid rgba(59,130,246,0.2);
   border-radius: 999px;
   padding: 3px 10px;
+  transition: background var(--transition), border-color var(--transition);
   white-space: nowrap;
+}
+
+.portfolio-tag:hover {
+  background: rgba(59,130,246,0.2);
+  border-color: rgba(59,130,246,0.4);
 }
 
 .portfolio-title {

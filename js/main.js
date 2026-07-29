@@ -636,43 +636,4 @@
     init();
   }
 
-  /* ── AI Audit Widget ────────────────────────────────────── */
-  (function() {
-    var answers = {};
-    var currentStep = 1;
-    var totalSteps = 5;
-
-    document.querySelectorAll('.audit-btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var step = this.closest('.audit-step');
-        var stepNum = parseInt(step.dataset.step);
-        var value = parseFloat(this.dataset.value);
-        answers[stepNum] = value;
-        step.classList.add('hidden');
-        if (stepNum < totalSteps) {
-          var next = document.querySelector('.audit-step[data-step="' + (stepNum + 1) + '"]');
-          next.classList.remove('hidden');
-          next.classList.add('fade-in');
-        } else {
-          showResult();
-        }
-      });
-    });
-
-    function showResult() {
-      var employees = answers[1];
-      var emailHours = answers[2] * 22;
-      var dataEntry = answers[3] * employees / 100;
-      var scheduling = answers[4] * 22;
-      var support = answers[5] > 0 ? employees * 0.5 : 0;
-      var totalHours = Math.round(emailHours + dataEntry + scheduling + support);
-      var monthlyCost = totalHours * 15;
-      document.getElementById('result-hours').textContent = totalHours + ' sati';
-      document.getElementById('result-money').textContent = '€' + monthlyCost.toLocaleString() + ' mesečno';
-      var resultDiv = document.getElementById('audit-result');
-      resultDiv.classList.remove('hidden');
-      resultDiv.classList.add('fade-in');
-    }
-  })();
-
 }());

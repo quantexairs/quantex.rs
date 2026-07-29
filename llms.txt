@@ -1,78 +1,67 @@
 # Quantex
 
-> Quantex je konsultantska agencija koja projektuje i implementira AI sisteme i automatizacije prilagođene specifičnom poslovnom modelu klijenta. Sedište je u Beogradu, Srbija. Usluge su dostupne kompanijama u celoj Srbiji i regionu.
+> Quantex je agencija za SEO, AEO i izradu web sajtova i web aplikacija. Sedište je u Beogradu, Srbija. Usluge su dostupne kompanijama u celoj Srbiji i regionu.
 
-Quantex ne prodaje gotove alate niti templete. Svaki projekat počinje analizom operativnog toka klijenta, identifikacijom uskog grla, a završava se bezbednom implementacijom prilagođenog AI rešenja. Pristup je isključivo konsultativan.
+Quantex ne prodaje gotove šablone niti generičke SEO pakete. Svaki projekat počinje analizom postojećeg sajta, konkurencije i ključnih pretraga klijenta, a završava se merljivim poboljšanjem vidljivosti na Google-u i u AI pretragama (ChatGPT, Perplexity, Google AI Overviews).
 
 ## Usluge
 
-- [AI Agenti obučeni na podacima firme](https://quantex.rs/#usluge): Razvoj AI agenata koji prolaze kroz trening na internoj dokumentaciji, procedurama, cenovniku i istorijskim podacima klijenta. Rezultat je sistem koji odgovara na interna i eksterna pitanja sa tačnošću iskusnog zaposlenog, dostupan 24 sata dnevno.
-- [Automatizovano generisanje i kvalifikacija lidova](https://quantex.rs/#usluge): Automatizovani tokovi koji identifikuju, kontaktiraju i kvalifikuju potencijalne klijente prema kriterijumima idealnog kupca. Prodajni tim dobija samo kontakte koji su već pokazali nameru kupovine.
-- [Interni AI sistemi za zaposlene](https://quantex.rs/#usluge): Operativni asistenti, automatizovano generisanje izveštaja i praćenje KPI metrika. Infrastruktura koja povećava produktivnost tima bez dodavanja novih alata koje niko ne koristi.
-- [Automatizacija zakazivanja i komunikacije](https://quantex.rs/#usluge): Inteligentni sistemi koji upravljaju terminima, sinhronizuju kalendare i komuniciraju sa klijentima bez ljudske intervencije. Svaka interakcija je dokumentovana i merljiva.
+- [SEO optimizacija](https://quantex.rs/usluge/seo.html): Tehnička i sadržajna SEO optimizacija koja podiže poziciju sajta na Google-u za pretrage koje donose klijente. Uključuje tehničku analizu, optimizaciju sadržaja, lokalni SEO i mesečno praćenje pozicija.
+- [AEO optimizacija](https://quantex.rs/usluge/aeo.html): Optimizacija sadržaja i strukture sajta (strukturirani podaci, jasna FAQ struktura) da vas prepoznaju i citiraju AI asistenti poput ChatGPT-a, Perplexity-ja i Google AI Overviews.
+- [Izrada web sajtova](https://quantex.rs/usluge/izrada-sajtova.html): Dizajn i izrada modernih, brzih sajtova prilagođenih brendu klijenta, sa SEO temeljima ugrađenim od prvog dana.
+- [Izrada web aplikacija](https://quantex.rs/usluge/web-aplikacije.html): Razvoj prilagođenih web aplikacija, interni alati, korisnički portali i sistemi po meri poslovnog procesa klijenta.
 
 ## Proces rada
 
-1. Analitički razgovor (45 do 60 minuta): Analiza operativnih procesa, identifikacija uskih grla, procena povrata na uloženo.
-2. Revizija infrastrukture (3 do 5 dana): Mapiranje postojećih alata, tokova podataka i tačaka integracije.
-3. Arhitektura rešenja (5 do 7 dana): Projektovanje tehničke arhitekture sa fokusom na bezbednost i skalabilnost.
-4. Iterativna implementacija (2 do 5 sedmica): Razvoj i isporuka u fazama uz testiranje na svakom koraku.
-5. Monitoring i optimizacija (tekuće): Praćenje performansi, prilagođavanje modela, kontinuirano poboljšanje.
+1. Besplatna analiza i razgovor (45 do 60 minuta): Pregled postojećeg sajta ili ideje, konkurencije i ključnih pretraga u delatnosti klijenta.
+2. SEO i tehnička analiza (3 do 5 dana): Mapiranje tehničkog stanja sajta, ključnih reči i konkurencije.
+3. Plan, dizajn i strategija (5 do 7 dana): Predlog dizajna, strukture i SEO/AEO strategije na uvid pre početka izrade.
+4. Izrada i optimizacija (2 do 5 sedmica): Gradnja sajta ili aplikacije u fazama uz SEO/AEO optimizaciju i redovne prikaze napretka.
+5. Praćenje i unapređenje (tekuće): Mesečno praćenje pozicija i saobraćaja, kontinuirano unapređenje sadržaja i tehnike.
 
-## Bezbednost podataka
+## Principi saradnje
 
-Quantex primenjuje sledeće bezbednosne standarde na svim projektima:
-
-- NDA potpisivanje pre uvida u podatke klijenta
-- Izolovano okruženje za podatke svakog klijenta
-- Enkripcija podataka u prenosu i mirovanju
-- Granularna kontrola pristupa
-- Opcija on-premise raspoređivanja za klijente sa regulatornim zahtevima
+- Fiksne, pisane cene: bez procena "po dogovoru" nakon razgovora
+- Mesečni izveštaj o napretku (pozicije, saobraćaj, upiti)
+- Sajt i kod pripadaju klijentu, bez zaključanih platformi
+- Lokalni tim u Beogradu, direktna komunikacija
 
 ## Ključne činjenice
 
 - Lokacija: Beograd, Srbija
 - Tržište: Srbija i region
 - Jezik usluge: Srpski i engleski
-- Prosečno vreme implementacije: 2 do 6 sedmica za prvu fazu
-- Tipičan ROI period: 3 do 9 meseci od puštanja sistema u produkciju
-- Industrijski prosek automatizacije: 55% do 78% repetitivnih poslovnih zadataka
+- Tipično trajanje izrade manjeg sajta: 2 do 4 nedelje
+- Tipično trajanje SEO rezultata: prve promene za nekoliko nedelja, pomeranje pozicija posle 6 do 12 nedelja
 
 ## Česta pitanja
 
-**Šta je AI automatizacija poslovanja?**
-AI automatizacija poslovanja je proces u kome se repetitivni, vremenski zahtevni i podacima vođeni zadaci prenose na inteligentne softverske sisteme. Za razliku od klasične automatizacije, AI sistemi mogu da tumače nestrukturirane podatke, vode prirodne razgovore i donose odluke u kontekstu.
+**Šta je SEO i zašto je važan za moj biznis?**
+SEO (Search Engine Optimization) je skup tehničkih i sadržajnih izmena na sajtu koje pomažu Google-u da razume o čemu se sajt radi i da ga rangira više za relevantne pretrage. Za lokalni biznis to znači da vas pronalaze kupci koji već traže vaše usluge u vašem gradu.
 
-**Koje poslovne procese može da automatizuje Quantex?**
-Najčešće oblasti su: odgovaranje na upite klijenata, generisanje i kvalifikacija prodajnih lidova, interno izveštavanje, zakazivanje i upravljanje terminima, onboarding novih zaposlenih i klijenata, obrada dokumenata i praćenje KPI metrika.
+**Šta je AEO i po čemu se razlikuje od SEO-a?**
+AEO (Answer Engine Optimization) je optimizacija sadržaja tako da ga AI asistenti poput ChatGPT-a, Perplexity-ja i Google AI Overviews prepoznaju i citiraju kao izvor odgovora. SEO cilja listu rezultata pretrage; AEO cilja direktan odgovor koji korisnik dobija od AI sistema.
 
-**Da li je potreban interni IT tim za upravljanje sistemom?**
-Ne. Quantex projektuje sisteme koji su operativno nezavisni od tehničkog tima na strani klijenta. Upravljački interfejsi su namenjeni poslovnim korisnicima. Quantex preuzima tekuće održavanje i monitoring.
+**Treba mi nov sajt ili je dovoljna optimizacija postojećeg?**
+Zavisi od stanja postojećeg sajta. Ako je tehnički zdrav ali slabo pozicioniran, često je dovoljna SEO/AEO optimizacija. Ako je sajt zastareo ili slabo konvertuje posetioce, redizajn i nova izrada donose bolji dugoročni rezultat.
 
-**Da li su podaci klijenta bezbedni?**
-Da. Svaki sistem podrazumeva izolovano okruženje za podatke, enkripciju, strogu kontrolu pristupa i NDA pre saradnje. Za klijente sa regulatornim zahtevima dostupno je on-premise raspoređivanje.
+**Koja je razlika između sajta i web aplikacije?**
+Sajt prvenstveno predstavlja informacije i brend. Web aplikacija ima interaktivnu funkcionalnost: korisničke naloge, obradu podataka, interne alate ili sisteme koje koriste zaposleni ili klijenti.
 
-**Šta je razlika između gotovog AI alata i prilagođenog AI sistema?**
-Gotovi alati ne znaju ništa o specifičnim procedurama, klijentima, ceniku i poslovnoj logici konkretne kompanije. Prilagođeni sistem prolazi kroz trening na tim specifičnim podacima i integriše se u postojeće kanale i alate.
+**Da li garantujete prvu poziciju na Google-u?**
+Nijedna agencija ne može iskreno garantovati tačnu poziciju, jer algoritam pretrage ne kontroliše nijedna treća strana. Garantujemo tehnički zdrav sajt, relevantan sadržaj i doslednu SEO/AEO strategiju, pristup primenjen kod klijenta angelicphoto.rs, gde je postignuta prva pozicija za sve ključne usluge u Pančevu.
 
-## Resursi
+## Realizovani projekti
 
-- [Besplatni vodič: 10 poslovnih procesa koji se mogu automatizovati danas](https://quantex.rs/vodic.html): Praktičan pregled 10 procesa koje srpske firme i dalje rade ručno, sa procenom uštede u satima i novcu za svaki.
-- [Studije slučaja](https://quantex.rs/case-studies.html): Realni primeri implementacije AI automatizacije kod klijenata u različitim industrijama.
+- [angelicphoto.rs](https://angelicphoto.rs): Izrada sajta, dizajn i SEO optimizacija. Prva pozicija na Google-u za sve usluge u Pančevu, među prvima i u Novom Sadu i Beogradu.
+- [relaxamassage.rs](https://relaxamassage.rs): Izrada sajta, dizajn i SEO optimizacija.
+- [thefreesecurity.com](https://thefreesecurity.com): Izrada sajta, dizajn i SEO optimizacija.
+- [antiquecroatia.com](https://antiquecroatia.com): Izrada sajta, dizajn i SEO optimizacija.
 
-## Blog (najnovije)
-
-- [Kako AI chatbot na sajtu može olakšati posao](https://quantex.rs/blog/kako-ai-chatbot-na-sajtu-moze-olaksati-posao.html)
-- [Zašto da uvedeš AI u svoj biznis](https://quantex.rs/blog/zasto-da-uvedem-ai-u-svoj-biznis.html)
-- [Koliko sati nedeljno gubite na repetitivne zadatke](https://quantex.rs/blog/sati-izgubljeni-na-repetitivne-zadatke.html)
-- [AI agent vs ChatGPT: u čemu je razlika](https://quantex.rs/blog/ai-agent-vs-chatgpt-razlika.html)
-- [Automatizacija generisanja lidova](https://quantex.rs/blog/automatizacija-generisanja-lidova.html)
-- [ROI veštačke inteligencije u poslovanju](https://quantex.rs/blog/roi-vestacke-inteligencije-poslovanje.html)
-- [Kako uvesti AI u firmu](https://quantex.rs/blog/kako-uvesti-ai-u-firmu.html)
-- [Poslovni procesi za automatizaciju](https://quantex.rs/blog/poslovni-procesi-za-automatizaciju.html)
+Puna lista projekata: [Naši projekti](https://quantex.rs/#projekti)
 
 ## Kontakt
 
 - Web: https://quantex.rs
 - Email: office@quantex.rs
-- Zakazivanje razgovora: https://quantex.rs/#kontakt
+- Zakazivanje besplatne analize: https://quantex.rs/#kontakt
