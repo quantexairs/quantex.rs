@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="../assets/favicon.ico" sizes="any" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="../assets/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AEO optimizacija | Quantex</title>
-  <meta name="description" content="Quantex optimizuje sadržaj i strukturu vašeg sajta da vas prepoznaju i citiraju AI asistenti poput ChatGPT-a, Perplexity-ja i Google AI Overviews." />
+  <meta name="author" content="Quantex" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Šta je AEO optimizacija? | Vodič za mali biznis | Quantex</title>
+  <meta name="description" content="AEO objašnjen jednostavnim jezikom: direktni odgovori, FAQ, strukturirani podaci i jasne poslovne činjenice. AEO je uključen u svaki Quantex sajt od €500." />
   <link rel="canonical" href="https://quantex.rs/usluge/aeo.html" />
-  <link rel="alternate" hreflang="sr" href="https://quantex.rs/usluge/aeo.html" />
-  <link rel="alternate" hreflang="en" href="https://quantex.rs/en/services/aeo.html" />
-  <meta property="og:title" content="AEO optimizacija | Quantex" />
-  <meta property="og:description" content="Quantex optimizuje sadržaj i strukturu vašeg sajta da vas prepoznaju i citiraju AI asistenti poput ChatGPT-a, Perplexity-ja i Google AI Overviews." />
+  <link rel="llms-txt" href="https://quantex.rs/llms.txt" type="text/plain" />
+  <meta property="og:type" content="article" />
   <meta property="og:url" content="https://quantex.rs/usluge/aeo.html" />
-  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Šta je AEO optimizacija i kako dopunjuje SEO? | Quantex" />
+  <meta property="og:description" content="Vodič kroz sadržaj koji daje jasne odgovore, bez tehničkog žargona i bez obećanja citiranja u AI sistemima." />
+  <meta property="og:image" content="https://quantex.rs/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="sr_RS" />
+  <meta property="og:site_name" content="Quantex" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Šta je AEO optimizacija? | Quantex" />
+  <meta name="twitter:description" content="Direktni odgovori, FAQ, strukturirani podaci i jasne činjenice, uključeni u svaki Quantex sajt." />
+  <meta name="twitter:image" content="https://quantex.rs/assets/og-image.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -22,6 +32,20 @@
   <link rel="stylesheet" href="../css/animations.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
   <link rel="stylesheet" href="../css/pages.css" />
+  <link rel="stylesheet" href="../css/brand.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AEO optimizacija u izradi sajta",
+    "url": "https://quantex.rs/usluge/aeo.html",
+    "provider": {"@type": "Organization", "name": "Quantex", "url": "https://quantex.rs/"},
+    "description": "Oblikovanje direktnih odgovora, čestih pitanja, strukturiranih podataka i jasnih poslovnih činjenica kao deo izrade svakog standardnog poslovnog sajta.",
+    "serviceType": "Izrada sajta sa AEO i SEO optimizacijom",
+    "areaServed": ["Srbija", "Hrvatska", "Bosna i Hercegovina", "Crna Gora", "Severna Makedonija", "Slovenija"],
+    "offers": {"@type": "Offer", "url": "https://quantex.rs/usluge/izrada-sajtova.html", "price": "500", "priceCurrency": "EUR", "description": "Kompletan standardni poslovni sajt sa AEO i SEO optimizacijom"}
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -29,19 +53,8 @@
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Početna", "item": "https://quantex.rs/"},
       {"@type": "ListItem", "position": 2, "name": "Usluge", "item": "https://quantex.rs/#usluge"},
-      {"@type": "ListItem", "position": 3, "name": "AEO optimizacija"}
+      {"@type": "ListItem", "position": 3, "name": "AEO optimizacija", "item": "https://quantex.rs/usluge/aeo.html"}
     ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "AEO optimizacija",
-    "provider": {"@type": "Organization", "name": "Quantex"},
-    "description": "Optimizacija sadržaja i strukture sajta da vas prepoznaju i citiraju AI asistenti i pretrage poput ChatGPT-a, Perplexity-ja i Google AI Overviews.",
-    "areaServed": "RS",
-    "serviceType": "AEO optimizacija"
   }
   </script>
   <script type="application/ld+json">
@@ -49,15 +62,15 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "Šta je AEO i po čemu se razlikuje od SEO-a?", "acceptedAnswer": {"@type": "Answer", "text": "AEO (Answer Engine Optimization) je optimizacija sadržaja tako da ga AI asistenti poput ChatGPT-a, Perplexity-ja i Google AI Overviews prepoznaju, razumeju i citiraju kao izvor odgovora. Dok SEO cilja klasičnu listu rezultata pretrage, AEO cilja direktan odgovor koji korisnik dobija od AI sistema, bez klika na sajt. To postižemo strukturiranim podacima, jasnom FAQ strukturom i sadržajem pisanim kao direktan odgovor na pitanja."}},
-      {"@type": "Question", "name": "Da li AEO zamenjuje SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. AEO i SEO su komplementarni, ne konkurentski pristupi. Klasična pretraga i dalje generiše značajan deo saobraćaja, dok AI asistenti postaju dodatni kanal preko kojeg korisnici dolaze do informacija i firmi. Sajt koji je tehnički dobro postavljen za SEO ima solidnu osnovu i za AEO, ali AEO zahteva dodatne korake poput strukturiranih podataka i sadržaja pisanog kao direktan odgovor."}},
-      {"@type": "Question", "name": "Kako se meri uspeh AEO optimizacije?", "acceptedAnswer": {"@type": "Answer", "text": "Merenje AEO uspeha je i dalje razvijajuća oblast jer AI platforme ne nude standardizovane analitičke alate poput onih za klasičnu pretragu. Pratimo pojavljivanje i citiranje vašeg sajta u odgovorima AI asistenata kroz ručne i alatima potpomognute provere, promene u direktnom saobraćaju sa AI platformi tamo gde je to merljivo, i indirektne signale poput porasta upita koji ukazuju da su korisnici već upoznati sa vašom ponudom pre kontakta."}},
-      {"@type": "Question", "name": "Koji AI asistenti su najvažniji za AEO?", "acceptedAnswer": {"@type": "Answer", "text": "Trenutno je najveći fokus na Google AI Overviews, zbog obima korisnika klasične Google pretrage, kao i na ChatGPT i Perplexity, koji sve više preuzimaju ulogu istraživačkog alata. Ekosistem se brzo menja i novi asistenti i funkcije se pojavljuju redovno, zbog čega AEO pristup mora ostati fleksibilan i praćen kontinuirano."}},
-      {"@type": "Question", "name": "Da li mala firma treba AEO?", "acceptedAnswer": {"@type": "Answer", "text": "Da, posebno firme čiji klijenti istražuju usluge postavljanjem pitanja pre nego što kontaktiraju nekoga - na primer advokatske kancelarije, konsultanti, zdravstvene usluge i lokalni biznisi. AEO za manju firmu često znači jasnije strukturiranje postojećeg sadržaja i dodavanje FAQ sekcija, što je relativno pristupačan i visoko isplativ prvi korak."}}
+      {"@type": "Question", "name": "Šta je AEO u jednoj rečenici?", "acceptedAnswer": {"@type": "Answer", "text": "AEO je način uređivanja sadržaja i poslovnih informacija da sistemi za odgovaranje lakše razumeju šta biznis nudi i gde se na sajtu nalaze jasni odgovori na konkretna pitanja."}},
+      {"@type": "Question", "name": "Da li AEO zamenjuje SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. SEO pomaže vidljivosti i razumevanju stranica u klasičnoj pretrazi, dok AEO dodatno uređuje odgovore i činjenice za sisteme koji sastavljaju odgovor za korisnika. Dobar tehnički i sadržajni temelj koristi obema oblastima."}},
+      {"@type": "Question", "name": "Da li strukturirani podaci garantuju citiranje u AI odgovorima?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. Strukturirani podaci opisuju sadržaj na standardizovan način, ali svaka platforma samostalno bira izvore i način prikaza. Zato ne garantujemo citiranje u ChatGPT-u, Perplexity-ju, Google AI Overviews niti drugom sistemu."}},
+      {"@type": "Question", "name": "Da li je AEO uključen u cenu sajta?", "acceptedAnswer": {"@type": "Answer", "text": "Da. Direktni odgovori, relevantna česta pitanja, jasne poslovne činjenice i odgovarajući strukturirani podaci ulaze u svaki standardni poslovni sajt od €500. Ne postoji obavezan AEO paket koji moraš da kupiš posebno."}},
+      {"@type": "Question", "name": "Moram li da pišem dodatne tekstove?", "acceptedAnswer": {"@type": "Answer", "text": "Ne moraš. Osnovni sadržaj i odgovore pripremamo u okviru izrade, na osnovu informacija o tvom biznisu. Ako kasnije želiš nove teme, možeš povremeno da naručiš objavu za €12 ili da nastaviš bez dodatnog sadržaja."}},
+      {"@type": "Question", "name": "Kako znam da li AEO ima smisla za moj biznis?", "acceptedAnswer": {"@type": "Answer", "text": "Ako klijenti pre kontakta pitaju šta nudiš, koliko nešto traje, gde radiš, šta ulazi u cenu ili kako da izaberu uslugu, imaš konkretna pitanja koja treba jasno da odgovoriš. AEO počinje od tih stvarnih potreba, a ne od dodavanja tehničkih oznaka radi samih oznaka."}}
     ]
   }
   </script>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0VB7R2391"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -67,325 +80,181 @@
   </script>
 </head>
 <body>
-
-  <header class="site-header scrolled" id="site-header">
+  <header class="site-header scrolled" id="site-header" role="banner">
     <nav class="nav-container" aria-label="Glavna navigacija">
-      <a href="../index.html" class="nav-logo" aria-label="Quantex početna strana">
-        <img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" />
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu">
-        <span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span>
-      </button>
+      <a href="../index.html" class="nav-logo" aria-label="Quantex početna strana"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
       <ul class="nav-links" id="navMenu" role="list">
         <li class="nav-item has-dropdown">
-          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">
-            Usluge
-            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">Usluge <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="nav-dropdown" id="uslugeDropdown" role="menu">
-            <li role="none"><a href="seo.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>SEO optimizacija</span></a></li>
-            <li role="none"><a href="aeo.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>AEO optimizacija</span></a></li>
-            <li role="none"><a href="izrada-sajtova.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Izrada web sajtova</span></a></li>
-            <li role="none"><a href="web-aplikacije.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Izrada web aplikacija</span></a></li>
+            <li role="none"><a href="izrada-sajtova.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">01</span><span>Izrada sajta</span></a></li>
+            <li role="none"><a href="sadrzaj.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">02</span><span>Sadržaj za sajt i mreže</span></a></li>
+            <li role="none"><a href="reklame.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">03</span><span>Vođenje reklama</span></a></li>
+            <li role="none"><a href="plan-i-identitet.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">04</span><span>Plan i vizuelni identitet</span></a></li>
+            <li role="none"><a href="seo.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">05</span><span>SEO i AEO</span></a></li>
+            <li role="none"><a href="web-aplikacije.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">06</span><span>Aplikacije i automatizacija</span></a></li>
           </ul>
         </li>
+        <li><a href="../cenovnik.html" class="nav-link">Cenovnik</a></li>
+        <li><a href="../case-studies.html" class="nav-link">Projekti</a></li>
         <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
-        <li><a href="../case-studies.html" class="nav-link">Studije slučaja</a></li>
-        <li><a href="../vodic.html" class="nav-link" style="color:var(--accent-light);font-weight:600;">Besplatni vodič</a></li>
-        <li>
-          <a href="../index.html#kontakt" class="nav-cta-btn" aria-label="Zakažite analitički razgovor sa Quantex timom">
-            Zakažite razgovor
-          </a>
-        </li>
-        <li>
-          <a href="/en/services/aeo.html" class="nav-lang-toggle" aria-label="Switch to English">EN</a>
-        </li>
+        <li><a href="../index.html#ideja" class="nav-cta-btn">Pošalji svoju ideju</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="page-hero">
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="hero-h1">
       <div class="container page-hero-inner">
         <nav class="breadcrumb" aria-label="Putanja">
-          <a href="../index.html">Početna</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <a href="../index.html#usluge">Usluge</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <span class="breadcrumb-current">AEO optimizacija</span>
+          <a href="../index.html">Početna</a><span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <a href="../index.html#usluge">Usluge</a><span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span class="breadcrumb-current" aria-current="page">AEO optimizacija</span>
         </nav>
-        <div class="page-tag">Usluga</div>
-        <h1 class="page-h1 animate-fade-up">
-          AEO optimizacija, da vas<br/><span class="text-gradient">pronađu i AI asistenti, ne samo Google</span>
-        </h1>
-        <p class="page-intro animate-fade-up" style="animation-delay:0.1s">
-          Sve više ljudi umesto klasičnog upita u pretragu postavlja pitanje ChatGPT-u, Perplexity-ju ili dobija direktan odgovor kroz Google AI Overviews. Da bi vaš sajt bio prepoznat i naveden kao izvor u tim odgovorima, potrebna je namenska optimizacija - strukturirani podaci, sadržaj pisan u jasnom FAQ formatu i autoritativno, precizno pisanje koje AI sistemi mogu pouzdano da citiraju.
-        </p>
-        <div class="page-hero-actions animate-fade-up" style="animation-delay:0.2s">
-          <a href="../index.html#kontakt" class="btn btn-primary">Zakažite besplatnu analizu <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <a href="../index.html#projekti" class="btn btn-secondary">Pogledajte projekte</a>
+        <div class="page-tag">AEO objašnjen ljudskim jezikom</div>
+        <h1 id="hero-h1" class="page-h1 animate-fade-up">Kada neko postavi pitanje, tvoj sajt treba da ima <span class="text-gradient">jasan odgovor.</span></h1>
+        <p class="page-intro animate-fade-up" style="animation-delay:.1s">AEO ili optimizacija za sisteme za odgovaranje uređuje sadržaj tako da alati koji sastavljaju odgovore mogu lakše da razumeju tvoj biznis. To nije zamena za SEO niti garancija citiranja. Kod Quantexa je deo svakog sajta od €500, od prvog dana.</p>
+        <div class="page-hero-actions animate-fade-up" style="animation-delay:.2s">
+          <a href="../index.html#ideja" class="btn btn-primary">Pošalji ideju za sajt <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="seo.html" class="btn btn-secondary">Kako SEO i AEO rade zajedno</a>
         </div>
       </div>
     </section>
 
-    <!-- What is it -->
-    <section class="content-section section-padding">
+    <section class="home-section" aria-labelledby="definicija-h2">
+      <div class="container home-split">
+        <div>
+          <div class="home-kicker">Šta zapravo znači AEO</div>
+          <h2 id="definicija-h2" class="home-h2">Manje magle. <span>Više jasnih, proverljivih informacija.</span></h2>
+          <p class="home-copy">U klasičnoj pretrazi korisnik često bira jedan od ponuđenih linkova. Sistem za odgovaranje može umesto toga da sastavi sažet odgovor iz više izvora. AEO se bavi time da tvoj sadržaj bude jasan, dostupan i koristan kada neko traži baš ono što ti objašnjavaš.</p>
+          <p class="home-copy">U praksi to znači da stranica ne govori samo da si „najbolji”, već navodi šta radiš, za koga, gde, pod kojim uslovima i kako se dolazi do tebe. Konkretno pitanje dobija konkretan odgovor pre dodatnog objašnjenja.</p>
+          <p class="home-copy">AI sistemi i pretraživači sami odlučuju koje izvore koriste. Zato dobar AEO nije obećanje pominjanja, već kvalitetniji način predstavljanja istih činjenica i ljudima i mašinama.</p>
+        </div>
+        <aside class="home-price-card" aria-label="AEO u ceni izrade sajta">
+          <div class="home-kicker">Bez posebnog AEO paketa</div>
+          <h3>Uključeno u standardni poslovni sajt</h3>
+          <div class="home-price">€500 <small>jednokratno</small></div>
+          <p>SEO i AEO osnova dolaze zajedno sa strukturom, sadržajem, dizajnom i tehničkom izradom.</p>
+          <ul><li>Direktni odgovori i relevantni FAQ</li><li>Odgovarajući strukturirani podaci</li><li>Jasne poslovne činjenice</li><li>Bez obaveznog mesečnog nastavka</li></ul>
+          <a href="../index.html#ideja" class="btn btn-primary">Pošalji svoju ideju</a>
+          <p class="home-price-note">Prva verzija standardnog sajta za 7 dana od dogovorenog obima i osnovnih informacija.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="home-section home-section-alt" aria-labelledby="seo-aeo-h2">
       <div class="container">
+        <div class="home-section-head">
+          <div class="home-kicker">Kako AEO dopunjuje SEO</div>
+          <h2 id="seo-aeo-h2" class="home-h2">Ne biraš jedno ili drugo. <span>Isti sadržaj mora da radi u oba konteksta.</span></h2>
+          <p class="home-copy">SEO i AEO dele tehničku dostupnost, dobru strukturu i koristan sadržaj. Razlika je u načinu na koji korisnik dolazi do informacije i u tome kako sistem može da je prikaže.</p>
+        </div>
         <div class="content-grid">
-          <div class="content-block animate-on-scroll">
-            <h2>Šta je AEO i zašto je bitan</h2>
-            <p>Način na koji ljudi traže informacije se menja. Umesto da otkucaju kratak upit i prelistaju listu linkova, sve češće postavljaju puno pitanje AI asistentu i očekuju direktan, gotov odgovor - bez potrebe da uopšte posete neki sajt.</p>
-            <p>Za firmu to znači novu vrstu vidljivosti: ne biti na prvoj strani rezultata pretrage, već biti izvor koji AI asistent navede ili citira unutar samog odgovora. Da bi se to desilo, sadržaj mora biti strukturiran i napisan na način koji AI sistemi mogu lako da razumeju, izdvoje i pouzdano prenesu dalje.</p>
-            <p>AEO ne zamenjuje SEO - nadograđuje ga za novi kanal otkrivanja informacija.</p>
-          </div>
-          <div class="feature-list animate-on-scroll" style="animation-delay:0.1s">
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
-              <div class="feature-text"><h3>Strukturirani podaci i schema</h3><p>Označavanje sadržaja markupom koji AI sistemima jasno prenosi o čemu je stranica i kako su informacije organizovane.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
-              <div class="feature-text"><h3>Sadržaj pisan kao direktan odgovor</h3><p>Rečenice i pasusi formulisani tako da samostalno odgovaraju na konkretno pitanje, spremni za citiranje.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-              <div class="feature-text"><h3>Jasna FAQ struktura</h3><p>Pitanja i odgovori organizovani u prepoznatljivom formatu koji AI asistenti lako parsiraju i preuzimaju.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-              <div class="feature-text"><h3>Praćenje vidljivosti u AI odgovorima</h3><p>Redovna provera da li se i kako vaš sajt pojavljuje kada korisnici postavljaju relevantna pitanja AI asistentima.</p></div>
-            </div>
-          </div>
+          <article class="content-block">
+            <h3>SEO: od upita do relevantne stranice</h3>
+            <p>Pretraživač procenjuje stranice i prikazuje rezultate za određeni upit. SEO zato povezuje nameru pretrage sa stranicom koja najjasnije pokriva temu, uz tehničke uslove za pronalaženje i indeksiranje.</p>
+            <ul><li>Stranica je dostupna i tehnički uredna</li><li>Naslov i sadržaj odgovaraju temi</li><li>Interne veze objašnjavaju odnos tema</li><li>Lokalne i poslovne informacije su jasne</li></ul>
+            <a href="seo.html" class="home-text-link">Detaljnije o SEO osnovi <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="content-block">
+            <h3>AEO: od pitanja do upotrebljivog odgovora</h3>
+            <p>Sistem za odgovaranje pokušava da izdvoji i spoji informacije. AEO zato dodatno naglašava direktne odgovore, nedvosmislene činjenice, korisna česta pitanja i oznake koje opisuju značenje sadržaja.</p>
+            <ul><li>Odgovor stoji odmah uz pitanje</li><li>Pojmovi su objašnjeni prirodnim jezikom</li><li>Podaci o biznisu su međusobno usklađeni</li><li>Izvor i autor sadržaja mogu da se razumeju</li></ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- SEO vs AEO -->
-    <section class="content-section section-padding" style="background: var(--bg-elevated);">
+    <section class="home-section" aria-labelledby="ukljuceno-h2">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">Razlika</div>
-          <h2 class="section-title animate-on-scroll">SEO vs <span class="text-gradient">AEO</span></h2>
+        <div class="home-section-head center">
+          <div class="home-kicker">Šta ugrađujemo u sajt</div>
+          <h2 id="ukljuceno-h2" class="home-h2">AEO nije jedna oznaka u kodu. <span>To je niz jasnih odluka.</span></h2>
         </div>
-        <div class="content-grid animate-on-scroll">
-          <div class="content-block">
-            <h3>Šta cilja SEO</h3>
-            <p>Klasična SEO optimizacija cilja poziciju vašeg sajta u listi rezultata pretrage. Cilj je da korisnik vidi vaš link, klikne na njega i dođe na vaš sajt gde dalje istražuje ponudu.</p>
-            <p>Ovo i dalje predstavlja veliki deo saobraćaja i ostaje temelj digitalne vidljivosti - tehnički zdrav, brz i dobro strukturiran sajt je preduslov za oba pristupa.</p>
-            <ul>
-              <li>Fokus na poziciju u listi rezultata pretrage</li>
-              <li>Cilj je klik i poseta sajtu</li>
-              <li>Meri se rangom, klikovima i saobraćajem</li>
-            </ul>
-          </div>
-          <div class="content-block">
-            <h3>Šta cilja AEO</h3>
-            <p>AEO cilja da vaš sadržaj bude sam odgovor koji AI asistent daje korisniku, ili da bude naveden kao izvor tog odgovora. Korisnik često dobija informaciju direktno, bez klika, ali vaš brend postaje deo odgovora koji vidi.</p>
-            <p>SEO i AEO nisu konkurencija - to su dva komplementarna kanala kroz koje se korisnik danas informiše, i dobra osnova za jedno gotovo uvek pomaže i drugom.</p>
-            <ul>
-              <li>Fokus na to da sadržaj bude citiran u AI odgovoru</li>
-              <li>Cilj je prepoznavanje i pominjanje brenda</li>
-              <li>Meri se pojavljivanjem i citiranjem u AI odgovorima</li>
-            </ul>
-          </div>
+        <div class="home-grid-3">
+          <article class="home-card"><span class="home-number">01 / ODGOVORI</span><h3>Direktan sadržaj</h3><p>Ključna pitanja dobijaju kratak, samostalan odgovor, a zatim potrebne detalje. Čitalac odmah razume suštinu, bez kopanja kroz opšte marketinške fraze.</p></article>
+          <article class="home-card"><span class="home-number">02 / FAQ</span><h3>Stvarna česta pitanja</h3><p>Biramo pitanja koja klijenti zaista postavljaju o usluzi, procesu, ceni, lokaciji ili sledećem koraku. FAQ ne služi za veštačko ponavljanje ključnih reči.</p></article>
+          <article class="home-card"><span class="home-number">03 / SCHEMA</span><h3>Strukturirani podaci</h3><p>Schema oznake opisuju organizaciju, uslugu, putanju i pitanja koja su vidljiva na stranici. Pomažu mašinsko tumačenje, ali ne kontrolišu izbor izvora.</p></article>
+          <article class="home-card"><span class="home-number">04 / ČINJENICE</span><h3>Jasan identitet biznisa</h3><p>Naziv, kontakt, područje rada, ponuda i uslovi saradnje moraju biti dosledni. Različiti podaci na raznim stranicama stvaraju nesigurnost i za ljude i za sisteme.</p></article>
+          <article class="home-card"><span class="home-number">05 / KORISNOST</span><h3>Sadržaj sa razlogom</h3><p>Tekst treba nešto da objasni, uporedi ili olakša odluku. Ne dodajemo generičke stranice samo da bi sajt izgledao veće ili da bi pokrio što više fraza.</p></article>
+          <article class="home-card"><span class="home-number">06 / POVERENJE</span><h3>Utemeljena reputacija</h3><p>Predstavi stvarno iskustvo, jasan način rada i proverljive informacije. Recenzije i reference moraju biti autentične, a tvrdnje o rezultatima potkrepljene podacima.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- Use Cases -->
-    <section class="content-section section-padding">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">Primene</div>
-          <h2 class="section-title animate-on-scroll">Kome AEO <span class="text-gradient">najviše donosi</span></h2>
+    <section class="home-section home-section-alt" aria-labelledby="primer-h2">
+      <div class="container home-split">
+        <div>
+          <div class="home-kicker">Primer dobre strukture</div>
+          <h2 id="primer-h2" class="home-h2">Pitanje, odgovor, zatim <span>dovoljno detalja za odluku.</span></h2>
+          <p class="home-copy">Zamisli da neko pita: „Da li mogu da zakažem masažu bez telefonskog poziva?” Stranica ne treba da krene od priče o filozofiji studija. Prvo treba jasno da odgovori da li je onlajn zakazivanje dostupno i kako funkcioniše.</p>
+          <p class="home-copy">Nakon toga mogu da dođu dostupni termini, trajanje tretmana, lokacija i pravila otkazivanja. Tako čitalac dobija ono što traži, a sistem koji obrađuje stranicu ima manje neodređenih tvrdnji i više konkretnih informacija.</p>
+          <p class="home-copy">Ovo je primer strukture sadržaja, ne tvrdnja da će određena platforma prikazati ili citirati takav odgovor.</p>
         </div>
-        <div class="use-cases-grid">
-          <div class="use-case-card animate-on-scroll">
-            <div class="use-case-industry">Usluge sa čestim pitanjima</div>
-            <h3>Advokati, konsultanti, zdravstvo</h3>
-            <p>Klijenti ovih usluga često prvo postave pitanje AI asistentu pre nego što kontaktiraju nekoga - o postupku, pravima, cenama ili opcijama. Jasno strukturiran sadržaj povećava šansu da baš vaš odgovor bude taj koji AI asistent prenese.</p>
-            <div class="use-case-result">Veća šansa da budete pomenuti pre prvog kontakta</div>
-          </div>
-          <div class="use-case-card animate-on-scroll" style="animation-delay:0.08s">
-            <div class="use-case-industry">Lokalni biznis</div>
-            <h3>Radnje, usluge i lokalne firme</h3>
-            <p>Kada korisnik pita AI asistenta za preporuku u svom gradu ili oblasti, dobro strukturirane informacije o radnom vremenu, uslugama i lokaciji povećavaju šansu da vas asistent uopšte spomene.</p>
-            <div class="use-case-result">Veća vidljivost u lokalno orijentisanim upitima</div>
-          </div>
-          <div class="use-case-card animate-on-scroll" style="animation-delay:0.16s">
-            <div class="use-case-industry">B2B i SaaS firme</div>
-            <h3>Kompanije sa kompleksnom ponudom</h3>
-            <p>B2B kupci sve češće koriste AI asistente da uporede rešenja pre nego što kontaktiraju prodaju. Jasno artikulisan sadržaj o funkcionalnostima i razlikama u odnosu na konkurenciju povećava šanse da budete deo tog poređenja.</p>
-            <div class="use-case-result">Prisutnost u AI-potpomognutom istraživanju kupaca</div>
-          </div>
+        <div class="feature-list">
+          <article class="feature-item"><div class="feature-text"><h3>1. Direktan odgovor</h3><p>Jasno reci da, ne ili pod kojim uslovima, bez izbegavanja suštine.</p></div></article>
+          <article class="feature-item"><div class="feature-text"><h3>2. Potrebni detalji</h3><p>Dodaj postupak, ograničenja, cenu ili lokaciju samo kada pomažu korisniku.</p></div></article>
+          <article class="feature-item"><div class="feature-text"><h3>3. Sledeći korak</h3><p>Omogući zakazivanje, kontakt ili čitanje povezane teme bez pritiska.</p></div></article>
         </div>
       </div>
     </section>
 
-    <!-- How it works -->
-    <section class="content-section section-padding">
+    <section class="home-section" aria-labelledby="nastavak-h2">
+      <div class="container home-split">
+        <div>
+          <div class="home-kicker">Novi odgovori kada ih biznis zatreba</div>
+          <h2 id="nastavak-h2" class="home-h2">Ne moraš stalno da objavljuješ. <span>Objavljuj kada imaš šta korisno da kažeš.</span></h2>
+          <p class="home-copy">Osnovna AEO struktura već je uključena u izradu. Tokom vremena se mogu pojaviti nova pitanja, usluge ili promene u procesu. Tada ima smisla dopuniti sajt, a ne objavljivati sadržaj samo radi kalendara.</p>
+          <p class="home-copy">Ako ne želiš sam da pišeš i postavljaš, za €12 po objavi pripremljujemo blog tekst, postavljamo ga na sajt i pravimo carousel i caption. Nema minimalnog broja objava ni obaveznog mesečnog ugovora.</p>
+          <a href="sadrzaj.html" class="home-text-link">Kako funkcioniše sadržaj po objavi <span aria-hidden="true">→</span></a>
+        </div>
+        <aside class="home-price-card" aria-label="Opcioni sadržaj za sajt i društvene mreže">
+          <div class="home-kicker">Samo ako ti je potrebno</div>
+          <h3>Jedna tema, sadržaj za više kanala</h3>
+          <div class="home-price">€12 <small>po objavi</small></div>
+          <p>Blog objava postavljena na sajt, carousel i caption za društvene mreže.</p>
+          <ul><li>Bez mesečne obaveze</li><li>Bez minimalnog broja objava</li><li>Tema prema stvarnim potrebama biznisa</li><li>Možeš i dalje sve da prepustiš nama</li></ul>
+          <a href="../index.html#ideja" class="btn btn-primary">Pošalji temu ili ideju</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="page-faq section-padding home-section-alt" aria-labelledby="faq-h2">
       <div class="container">
-        <div class="content-grid reverse animate-on-scroll">
-          <div class="content-block">
-            <h2>Kako sprovodimo AEO optimizaciju</h2>
-            <p>Proces počinje detaljnim auditom postojećeg sadržaja vašeg sajta - proveravamo koje teme već pokrivate, kako su formulisane, i gde nedostaju jasni odgovori na pitanja koja vaši potencijalni klijenti zaista postavljaju.</p>
-            <p>Zatim sadržaj strukturiramo i dopunjujemo: dodajemo schema markup, formiramo jasne FAQ sekcije i prepisujemo ključne pasuse tako da samostalno odgovaraju na konkretno pitanje, spremni za preuzimanje od strane AI sistema.</p>
-            <p>Nakon toga pratimo kako se i da li se vaš sadržaj pojavljuje u odgovorima AI asistenata, i kontinuirano prilagođavamo pristup - ovo je oblast koja se menja brzo, pa AEO tretiramo kao stalni proces, ne jednokratni projekat.</p>
-            <ul>
-              <li>Audit trenutnog sadržaja i identifikacija praznina</li>
-              <li>Strukturiranje sadržaja i implementacija schema markup-a</li>
-              <li>Praćenje pojavljivanja i citiranja u AI odgovorima</li>
-              <li>Kontinuirano prilagođavanje kako se AI modeli i platforme menjaju</li>
-            </ul>
-          </div>
-          <div class="feature-list animate-on-scroll" style="animation-delay:0.1s">
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4a7 7 0 100 14 7 7 0 000-14zM21 21l-4.35-4.35"/></svg></div>
-              <div class="feature-text"><h3>Audit sadržaja</h3><p>Pregled postojećih stranica i identifikacija tema koje treba jasnije strukturirati.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h7"/></svg></div>
-              <div class="feature-text"><h3>Strukturiranje i schema</h3><p>Implementacija markupa i FAQ formata koji AI sistemi lako prepoznaju.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-              <div class="feature-text"><h3>Kontinuirano prilagođavanje</h3><p>Redovna revizija pristupa u skladu sa promenama u AI platformama.</p></div>
-            </div>
-          </div>
+        <div class="section-header"><div class="section-tag">Česta pitanja</div><h2 id="faq-h2" class="section-title">Još odgovora o <span class="text-gradient">AEO optimizaciji.</span></h2></div>
+        <div class="faq-grid">
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq1">Šta je AEO u jednoj rečenici?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq1" hidden><p>AEO je način uređivanja sadržaja i poslovnih informacija da sistemi za odgovaranje lakše razumeju šta biznis nudi i gde se na sajtu nalaze jasni odgovori na konkretna pitanja.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq2">Da li AEO zamenjuje SEO?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq2" hidden><p>Ne. SEO pomaže vidljivosti i razumevanju stranica u klasičnoj pretrazi, dok AEO dodatno uređuje odgovore i činjenice za sisteme koji sastavljaju odgovor za korisnika. Dobar tehnički i sadržajni temelj koristi obema oblastima.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq3">Da li strukturirani podaci garantuju citiranje u AI odgovorima?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq3" hidden><p>Ne. Strukturirani podaci opisuju sadržaj na standardizovan način, ali svaka platforma samostalno bira izvore i način prikaza. Zato ne garantujemo citiranje u ChatGPT-u, Perplexity-ju, Google AI Overviews niti drugom sistemu.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq4">Da li je AEO uključen u cenu sajta?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq4" hidden><p>Da. Direktni odgovori, relevantna česta pitanja, jasne poslovne činjenice i odgovarajući strukturirani podaci ulaze u svaki standardni poslovni sajt od €500. Ne postoji obavezan AEO paket koji moraš da kupiš posebno.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq5">Moram li da pišem dodatne tekstove?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq5" hidden><p>Ne moraš. Osnovni sadržaj i odgovore pripremamo u okviru izrade, na osnovu informacija o tvom biznisu. Ako kasnije želiš nove teme, možeš povremeno da naručiš objavu za €12 ili da nastaviš bez dodatnog sadržaja.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq6">Kako znam da li AEO ima smisla za moj biznis?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq6" hidden><p>Ako klijenti pre kontakta pitaju šta nudiš, koliko nešto traje, gde radiš, šta ulazi u cenu ili kako da izaberu uslugu, imaš konkretna pitanja koja treba jasno da odgovoriš. AEO počinje od tih stvarnih potreba, a ne od dodavanja tehničkih oznaka radi samih oznaka.</p></div></div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="page-faq section-padding" aria-labelledby="faq-h2">
+    <section class="page-cta" aria-labelledby="cta-h2">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">FAQ</div>
-          <h2 id="faq-h2" class="section-title animate-on-scroll">Česta pitanja o <span class="text-gradient">AEO optimizaciji</span></h2>
-        </div>
-        <div class="faq-grid animate-on-scroll">
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq1">Šta je AEO i po čemu se razlikuje od SEO-a?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq1" hidden><p>AEO (Answer Engine Optimization) je optimizacija sadržaja tako da ga AI asistenti poput ChatGPT-a, Perplexity-ja i Google AI Overviews prepoznaju, razumeju i citiraju kao izvor odgovora. Dok SEO cilja klasičnu listu rezultata pretrage, AEO cilja direktan odgovor koji korisnik dobija od AI sistema, bez klika na sajt. To postižemo strukturiranim podacima, jasnom FAQ strukturom i sadržajem pisanim kao direktan odgovor na pitanja.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq2">Da li AEO zamenjuje SEO?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq2" hidden><p>Ne. AEO i SEO su komplementarni, ne konkurentski pristupi. Klasična pretraga i dalje generiše značajan deo saobraćaja, dok AI asistenti postaju dodatni kanal preko kojeg korisnici dolaze do informacija i firmi. Sajt koji je tehnički dobro postavljen za SEO ima solidnu osnovu i za AEO, ali AEO zahteva dodatne korake poput strukturiranih podataka i sadržaja pisanog kao direktan odgovor.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq3">Kako se meri uspeh AEO optimizacije?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq3" hidden><p>Merenje AEO uspeha je i dalje razvijajuća oblast jer AI platforme ne nude standardizovane analitičke alate poput onih za klasičnu pretragu. Pratimo pojavljivanje i citiranje vašeg sajta u odgovorima AI asistenata kroz ručne i alatima potpomognute provere, promene u direktnom saobraćaju sa AI platformi tamo gde je to merljivo, i indirektne signale poput porasta upita koji ukazuju da su korisnici već upoznati sa vašom ponudom pre kontakta.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq4">Koji AI asistenti su najvažniji za AEO?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq4" hidden><p>Trenutno je najveći fokus na Google AI Overviews, zbog obima korisnika klasične Google pretrage, kao i na ChatGPT i Perplexity, koji sve više preuzimaju ulogu istraživačkog alata. Ekosistem se brzo menja i novi asistenti i funkcije se pojavljuju redovno, zbog čega AEO pristup mora ostati fleksibilan i praćen kontinuirano.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq5">Da li mala firma treba AEO?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq5" hidden><p>Da, posebno firme čiji klijenti istražuju usluge postavljanjem pitanja pre nego što kontaktiraju nekoga - na primer advokatske kancelarije, konsultanti, zdravstvene usluge i lokalni biznisi. AEO za manju firmu često znači jasnije strukturiranje postojećeg sadržaja i dodavanje FAQ sekcija, što je relativno pristupačan i visoko isplativ prvi korak.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cenovnik -->
-    <section class="content-section section-padding" style="background: var(--bg-elevated);">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">Cenovnik</div>
-          <h2 class="section-title animate-on-scroll">Transparentne cene bez <span class="text-gradient">skrivenih troškova</span></h2>
-          <p class="section-sub animate-on-scroll">Svaki paket uključuje postavljanje, inicijalnu optimizaciju i mesečno praćenje vidljivosti u AI odgovorima.</p>
-        </div>
-        <div class="pricing-grid">
-          <div class="pricing-card animate-on-scroll">
-            <div class="pricing-tier">Starter</div>
-            <div>
-              <span class="pricing-setup">€290 postavljanje</span>
-              <div class="pricing-monthly">
-                <span class="pricing-amount">€79</span>
-                <span class="pricing-period">/mesec</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Osnovna schema optimizacija</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>FAQ struktura za manji sajt</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Osnovni audit postojećeg sadržaja</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Mesečni pregled statusa</li>
-            </ul>
-            <a href="../index.html#kontakt" class="btn btn-secondary pricing-btn">Zakažite razgovor</a>
-          </div>
-          <div class="pricing-card pricing-card-featured animate-on-scroll" style="animation-delay:0.08s">
-            <div class="pricing-badge">Najpopularnije</div>
-            <div class="pricing-tier">Pro</div>
-            <div>
-              <span class="pricing-setup">€490 postavljanje</span>
-              <div class="pricing-monthly">
-                <span class="pricing-amount">€129</span>
-                <span class="pricing-period">/mesec</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Puna AEO optimizacija sajta</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Napredni schema markup na svim ključnim stranicama</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Praćenje vidljivosti u AI odgovorima</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Mesečni izveštaj</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Kontinuirano prilagođavanje sadržaja</li>
-            </ul>
-            <a href="../index.html#kontakt" class="btn btn-primary pricing-btn">Zakažite razgovor</a>
-          </div>
-          <div class="pricing-card animate-on-scroll" style="animation-delay:0.16s">
-            <div class="pricing-tier">Enterprise</div>
-            <div>
-              <span class="pricing-setup">Prilagođena cena</span>
-              <div class="pricing-monthly">
-                <span class="pricing-amount" style="font-size:1.5rem">Po dogovoru</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>AEO za sajtove sa velikim brojem stranica</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Prilagođena strategija po tržištu i industriji</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Direktna saradnja sa Quantex timom</li>
-            </ul>
-            <a href="../index.html#kontakt" class="btn btn-secondary pricing-btn">Kontaktirajte nas</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="page-cta">
-      <div class="container">
-        <h2 class="page-cta-title">Spremni da vas AI asistenti prepoznaju kao izvor?</h2>
-        <p class="page-cta-sub">Zakažite besplatnu analizu i pokazaćemo vam konkretno gde vaš sadržaj gubi šansu da bude citiran u AI odgovorima.</p>
-        <div class="page-cta-actions">
-          <a href="../index.html#kontakt" class="btn btn-primary">Zakažite besplatnu analizu <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <a href="../index.html#projekti" class="btn btn-secondary">Pogledajte projekte</a>
-        </div>
+        <h2 id="cta-h2" class="page-cta-title">Najbolji odgovori počinju od dobrog razumevanja tvog posla.</h2>
+        <p class="page-cta-sub">Opiši šta radiš ili šta želiš da pokreneš. Mi ćemo oblikovati sajt, sadržaj, SEO i AEO, bez obaveznih dodataka.</p>
+        <div class="page-cta-actions"><a href="../index.html#ideja" class="btn btn-primary">Pošalji svoju ideju <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><a href="seo.html" class="btn btn-secondary">Uporedi SEO i AEO</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="../index.html" class="nav-logo footer-logo"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a>
-          <p class="footer-tagline">SEO, AEO i izrada web sajtova i aplikacija prilagođenih vašem poslovnom modelu.</p>
-          <address class="footer-contact"><a href="mailto:office@quantex.rs" class="footer-contact-link">office@quantex.rs</a></address>
-        </div>
-        <nav class="footer-nav" aria-label="Usluge">
-          <h4 class="footer-nav-title">Usluge</h4>
-          <ul role="list">
-            <li><a href="seo.html" class="footer-link">SEO optimizacija</a></li>
-            <li><a href="aeo.html" class="footer-link">AEO optimizacija</a></li>
-            <li><a href="izrada-sajtova.html" class="footer-link">Izrada web sajtova</a></li>
-            <li><a href="web-aplikacije.html" class="footer-link">Izrada web aplikacija</a></li>
-          </ul>
-        </nav>
-        <nav class="footer-nav" aria-label="Ostalo">
-          <h4 class="footer-nav-title">Ostalo</h4>
-          <ul role="list">
-            <li><a href="../index.html#proces" class="footer-link">Naš Proces</a></li>
-            <li><a href="../blog/index.html" class="footer-link">Blog</a></li>
-            <li><a href="../index.html#projekti" class="footer-link">Naši projekti</a></li>
-            <li><a href="../index.html#kontakt" class="footer-link">Kontakt</a></li>
-          </ul>
-        </nav>
+        <div class="footer-brand"><a href="../index.html" class="nav-logo footer-logo" aria-label="Quantex početna"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a><p class="footer-tagline">Digitalni partner za ljude koji žele da rade i zarađuju od onoga što vole. Sajt, SEO, AEO, sadržaj i reklame, bez nepotrebnih obaveza.</p><address class="footer-contact"><a href="mailto:office@quantex.rs" class="footer-contact-link">office@quantex.rs</a></address></div>
+        <nav class="footer-nav" aria-label="Usluge"><h4 class="footer-nav-title">Usluge</h4><ul role="list"><li><a href="izrada-sajtova.html" class="footer-link">Izrada sajta</a></li><li><a href="sadrzaj.html" class="footer-link">Sadržaj</a></li><li><a href="reklame.html" class="footer-link">Reklame</a></li><li><a href="plan-i-identitet.html" class="footer-link">Plan i identitet</a></li><li><a href="web-aplikacije.html" class="footer-link">Aplikacije</a></li></ul></nav>
+        <nav class="footer-nav" aria-label="Navigacija"><h4 class="footer-nav-title">Quantex</h4><ul role="list"><li><a href="../index.html#kako-radimo" class="footer-link">Kako radimo</a></li><li><a href="../index.html#projekti" class="footer-link">Projekti</a></li><li><a href="../cenovnik.html" class="footer-link">Cenovnik</a></li><li><a href="../blog/index.html" class="footer-link">Blog</a></li><li><a href="../vodic.html" class="footer-link">Besplatni vodič</a></li><li><a href="../index.html#ideja" class="footer-link">Pošalji ideju</a></li></ul></nav>
+        <div class="footer-legal"><h4 class="footer-nav-title">Pravno</h4><ul role="list"><li><a href="../politika-privatnosti.html" class="footer-link">Politika privatnosti</a></li><li><a href="../uslovi-koriscenja.html" class="footer-link">Uslovi korišćenja</a></li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-copyright">&copy; <span id="copyright-year"></span> Quantex. Sva prava zadržana.</p>
-        <p class="footer-location">Beograd, Srbija</p>
-      </div>
+      <div class="footer-bottom"><p class="footer-copyright">&copy; <span id="copyright-year"></span> Quantex. Sva prava zadržana.</p><p class="footer-location">Beograd • Radimo širom Balkana</p></div>
     </div>
   </footer>
-
+  <button class="back-to-top" id="backToTop" aria-label="Povratak na vrh strane" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg></button>
   <script src="../js/animations.js" defer></script>
   <script src="../js/main.js" defer></script>
 </body>

@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="../assets/favicon.ico" sizes="any" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="../assets/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Izrada web aplikacija | Quantex</title>
-  <meta name="description" content="Quantex razvija prilagođene web aplikacije, interne alate, korisničke naloge i sisteme po meri vašeg poslovnog procesa. Fiksne cene, jasan proces." />
+  <meta name="author" content="Quantex" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Web aplikacije i AI automatizacija po meri | Quantex</title>
+  <meta name="description" content="Sistemi za zakazivanje, korisnički nalozi, interni alati, integracije i AI automatizacija kada biznisu treba više od sajta. Cena i rok isključivo prema obimu." />
   <link rel="canonical" href="https://quantex.rs/usluge/web-aplikacije.html" />
-  <link rel="alternate" hreflang="sr" href="https://quantex.rs/usluge/web-aplikacije.html" />
-  <link rel="alternate" hreflang="en" href="https://quantex.rs/en/services/web-applications.html" />
-  <meta property="og:title" content="Izrada web aplikacija | Quantex" />
-  <meta property="og:description" content="Quantex razvija prilagođene web aplikacije, interne alate, korisničke naloge i sisteme po meri vašeg poslovnog procesa. Fiksne cene, jasan proces." />
-  <meta property="og:url" content="https://quantex.rs/usluge/web-aplikacije.html" />
+  <link rel="llms-txt" href="https://quantex.rs/llms.txt" type="text/plain" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://quantex.rs/usluge/web-aplikacije.html" />
+  <meta property="og:title" content="Web aplikacije i automatizacija po meri | Quantex" />
+  <meta property="og:description" content="Opciona rešenja za zakazivanje, naloge, interne procese i integracije. Pisan obim, jasno vlasništvo i cena prema konkretnom projektu." />
+  <meta property="og:image" content="https://quantex.rs/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="sr_RS" />
+  <meta property="og:site_name" content="Quantex" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Web aplikacije i automatizacija po meri | Quantex" />
+  <meta name="twitter:description" content="Kada sajtu treba više funkcija, pravimo rešenje prema stvarnom procesu. Cena i rok zavise od pismeno dogovorenog obima." />
+  <meta name="twitter:image" content="https://quantex.rs/assets/og-image.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -22,6 +32,19 @@
   <link rel="stylesheet" href="../css/animations.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
   <link rel="stylesheet" href="../css/pages.css" />
+  <link rel="stylesheet" href="../css/brand.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Web aplikacije, integracije i AI automatizacija po meri",
+    "url": "https://quantex.rs/usluge/web-aplikacije.html",
+    "provider": {"@type": "Organization", "name": "Quantex", "url": "https://quantex.rs/"},
+    "description": "Projektovanje i razvoj sistema za zakazivanje, korisničkih naloga, internih alata, integracija i AI automatizacije prema pismeno definisanom obimu, ceni i roku.",
+    "serviceType": "Razvoj web aplikacija i poslovne automatizacije",
+    "areaServed": ["Srbija", "Hrvatska", "Bosna i Hercegovina", "Crna Gora", "Severna Makedonija", "Slovenija"]
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -29,19 +52,8 @@
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Početna", "item": "https://quantex.rs/"},
       {"@type": "ListItem", "position": 2, "name": "Usluge", "item": "https://quantex.rs/#usluge"},
-      {"@type": "ListItem", "position": 3, "name": "Izrada web aplikacija"}
+      {"@type": "ListItem", "position": 3, "name": "Aplikacije i automatizacija", "item": "https://quantex.rs/usluge/web-aplikacije.html"}
     ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Izrada web aplikacija",
-    "provider": {"@type": "Organization", "name": "Quantex"},
-    "description": "Razvoj prilagođenih web aplikacija, interni alati, korisnički nalozi i sistemi po meri poslovnog procesa klijenta.",
-    "areaServed": "RS",
-    "serviceType": "Izrada web aplikacija"
   }
   </script>
   <script type="application/ld+json">
@@ -49,15 +61,15 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "Koja je razlika između sajta i web aplikacije?", "acceptedAnswer": {"@type": "Answer", "text": "Sajt prvenstveno predstavlja informacije i brend, prezentuje usluge, gradi poverenje i generiše upite. Web aplikacija ima interaktivnu funkcionalnost: korisnički nalozi, obrada podataka, interne alate ili sisteme koje koriste zaposleni ili klijenti. Mnogi projekti počinju kao sajt i vremenom dobijaju aplikativne funkcionalnosti."}},
-      {"@type": "Question", "name": "Koliko traje razvoj web aplikacije?", "acceptedAnswer": {"@type": "Answer", "text": "Zavisi od obima funkcionalnosti. Jednostavnija aplikacija ili MVP se tipično razvija u nekoliko nedelja, dok kompleksniji sistemi sa više integracija i uloga korisnika zahtevaju duži period. Tačan rok definišemo zajedno nakon mapiranja zahteva, pre početka razvoja."}},
-      {"@type": "Question", "name": "Da li aplikacija radi na mobilnom telefonu?", "acceptedAnswer": {"@type": "Answer", "text": "Da. Aplikacije koje razvijamo su responzivne i prilagođene radu na mobilnim uređajima, tabletima i desktop računarima, osim ako priroda funkcionalnosti zahteva drugačiji pristup, o čemu se dogovaramo unapred."}},
-      {"@type": "Question", "name": "Ko poseduje kod i podatke nakon završetka projekta?", "acceptedAnswer": {"@type": "Answer", "text": "Vi. Kod, baza podataka i svi povezani nalozi ostaju vlasništvo klijenta. Quantex ne zadržava ekskluzivna prava niti uslovljava dalji rad na aplikaciji isključivo saradnjom sa nama."}},
-      {"@type": "Question", "name": "Kako izgleda podrška nakon lansiranja?", "acceptedAnswer": {"@type": "Answer", "text": "Nakon lansiranja pratimo rad aplikacije, rešavamo eventualne probleme i po dogovoru nastavljamo sa manjim izmenama i unapređenjima. Obim podrške i mesečna naknada zavise od izabranog paketa i definišu se unapred, bez skrivenih troškova."}}
+      {"@type": "Question", "name": "Kada mi je potrebna aplikacija, a kada je dovoljan sajt?", "acceptedAnswer": {"@type": "Answer", "text": "Sajt je dovoljan kada treba da predstavi ponudu, odgovori na pitanja i omogući kontakt. Aplikacija dobija smisao kada korisnici ili zaposleni treba nešto da urade u sistemu, na primer da zakažu termin, prate status, unose podatke ili koriste poseban nalog. Ako običan kontakt obrazac rešava problem, ne predlažemo složeniju izradu."}},
+      {"@type": "Question", "name": "Koliko košta web aplikacija?", "acceptedAnswer": {"@type": "Answer", "text": "Cena se određuje isključivo prema obimu. Zavisi od funkcija, korisničkih uloga, integracija, zahteva za podacima i nivoa testiranja. Pre početka dobijaš pisan predlog sa obimom, ukupnom cenom i onim što nije uključeno."}},
+      {"@type": "Question", "name": "Da li važi rok od 7 dana kao za standardni sajt?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. Rok od 7 dana odnosi se na prvu verziju standardnog poslovnog sajta. Za aplikaciju i automatizaciju rok se procenjuje posebno nakon mapiranja zahteva i potvrđuje pre početka, zajedno sa fazama rada."}},
+      {"@type": "Question", "name": "Ko poseduje kod, podatke i naloge?", "acceptedAnswer": {"@type": "Answer", "text": "Kod, podaci i povezani nalozi pripadaju tebi, kako je definisano pismenim dogovorom. Pre početka preciziramo i pristup repozitorijumu, hostingu, domenima i uslugama trećih strana, kako dalji rad ne bi zavisio od nas."}},
+      {"@type": "Question", "name": "Možemo li da krenemo od jedne funkcije?", "acceptedAnswer": {"@type": "Answer", "text": "Da, kada je tehnički i poslovno razumno. Možemo prvo da definišemo najmanji koristan obim, pa tek kasnije dodajemo module. Cilj nije da odmah platiš veliki sistem, već da prvi deo reši konkretan problem i ostavi jasan put za nadogradnju."}},
+      {"@type": "Question", "name": "Da li je podrška posle lansiranja obavezna?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. Dalja podrška i izmene dogovaramo po potrebi, bez automatskog mesečnog paketa. Pre lansiranja preciziramo šta čini završetak projekta, koje su odgovornosti za hosting i servise i kako se dogovaraju eventualne naredne izmene."}}
     ]
   }
   </script>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0VB7R2391"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -67,321 +79,171 @@
   </script>
 </head>
 <body>
-
-  <header class="site-header scrolled" id="site-header">
+  <header class="site-header scrolled" id="site-header" role="banner">
     <nav class="nav-container" aria-label="Glavna navigacija">
-      <a href="../index.html" class="nav-logo" aria-label="Quantex početna strana">
-        <img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" />
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu">
-        <span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span>
-      </button>
+      <a href="../index.html" class="nav-logo" aria-label="Quantex početna strana"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
       <ul class="nav-links" id="navMenu" role="list">
         <li class="nav-item has-dropdown">
-          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">
-            Usluge
-            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">Usluge <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="nav-dropdown" id="uslugeDropdown" role="menu">
-            <li role="none"><a href="seo.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>SEO optimizacija</span></a></li>
-            <li role="none"><a href="aeo.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>AEO optimizacija</span></a></li>
-            <li role="none"><a href="izrada-sajtova.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Izrada web sajtova</span></a></li>
-            <li role="none"><a href="web-aplikacije.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Izrada web aplikacija</span></a></li>
+            <li role="none"><a href="izrada-sajtova.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">01</span><span>Izrada sajta</span></a></li>
+            <li role="none"><a href="sadrzaj.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">02</span><span>Sadržaj za sajt i mreže</span></a></li>
+            <li role="none"><a href="reklame.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">03</span><span>Vođenje reklama</span></a></li>
+            <li role="none"><a href="plan-i-identitet.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">04</span><span>Plan i vizuelni identitet</span></a></li>
+            <li role="none"><a href="seo.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">05</span><span>SEO i AEO</span></a></li>
+            <li role="none"><a href="web-aplikacije.html" class="nav-dropdown-item" role="menuitem" aria-current="page"><span class="dropdown-item-icon" aria-hidden="true">06</span><span>Aplikacije i automatizacija</span></a></li>
           </ul>
         </li>
+        <li><a href="../cenovnik.html" class="nav-link">Cenovnik</a></li>
+        <li><a href="../case-studies.html" class="nav-link">Projekti</a></li>
         <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
-        <li><a href="../case-studies.html" class="nav-link">Studije slučaja</a></li>
-        <li><a href="../vodic.html" class="nav-link" style="color:var(--accent-light);font-weight:600;">Besplatni vodič</a></li>
-        <li>
-          <a href="../index.html#kontakt" class="nav-cta-btn" aria-label="Zakažite analitički razgovor sa Quantex timom">
-            Zakažite razgovor
-          </a>
-        </li>
-        <li>
-          <a href="/en/services/web-applications.html" class="nav-lang-toggle" aria-label="Switch to English">EN</a>
-        </li>
+        <li><a href="../index.html#ideja" class="nav-cta-btn">Pošalji svoju ideju</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="page-hero">
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="hero-h1">
       <div class="container page-hero-inner">
         <nav class="breadcrumb" aria-label="Putanja">
-          <a href="../index.html">Početna</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <a href="../index.html#usluge">Usluge</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <span class="breadcrumb-current">Izrada web aplikacija</span>
+          <a href="../index.html">Početna</a><span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <a href="../index.html#usluge">Usluge</a><span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span class="breadcrumb-current" aria-current="page">Aplikacije i automatizacija</span>
         </nav>
-        <div class="page-tag">Usluga</div>
-        <h1 class="page-h1 animate-fade-up">
-          Web aplikacije napravljene<br/><span class="text-gradient">tačno za vaš proces</span>
-        </h1>
-        <p class="page-intro animate-fade-up" style="animation-delay:0.1s">
-          Gotov softver retko prati vaš proces onako kako on stvarno funkcioniše, obično plaćate funkcije koje ne koristite i zaobilazite one koje vam nedostaju. Quantex razvija web aplikacije po meri: interne alate, korisničke portale, sisteme za rezervacije i upravljanje, napravljene oko toga kako vaš tim zaista radi, a ne oko generičkog šablona.
-        </p>
-        <div class="page-hero-actions animate-fade-up" style="animation-delay:0.2s">
-          <a href="../index.html#kontakt" class="btn btn-primary">Zakažite besplatnu analizu <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <a href="../index.html#projekti" class="btn btn-secondary">Pogledajte projekte</a>
+        <div class="page-tag">Opcioni razvoj po meri</div>
+        <h1 id="hero-h1" class="page-h1 animate-fade-up">Kada biznisu treba više od sajta, pravimo alat za <span class="text-gradient">tvoj stvarni način rada.</span></h1>
+        <p class="page-intro animate-fade-up" style="animation-delay:.1s">Sistemi za zakazivanje, korisnički nalozi, interni alati, integracije i AI automatizacija dolaze tek kada rešavaju konkretan problem. Obim, cena i rok dogovaraju se pismeno za svaki projekat, bez gotovih paketa i unapred obećanog roka.</p>
+        <div class="page-hero-actions animate-fade-up" style="animation-delay:.2s">
+          <a href="../index.html#ideja" class="btn btn-primary">Opiši šta želiš da rešiš <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="#proces" class="btn btn-secondary">Kako izgleda proces</a>
         </div>
       </div>
     </section>
 
-    <!-- What is it -->
-    <section class="content-section section-padding">
+    <section class="home-section" aria-labelledby="sajt-aplikacija-h2">
       <div class="container">
+        <div class="home-section-head">
+          <div class="home-kicker">Prvo proveravamo da li ti je ovo uopšte potrebno</div>
+          <h2 id="sajt-aplikacija-h2" class="home-h2">Sajt predstavlja biznis. <span>Aplikacija omogućava rad unutar njega.</span></h2>
+          <p class="home-copy">Ne treba ti aplikacija samo zato što zvuči ozbiljnije. Ako posetiocu treba da vidi usluge i pošalje upit, dobar sajt je jednostavnije i razumnije rešenje. Razvoj po meri ima smisla kada postoje korisnici, podaci, pravila i koraci koje obična prezentacija ne može da pokrije.</p>
+        </div>
         <div class="content-grid">
-          <div class="content-block animate-on-scroll">
-            <h2>Šta je web aplikacija po meri</h2>
-            <p>Web aplikacija po meri nije prilagođavanje gotovog softvera dok se donekle ne uklopi u vaš proces. To je sistem projektovan od nule oko konkretnih koraka vašeg poslovanja, polja, uloga, pravila i tokova rada koje vi definišete.</p>
-            <p>Umesto da menjate način na koji radite kako bi odgovarao alatu, alat se gradi oko načina na koji već radite. To znači manje zaobilaznih rešenja, manje ručnog unosa podataka između sistema i jasniju sliku onoga što se u firmi zapravo dešava.</p>
-            <p>Ovo je posebno vredno kada vaš proces ima specifičnosti koje nijedno gotovo rešenje ne pokriva u potpunosti.</p>
-          </div>
-          <div class="feature-list animate-on-scroll" style="animation-delay:0.1s">
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
-              <div class="feature-text"><h3>Prilagođena funkcionalnost, ne gotovo rešenje</h3><p>Svaki ekran i tok rada projektovan je oko vašeg konkretnog procesa, ne oko generičkog šablona.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
-              <div class="feature-text"><h3>Korisnički nalozi i kontrola pristupa</h3><p>Različite uloge (administrator, zaposleni, klijent) vide i rade tačno ono što im je dozvoljeno.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6M12 9v6"/><circle cx="12" cy="12" r="9"/></svg></div>
-              <div class="feature-text"><h3>Integracija sa vašim postojećim alatima</h3><p>Aplikacija se povezuje sa računovodstvenim, CRM ili drugim sistemima koje već koristite, umesto da ih dubluje.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
-              <div class="feature-text"><h3>Arhitektura koja raste sa vašim poslovanjem</h3><p>Aplikacija se gradi tako da nove funkcionalnosti i veći obim korisnika mogu da se dodaju bez ponovne izgradnje sistema.</p></div>
-            </div>
-          </div>
+          <article class="content-block">
+            <h3>Dovoljan je sajt kada želiš da:</h3>
+            <ul><li>Predstaviš usluge, radove ili proizvode</li><li>Odgovoriš na česta pitanja</li><li>Budeš vidljiv u pretrazi</li><li>Prikupiš upite preko obrasca</li><li>Objavljuješ sadržaj bez posebnih korisničkih naloga</li></ul>
+            <a href="izrada-sajtova.html" class="home-text-link">Izrada sajta od €500 <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="content-block">
+            <h3>Aplikacija ima smisla kada treba da:</h3>
+            <ul><li>Klijent zakaže ili izmeni termin prema dostupnosti</li><li>Korisnik vidi svoje podatke, dokumenta ili status</li><li>Tim unosi i obrađuje podatke po definisanim pravilima</li><li>Više sistema razmenjuje informacije</li><li>Automatizacija preuzme jasno opisan deo procesa</li></ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Comparison -->
-    <section class="content-section section-padding" style="background: var(--bg-elevated);">
+    <section class="home-section home-section-alt" aria-labelledby="resenja-h2">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">Razlika</div>
-          <h2 class="section-title animate-on-scroll">Gotov softver vs <span class="text-gradient">aplikacija po meri</span></h2>
+        <div class="home-section-head center">
+          <div class="home-kicker">Šta možemo da razvijamo</div>
+          <h2 id="resenja-h2" class="home-h2">Funkcije se biraju prema procesu. <span>Ne prema unapred napisanom paketu.</span></h2>
         </div>
-        <div class="content-grid animate-on-scroll">
-          <div class="content-block">
-            <h3>Šta je gotov softver</h3>
-            <p>Gotova SaaS rešenja nude širok skup funkcija napravljenih da odgovaraju velikom broju različitih firmi odjednom. To znači da nijedna od tih firmi ne dobija tačno ono što joj treba, plaćate mesečnu pretplatu za funkcije koje nikad ne koristite, a za deo procesa koji vam je specifičan tražite zaobilazna rešenja u Excel tabelama i ručnim koracima.</p>
-            <p>Kako firma raste, ta ograničenja postaju sve vidljivija, a promena provajdera dolazi sa migracijom podataka i novim učenjem alata.</p>
-            <ul>
-              <li>Plaćate pretplatu i za funkcije koje ne koristite</li>
-              <li>Deo procesa i dalje rešavate ručno ili u tabelama</li>
-              <li>Ograničeni ste tuđim planom razvoja proizvoda</li>
-            </ul>
-          </div>
-          <div class="content-block">
-            <h3>Šta je aplikacija po meri</h3>
-            <p>Aplikacija koju Quantex razvija projektovana je oko vašeg konkretnog procesa, od prvog ekrana. Nema nepotrebnih funkcija koje otežavaju korišćenje niti nedostajućih koje morate ručno nadoknađivati.</p>
-            <p>Vi definišete prioritete razvoja, a arhitektura se gradi tako da prati rast vaše firme, bez zavisnosti od tuđe mape puta ili cenovne politike.</p>
-            <ul>
-              <li>Plaćate samo funkcionalnost koja vam je zaista potrebna</li>
-              <li>Proces je automatizovan tačno onako kako radi vaš tim</li>
-              <li>Vi odlučujete šta se razvija i kada</li>
-            </ul>
-          </div>
+        <div class="home-grid-3">
+          <article class="home-card"><span class="home-number">01 / TERMINI</span><h3>Zakazivanje i rezervacije</h3><p>Dostupnost, vrste usluga, trajanje, kapaciteti, podsetnici i administratorski pregled. Obim zavisi od toga koliko pravila tvoj proces stvarno ima.</p></article>
+          <article class="home-card"><span class="home-number">02 / NALOZI</span><h3>Korisnički nalozi i portali</h3><p>Pristup dokumentima, statusu porudžbine ili projekta, ličnim podacima i komunikaciji, uz jasno definisane uloge i dozvole.</p></article>
+          <article class="home-card"><span class="home-number">03 / TIM</span><h3>Interni alati</h3><p>Praćenje zadataka, evidencija rada, obrada zahteva i pregledi koji zamenjuju nepregledne tabele ili ručno spajanje podataka.</p></article>
+          <article class="home-card"><span class="home-number">04 / POVEZIVANJE</span><h3>Integracije</h3><p>Povezivanje sajta, obrazaca, kalendara, CRM sistema, plaćanja ili drugih servisa kada tehničke mogućnosti i uslovi tih servisa to dozvoljavaju.</p></article>
+          <article class="home-card"><span class="home-number">05 / AI</span><h3>AI automatizacija</h3><p>Razvrstavanje upita, sažimanje teksta, priprema nacrta odgovora ili izdvajanje podataka, uz ljudsku proveru kada je potrebna i jasna pravila pristupa podacima.</p></article>
+          <article class="home-card"><span class="home-number">06 / NADOGRADNJA</span><h3>Postojeći sistemi</h3><p>Digitalno preuređenje postojećeg procesa ili postepeno dodavanje modula, nakon provere tehnologije, kvaliteta osnove i mogućnosti bezbedne izmene.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- Use Cases -->
-    <section class="content-section section-padding">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">Primene</div>
-          <h2 class="section-title animate-on-scroll">Gde aplikacija po meri <span class="text-gradient">rešava konkretan problem</span></h2>
+    <section class="home-section" aria-labelledby="ai-h2">
+      <div class="container home-split">
+        <div>
+          <div class="home-kicker">Automatizacija sa jasnom granicom</div>
+          <h2 id="ai-h2" class="home-h2">AI nije obavezna funkcija. <span>Koristimo ga samo gde ima konkretan zadatak.</span></h2>
+          <p class="home-copy">Nije svaki ponovljen korak dobar kandidat za AI. Neki procesi se pouzdanije rešavaju običnim pravilom ili integracijom. AI razmatramo kada treba da radi sa nestruktuiranim tekstom, predloži odgovor, klasifikuje zahtev ili sažme informacije.</p>
+          <p class="home-copy">Pre razvoja dogovaramo koji podaci smeju da se koriste, ko proverava rezultat i šta sistem radi kada nema dovoljno sigurnosti. Osetljive odluke ne prepuštamo automatizaciji bez dogovorene kontrole.</p>
+          <p class="home-copy">Troškovi spoljnih AI i drugih servisa, ako postoje, navode se odvojeno u predlogu. Ne ulaze automatski u cenu razvoja i ne pretvaraju se u obavezan paket bez tvog znanja.</p>
         </div>
-        <div class="use-cases-grid">
-          <div class="use-case-card animate-on-scroll">
-            <div class="use-case-industry">Terenski i logistički timovi</div>
-            <h3>Interni alat za upravljanje i raspoređivanje</h3>
-            <p>Firme sa terenskim ekipama, dostavom ili logistikom dobijaju sistem za raspoređivanje zadataka, praćenje statusa u realnom vremenu i pregled opterećenja tima na jednom mestu, umesto u razmeni poruka i tabelama.</p>
-            <div class="use-case-result">Jasniji pregled tima i manje ručne koordinacije</div>
-          </div>
-          <div class="use-case-card animate-on-scroll" style="animation-delay:0.08s">
-            <div class="use-case-industry">Usluge i agencije</div>
-            <h3>Portal za klijente</h3>
-            <p>Klijenti dobijaju svoj nalog na kom prate status projekta ili narudžbine, preuzimaju dokumente i komuniciraju sa vašim timom, bez neprekidne razmene mejlova za osnovne informacije.</p>
-            <div class="use-case-result">Manje upita tipa "gde je moj status" u inboxu</div>
-          </div>
-          <div class="use-case-card animate-on-scroll" style="animation-delay:0.16s">
-            <div class="use-case-industry">Rezervacije i zakazivanje</div>
-            <h3>Sistem za rezervacije sa administracijom</h3>
-            <p>Korisnici zakazuju termine ili rezervišu resurse preko jednostavnog interfejsa, dok vaš tim iz administratorskog panela upravlja kapacitetima, cenama i pravilima otkazivanja.</p>
-            <div class="use-case-result">Zakazivanje bez telefonskih poziva i duplih termina</div>
-          </div>
+        <div class="feature-list">
+          <article class="feature-item"><div class="feature-text"><h3>Jasan ulaz</h3><p>Definišemo koje podatke sistem prima i da li ima pravo da ih koristi.</p></div></article>
+          <article class="feature-item"><div class="feature-text"><h3>Proverljiv postupak</h3><p>Utvrđujemo šta automatizacija radi, šta beleži i kada traži odluku čoveka.</p></div></article>
+          <article class="feature-item"><div class="feature-text"><h3>Kontrolisan izlaz</h3><p>Dogovaramo ko odobrava slanje, izmenu ili prenos podataka u drugi sistem.</p></div></article>
         </div>
       </div>
     </section>
 
-    <!-- How it works -->
-    <section class="content-section section-padding">
+    <section id="proces" class="home-section home-section-alt" aria-labelledby="proces-h2">
       <div class="container">
-        <div class="content-grid reverse animate-on-scroll">
-          <div class="content-block">
-            <h2>Kako izgleda proces razvoja</h2>
-            <p>Razvoj počinje razgovorom u kom mapiramo vaš postojeći proces i zahteve, ko su korisnici aplikacije, koje korake obavljaju i gde su najveća uska grla u trenutnom načinu rada.</p>
-            <p>Na osnovu toga pravimo dizajn i plan funkcionalnosti koji vidite i odobravate pre nego što razvoj uopšte počne, tako da nema iznenađenja kasnije u projektu.</p>
-            <p>Sam razvoj se odvija u fazama uz redovno testiranje, a projekat se završava lansiranjem i obukom vašeg tima za svakodnevno korišćenje aplikacije.</p>
-            <ul>
-              <li>Mapiranje procesa i zahteva kroz razgovor sa vašim timom</li>
-              <li>Dizajn i plan funkcionalnosti na uvid pre početka razvoja</li>
-              <li>Razvoj u fazama uz kontinuirano testiranje</li>
-              <li>Lansiranje i obuka tima za korišćenje aplikacije</li>
-            </ul>
-          </div>
-          <div class="feature-list animate-on-scroll" style="animation-delay:0.1s">
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
-              <div class="feature-text"><h3>Plan pre razvoja</h3><p>Vidite dizajn i obim funkcionalnosti unapred, tako da znate tačno šta se gradi.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
-              <div class="feature-text"><h3>Razvoj u fazama</h3><p>Testiranje prati svaku fazu razvoja, umesto da se sve proverava tek na kraju.</p></div>
-            </div>
-          </div>
+        <div class="home-section-head center"><div class="home-kicker">Od problema do dogovorenog rešenja</div><h2 id="proces-h2" class="home-h2">Prvo pišemo šta sistem radi. <span>Tek onda koliko košta i koliko traje.</span></h2><p class="home-copy">Aplikacije nemaju univerzalan rok. Složenost otkrivamo pre početka, kako odluka o saradnji ne bi počivala na nerealnoj proceni.</p></div>
+        <div class="home-steps">
+          <article class="home-step"><h3>Mapiramo proces</h3><p>Razgovaramo o korisnicima, koracima, izuzecima, podacima i postojećim alatima. Možeš sve da nam objasniš neformalno, bez tehničke specifikacije.</p></article>
+          <article class="home-step"><h3>Definišemo obim</h3><p>Dobijaš pisan spisak funkcija, faza, pretpostavki i onoga što nije uključeno. Tada potvrđujemo cenu i realan rok.</p></article>
+          <article class="home-step"><h3>Razvijamo i proveravamo</h3><p>Rad prikazujemo kroz dogovorene faze. Testiramo ključne tokove, dozvole i integracije pre puštanja u rad.</p></article>
+          <article class="home-step"><h3>Predajemo i dokumentujemo</h3><p>Dogovaramo lansiranje, pristup kodu i nalozima, osnovna uputstva i odgovornosti za dalji rad sistema.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="page-faq section-padding" aria-labelledby="faq-h2">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">FAQ</div>
-          <h2 id="faq-h2" class="section-title animate-on-scroll">Česta pitanja o <span class="text-gradient">izradi web aplikacija</span></h2>
+    <section class="home-section" aria-labelledby="uslovi-h2">
+      <div class="container home-split">
+        <div>
+          <div class="home-kicker">Pisan dogovor pre razvoja</div>
+          <h2 id="uslovi-h2" class="home-h2">Znaš šta dobijaš, šta plaćaš i <span>šta ostaje u tvom vlasništvu.</span></h2>
+          <p class="home-copy">Cena je uvek prilagođena konkretnom obimu. Ne postoje unapred određeni paketi aplikacija niti fiksna cena koja kasnije raste bez dogovora. Ako se zahtevi promene, posledice na cenu i rok prvo beležimo i potvrđujemo sa tobom.</p>
+          <p class="home-copy">Za projekat sa jasno definisanim obimom uobičajeno plaćanje je 50% na početku i 50% pred lansiranje. Ako priroda projekta zahteva drugačije faze, uslove navodimo u pisanoj ponudi pre početka.</p>
+          <p class="home-copy">Kod, podaci i povezani nalozi pripadaju tebi prema dogovoru. Definišemo i pristup repozitorijumu, hostingu i servisima trećih strana, tako da kasnije možeš da nastaviš sa nama ili sa drugim timom.</p>
         </div>
-        <div class="faq-grid animate-on-scroll">
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq1">Koja je razlika između sajta i web aplikacije?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq1" hidden><p>Sajt prvenstveno predstavlja informacije i brend, prezentuje usluge, gradi poverenje i generiše upite. Web aplikacija ima interaktivnu funkcionalnost: korisnički nalozi, obrada podataka, interne alate ili sisteme koje koriste zaposleni ili klijenti. Mnogi projekti počinju kao sajt i vremenom dobijaju aplikativne funkcionalnosti.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq2">Koliko traje razvoj web aplikacije?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq2" hidden><p>Zavisi od obima funkcionalnosti. Jednostavnija aplikacija ili MVP se tipično razvija u nekoliko nedelja, dok kompleksniji sistemi sa više integracija i uloga korisnika zahtevaju duži period. Tačan rok definišemo zajedno nakon mapiranja zahteva, pre početka razvoja.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq3">Da li aplikacija radi na mobilnom telefonu?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq3" hidden><p>Da. Aplikacije koje razvijamo su responzivne i prilagođene radu na mobilnim uređajima, tabletima i desktop računarima, osim ako priroda funkcionalnosti zahteva drugačiji pristup, o čemu se dogovaramo unapred.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq4">Ko poseduje kod i podatke nakon završetka projekta?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq4" hidden><p>Vi. Kod, baza podataka i svi povezani nalozi ostaju vlasništvo klijenta. Quantex ne zadržava ekskluzivna prava niti uslovljava dalji rad na aplikaciji isključivo saradnjom sa nama.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq5">Kako izgleda podrška nakon lansiranja?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq5" hidden><p>Nakon lansiranja pratimo rad aplikacije, rešavamo eventualne probleme i po dogovoru nastavljamo sa manjim izmenama i unapređenjima. Obim podrške i mesečna naknada zavise od izabranog paketa i definišu se unapred, bez skrivenih troškova.</p></div></div>
+        <aside class="home-price-card" aria-label="Cena i plaćanje razvoja po meri">
+          <div class="home-kicker">Bez unapred određenih paketa</div>
+          <h3>Cena i rok prema obimu</h3>
+          <div class="home-price" style="font-size:clamp(2.5rem,4vw,4rem)">Po projektu</div>
+          <p>Procena dolazi nakon mapiranja funkcija, integracija i zahteva.</p>
+          <ul><li>Pisan obim pre početka</li><li>Jasno naznačeno šta nije uključeno</li><li>Promene se potvrđuju pre realizacije</li><li>Podrška kasnije samo po dogovoru</li></ul>
+          <a href="../index.html#ideja" class="btn btn-primary">Zatraži procenu obima</a>
+          <p class="home-price-note">Upit i početni razgovor ne obavezuju te na razvoj.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="page-faq section-padding home-section-alt" aria-labelledby="faq-h2">
+      <div class="container">
+        <div class="section-header"><div class="section-tag">Česta pitanja</div><h2 id="faq-h2" class="section-title">Pre razvoja, <span class="text-gradient">odgovori na praktična pitanja.</span></h2></div>
+        <div class="faq-grid">
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq1">Kada mi je potrebna aplikacija, a kada je dovoljan sajt?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq1" hidden><p>Sajt je dovoljan kada treba da predstavi ponudu, odgovori na pitanja i omogući kontakt. Aplikacija dobija smisao kada korisnici ili zaposleni treba nešto da urade u sistemu, na primer da zakažu termin, prate status, unose podatke ili koriste poseban nalog. Ako običan kontakt obrazac rešava problem, ne predlažemo složeniju izradu.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq2">Koliko košta web aplikacija?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq2" hidden><p>Cena se određuje isključivo prema obimu. Zavisi od funkcija, korisničkih uloga, integracija, zahteva za podacima i nivoa testiranja. Pre početka dobijaš pisan predlog sa obimom, ukupnom cenom i onim što nije uključeno.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq3">Da li važi rok od 7 dana kao za standardni sajt?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq3" hidden><p>Ne. Rok od 7 dana odnosi se na prvu verziju standardnog poslovnog sajta. Za aplikaciju i automatizaciju rok se procenjuje posebno nakon mapiranja zahteva i potvrđuje pre početka, zajedno sa fazama rada.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq4">Ko poseduje kod, podatke i naloge?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq4" hidden><p>Kod, podaci i povezani nalozi pripadaju tebi, kako je definisano pismenim dogovorom. Pre početka preciziramo i pristup repozitorijumu, hostingu, domenima i uslugama trećih strana, kako dalji rad ne bi zavisio od nas.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq5">Možemo li da krenemo od jedne funkcije?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq5" hidden><p>Da, kada je tehnički i poslovno razumno. Možemo prvo da definišemo najmanji koristan obim, pa tek kasnije dodajemo module. Cilj nije da odmah platiš veliki sistem, već da prvi deo reši konkretan problem i ostavi jasan put za nadogradnju.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq6">Da li je podrška posle lansiranja obavezna?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq6" hidden><p>Ne. Dalja podrška i izmene dogovaramo po potrebi, bez automatskog mesečnog paketa. Pre lansiranja preciziramo šta čini završetak projekta, koje su odgovornosti za hosting i servise i kako se dogovaraju eventualne naredne izmene.</p></div></div>
         </div>
       </div>
     </section>
 
-    <!-- Cenovnik -->
-    <section class="content-section section-padding" style="background: var(--bg-elevated);">
+    <section class="page-cta" aria-labelledby="cta-h2">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">Cenovnik</div>
-          <h2 class="section-title animate-on-scroll">Transparentne cene bez <span class="text-gradient">skrivenih troškova</span></h2>
-          <p class="section-sub animate-on-scroll">Svaki paket uključuje mapiranje zahteva, razvoj i lansiranje. Mesečna naknada pokriva hosting, monitoring i podršku.</p>
-        </div>
-        <div class="pricing-grid">
-          <div class="pricing-card animate-on-scroll">
-            <div class="pricing-tier">Starter</div>
-            <div>
-              <span class="pricing-setup">€2.490 jednokratno</span>
-              <div class="pricing-monthly">
-                <span class="pricing-amount">€99</span>
-                <span class="pricing-period">/mesec</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Jednostavnija aplikacija ili MVP</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Do 2 tipa korisničkih naloga</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Osnovna funkcionalnost po dogovoru</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Hosting i monitoring uključeni</li>
-            </ul>
-            <a href="../index.html#kontakt" class="btn btn-secondary pricing-btn">Zakažite razgovor</a>
-          </div>
-          <div class="pricing-card pricing-card-featured animate-on-scroll" style="animation-delay:0.08s">
-            <div class="pricing-badge">Najpopularnije</div>
-            <div class="pricing-tier">Pro</div>
-            <div>
-              <span class="pricing-setup">€4.990 jednokratno</span>
-              <div class="pricing-monthly">
-                <span class="pricing-amount">€199</span>
-                <span class="pricing-period">/mesec</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Kompleksnija aplikacija sa više modula</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Integracije sa postojećim alatima</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Napredna kontrola pristupa po ulogama</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Prioritetna podrška</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Redovan monitoring i izveštaji</li>
-            </ul>
-            <a href="../index.html#kontakt" class="btn btn-primary pricing-btn">Zakažite razgovor</a>
-          </div>
-          <div class="pricing-card animate-on-scroll" style="animation-delay:0.16s">
-            <div class="pricing-tier">Enterprise</div>
-            <div>
-              <span class="pricing-setup">Prilagođena cena</span>
-              <div class="pricing-monthly">
-                <span class="pricing-amount" style="font-size:1.5rem">Po dogovoru</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Veći sistemi sa više modula i uloga</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Veći broj integracija sa vašim sistemima</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Posebni sigurnosni zahtevi</li>
-            </ul>
-            <a href="../index.html#kontakt" class="btn btn-secondary pricing-btn">Kontaktirajte nas</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="page-cta">
-      <div class="container">
-        <h2 class="page-cta-title">Spremni za alat napravljen tačno za vas?</h2>
-        <p class="page-cta-sub">Zakažite besplatnu analizu i pokazaćemo vam konkretno kako bi aplikacija po meri izgledala za vaš proces.</p>
-        <div class="page-cta-actions">
-          <a href="../index.html#kontakt" class="btn btn-primary">Zakažite besplatnu analizu <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <a href="../index.html#projekti" class="btn btn-secondary">Pogledajte projekte</a>
-        </div>
+        <h2 id="cta-h2" class="page-cta-title">Opiši problem, ne tehničko rešenje.</h2>
+        <p class="page-cta-sub">Dovoljno je da nam kažeš koji deo posla oduzima vreme ili šta klijenti i tim treba da urade. Predložićemo da li je dovoljan sajt, jednostavna integracija ili razvoj po meri.</p>
+        <div class="page-cta-actions"><a href="../index.html#ideja" class="btn btn-primary">Pošalji svoju ideju <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><a href="izrada-sajtova.html" class="btn btn-secondary">Prvo mi je potreban samo sajt</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="../index.html" class="nav-logo footer-logo"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a>
-          <p class="footer-tagline">SEO, AEO i izrada web sajtova i aplikacija prilagođenih vašem poslovnom modelu.</p>
-          <address class="footer-contact"><a href="mailto:office@quantex.rs" class="footer-contact-link">office@quantex.rs</a></address>
-        </div>
-        <nav class="footer-nav" aria-label="Usluge">
-          <h4 class="footer-nav-title">Usluge</h4>
-          <ul role="list">
-            <li><a href="seo.html" class="footer-link">SEO optimizacija</a></li>
-            <li><a href="aeo.html" class="footer-link">AEO optimizacija</a></li>
-            <li><a href="izrada-sajtova.html" class="footer-link">Izrada web sajtova</a></li>
-            <li><a href="web-aplikacije.html" class="footer-link">Izrada web aplikacija</a></li>
-          </ul>
-        </nav>
-        <nav class="footer-nav" aria-label="Ostalo">
-          <h4 class="footer-nav-title">Ostalo</h4>
-          <ul role="list">
-            <li><a href="../index.html#proces" class="footer-link">Naš Proces</a></li>
-            <li><a href="../blog/index.html" class="footer-link">Blog</a></li>
-            <li><a href="../index.html#projekti" class="footer-link">Naši projekti</a></li>
-            <li><a href="../index.html#kontakt" class="footer-link">Kontakt</a></li>
-          </ul>
-        </nav>
+        <div class="footer-brand"><a href="../index.html" class="nav-logo footer-logo" aria-label="Quantex početna"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a><p class="footer-tagline">Digitalni partner za ljude koji žele da rade i zarađuju od onoga što vole. Sajt, SEO, AEO, sadržaj i reklame, bez nepotrebnih obaveza.</p><address class="footer-contact"><a href="mailto:office@quantex.rs" class="footer-contact-link">office@quantex.rs</a></address></div>
+        <nav class="footer-nav" aria-label="Usluge"><h4 class="footer-nav-title">Usluge</h4><ul role="list"><li><a href="izrada-sajtova.html" class="footer-link">Izrada sajta</a></li><li><a href="sadrzaj.html" class="footer-link">Sadržaj</a></li><li><a href="reklame.html" class="footer-link">Reklame</a></li><li><a href="plan-i-identitet.html" class="footer-link">Plan i identitet</a></li><li><a href="web-aplikacije.html" class="footer-link">Aplikacije</a></li></ul></nav>
+        <nav class="footer-nav" aria-label="Navigacija"><h4 class="footer-nav-title">Quantex</h4><ul role="list"><li><a href="../index.html#kako-radimo" class="footer-link">Kako radimo</a></li><li><a href="../index.html#projekti" class="footer-link">Projekti</a></li><li><a href="../cenovnik.html" class="footer-link">Cenovnik</a></li><li><a href="../blog/index.html" class="footer-link">Blog</a></li><li><a href="../vodic.html" class="footer-link">Besplatni vodič</a></li><li><a href="../index.html#ideja" class="footer-link">Pošalji ideju</a></li></ul></nav>
+        <div class="footer-legal"><h4 class="footer-nav-title">Pravno</h4><ul role="list"><li><a href="../politika-privatnosti.html" class="footer-link">Politika privatnosti</a></li><li><a href="../uslovi-koriscenja.html" class="footer-link">Uslovi korišćenja</a></li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-copyright">&copy; <span id="copyright-year"></span> Quantex. Sva prava zadržana.</p>
-        <p class="footer-location">Beograd, Srbija</p>
-      </div>
+      <div class="footer-bottom"><p class="footer-copyright">&copy; <span id="copyright-year"></span> Quantex. Sva prava zadržana.</p><p class="footer-location">Beograd • Radimo širom Balkana</p></div>
     </div>
   </footer>
-
+  <button class="back-to-top" id="backToTop" aria-label="Povratak na vrh strane" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg></button>
   <script src="../js/animations.js" defer></script>
   <script src="../js/main.js" defer></script>
 </body>

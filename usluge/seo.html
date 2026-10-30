@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="../assets/favicon.ico" sizes="any" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="../assets/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SEO optimizacija | Quantex</title>
-  <meta name="description" content="Quantex sprovodi tehničku i sadržajnu SEO optimizaciju koja podiže vaš sajt na Google-u za pretrage koje donose klijente. Fiksne cene, mesečni izveštaji." />
+  <meta name="author" content="Quantex" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>SEO i AEO optimizacija sajta | Uključeno u izradu | Quantex</title>
+  <meta name="description" content="Saznaj šta SEO i AEO znače za tvoj biznis. Tehnička osnova, jasan sadržaj, lokalna pretraga i strukturirani podaci uključeni su u svaki Quantex sajt od €500." />
   <link rel="canonical" href="https://quantex.rs/usluge/seo.html" />
-  <link rel="alternate" hreflang="sr" href="https://quantex.rs/usluge/seo.html" />
-  <link rel="alternate" hreflang="en" href="https://quantex.rs/en/services/seo.html" />
-  <meta property="og:title" content="SEO optimizacija | Quantex" />
-  <meta property="og:description" content="Quantex sprovodi tehničku i sadržajnu SEO optimizaciju koja podiže vaš sajt na Google-u za pretrage koje donose klijente. Fiksne cene, mesečni izveštaji." />
-  <meta property="og:url" content="https://quantex.rs/usluge/seo.html" />
+  <link rel="llms-txt" href="https://quantex.rs/llms.txt" type="text/plain" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://quantex.rs/usluge/seo.html" />
+  <meta property="og:title" content="SEO i AEO optimizacija sajta | Quantex" />
+  <meta property="og:description" content="SEO i AEO nisu dodatni paketi. Ugrađujemo ih u svaki sajt od prvog dana, uz opcioni sadržaj i reklame kada poželiš dalji rast." />
+  <meta property="og:image" content="https://quantex.rs/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="sr_RS" />
+  <meta property="og:site_name" content="Quantex" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SEO i AEO optimizacija sajta | Quantex" />
+  <meta name="twitter:description" content="Jasan vodič kroz SEO i AEO, uz optimizaciju uključenu u svaki Quantex sajt." />
+  <meta name="twitter:image" content="https://quantex.rs/assets/og-image.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -22,6 +32,20 @@
   <link rel="stylesheet" href="../css/animations.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
   <link rel="stylesheet" href="../css/pages.css" />
+  <link rel="stylesheet" href="../css/brand.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SEO i AEO optimizacija u izradi sajta",
+    "url": "https://quantex.rs/usluge/seo.html",
+    "provider": {"@type": "Organization", "name": "Quantex", "url": "https://quantex.rs/"},
+    "description": "Tehnički SEO, jasna informacijska arhitektura, lokalna pretraga, sadržaj, indeksiranje, strukturirani podaci i AEO osnove uključeni u izradu svakog standardnog poslovnog sajta.",
+    "serviceType": "Izrada sajta sa SEO i AEO optimizacijom",
+    "areaServed": ["Srbija", "Hrvatska", "Bosna i Hercegovina", "Crna Gora", "Severna Makedonija", "Slovenija"],
+    "offers": {"@type": "Offer", "url": "https://quantex.rs/usluge/izrada-sajtova.html", "price": "500", "priceCurrency": "EUR", "description": "Kompletan standardni poslovni sajt sa SEO i AEO optimizacijom"}
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -29,19 +53,8 @@
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Početna", "item": "https://quantex.rs/"},
       {"@type": "ListItem", "position": 2, "name": "Usluge", "item": "https://quantex.rs/#usluge"},
-      {"@type": "ListItem", "position": 3, "name": "SEO optimizacija"}
+      {"@type": "ListItem", "position": 3, "name": "SEO i AEO optimizacija", "item": "https://quantex.rs/usluge/seo.html"}
     ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "SEO optimizacija",
-    "provider": {"@type": "Organization", "name": "Quantex"},
-    "description": "Tehnička i sadržajna SEO optimizacija koja podiže poziciju sajta na Google-u za relevantne pretrage.",
-    "areaServed": "RS",
-    "serviceType": "SEO optimizacija"
   }
   </script>
   <script type="application/ld+json">
@@ -49,15 +62,15 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "Šta je SEO i zašto je važan za moj biznis?", "acceptedAnswer": {"@type": "Answer", "text": "SEO (Search Engine Optimization) je skup tehničkih i sadržajnih izmena na sajtu koje pomažu Google-u da razume o čemu se sajt radi i da ga rangira više za relevantne pretrage. Za lokalni biznis to znači da vas pronalaze kupci koji već traže vaše usluge u vašem gradu, bez plaćanja za svaki klik."}},
-      {"@type": "Question", "name": "Koliko dugo traje da se vide rezultati SEO optimizacije?", "acceptedAnswer": {"@type": "Answer", "text": "Prve promene u indeksiranju i tehničkom zdravlju sajta su vidljive u prvih nekoliko nedelja. Pomeranje pozicija u pretrazi obično počinje posle 6 do 12 nedelja, a stabilan rast traje kontinuirano dok se sadržaj i autoritet sajta grade."}},
-      {"@type": "Question", "name": "Da li garantujete prvu poziciju na Google-u?", "acceptedAnswer": {"@type": "Answer", "text": "Nijedna agencija ne može iskreno garantovati tačnu poziciju, jer algoritam pretrage ne kontroliše nijedna treća strana. Ono što možemo da garantujemo je tehnički zdrav sajt, relevantan sadržaj i doslednu SEO strategiju, pristup koji smo primenili kod klijenta angelicphoto.rs, gde smo postigli prvu poziciju za sve ključne usluge u Pančevu."}},
-      {"@type": "Question", "name": "Koja je razlika između SEO-a i plaćenih oglasa (Google Ads)?", "acceptedAnswer": {"@type": "Answer", "text": "Plaćeni oglasi donose posete dok plaćate za svaki klik i prestaju čim obustavite budžet. SEO gradi trajniju vidljivost, jednom kada sajt postigne dobru poziciju, saobraćaj nastavlja da dolazi bez direktnog troška po klik. Najbolji rezultati dolaze iz kombinacije oba pristupa, ali SEO je dugoročno isplativiji kanal."}},
-      {"@type": "Question", "name": "Da li je lokalni SEO drugačiji od standardnog SEO-a?", "acceptedAnswer": {"@type": "Answer", "text": "Lokalni SEO dodaje set specifičnih koraka standardnoj optimizaciji: Google Business Profile, lokalne ključne reči vezane za grad ili opštinu, konzistentnost naziva, adrese i telefona (NAP) na svim izvorima i prikupljanje recenzija. Za firme koje uslužuju određeno geografsko područje ovo je često najvažniji deo SEO strategije."}}
+      {"@type": "Question", "name": "Da li su SEO i AEO zaista uključeni u cenu sajta?", "acceptedAnswer": {"@type": "Answer", "text": "Da. Tehnički SEO, struktura stranica, osnovni sadržaj, podešavanje indeksiranja, strukturirani podaci i AEO osnove ulaze u svaki standardni poslovni sajt od €500. Ne kupuješ poseban SEO ili AEO paket da bi osnova bila urađena."}},
+      {"@type": "Question", "name": "Koja je razlika između SEO-a i AEO-a?", "acceptedAnswer": {"@type": "Answer", "text": "SEO pomaže pretraživačima da pronađu, indeksiraju i razumeju stranice sajta. AEO dodatno oblikuje informacije kao jasne odgovore na pitanja, uz poslovne činjenice i strukturirane podatke koje sistemi za odgovaranje mogu da protumače. Jedno dopunjuje drugo."}},
+      {"@type": "Question", "name": "Da li garantujete prvu poziciju na Googleu?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. Pozicije zavise od pretrage, konkurencije, lokacije, kvaliteta celokupnog prisustva i odluka samog pretraživača. Zato ne obećavamo određeni rang, već jasno definisanu tehničku i sadržajnu osnovu bez lažnih garancija."}},
+      {"@type": "Question", "name": "Šta ako već imam sajt?", "acceptedAnswer": {"@type": "Answer", "text": "Najpre proveravamo šta postojeći sajt radi dobro, a šta otežava pretragu ili korišćenje. Ako je potrebno digitalno preuređenje, predlažemo konkretan obim pre početka. Ne moraš unapred da odlučiš da li ti treba nova izrada ili samo izmene."}},
+      {"@type": "Question", "name": "Moram li kasnije da naručujem objave svakog meseca?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. Objave su potpuno opcione i naručuješ ih po potrebi. Za €12 po objavi dobijaš blog tekst postavljen na sajt, carousel i caption. Nema obaveznog mesečnog broja objava ni ugovora."}},
+      {"@type": "Question", "name": "Da li moram da razumem tehnički deo?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. Možeš da učestvuješ u odlukama koliko želiš ili da ceo digitalni deo prepustiš nama. Od tebe tražimo samo informacije o biznisu koje ne možemo da znamo bez tebe i odobrenje dogovorenog sadržaja."}}
     ]
   }
   </script>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0VB7R2391"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -67,325 +80,171 @@
   </script>
 </head>
 <body>
-
-  <header class="site-header scrolled" id="site-header">
+  <header class="site-header scrolled" id="site-header" role="banner">
     <nav class="nav-container" aria-label="Glavna navigacija">
-      <a href="../index.html" class="nav-logo" aria-label="Quantex početna strana">
-        <img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" />
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu">
-        <span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span>
-      </button>
+      <a href="../index.html" class="nav-logo" aria-label="Quantex početna strana"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
       <ul class="nav-links" id="navMenu" role="list">
         <li class="nav-item has-dropdown">
-          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">
-            Usluge
-            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="menu" aria-controls="uslugeDropdown" type="button">Usluge <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="nav-dropdown" id="uslugeDropdown" role="menu">
-            <li role="none"><a href="seo.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>SEO optimizacija</span></a></li>
-            <li role="none"><a href="aeo.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>AEO optimizacija</span></a></li>
-            <li role="none"><a href="izrada-sajtova.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Izrada web sajtova</span></a></li>
-            <li role="none"><a href="web-aplikacije.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">◆</span><span>Izrada web aplikacija</span></a></li>
+            <li role="none"><a href="izrada-sajtova.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">01</span><span>Izrada sajta</span></a></li>
+            <li role="none"><a href="sadrzaj.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">02</span><span>Sadržaj za sajt i mreže</span></a></li>
+            <li role="none"><a href="reklame.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">03</span><span>Vođenje reklama</span></a></li>
+            <li role="none"><a href="plan-i-identitet.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">04</span><span>Plan i vizuelni identitet</span></a></li>
+            <li role="none"><a href="seo.html" class="nav-dropdown-item" role="menuitem" aria-current="page"><span class="dropdown-item-icon" aria-hidden="true">05</span><span>SEO i AEO</span></a></li>
+            <li role="none"><a href="web-aplikacije.html" class="nav-dropdown-item" role="menuitem"><span class="dropdown-item-icon" aria-hidden="true">06</span><span>Aplikacije i automatizacija</span></a></li>
           </ul>
         </li>
+        <li><a href="../cenovnik.html" class="nav-link">Cenovnik</a></li>
+        <li><a href="../case-studies.html" class="nav-link">Projekti</a></li>
         <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
-        <li><a href="../case-studies.html" class="nav-link">Studije slučaja</a></li>
-        <li><a href="../vodic.html" class="nav-link" style="color:var(--accent-light);font-weight:600;">Besplatni vodič</a></li>
-        <li>
-          <a href="../index.html#kontakt" class="nav-cta-btn" aria-label="Zakažite analitički razgovor sa Quantex timom">
-            Zakažite razgovor
-          </a>
-        </li>
-        <li>
-          <a href="/en/services/seo.html" class="nav-lang-toggle" aria-label="Switch to English">EN</a>
-        </li>
+        <li><a href="../index.html#ideja" class="nav-cta-btn">Pošalji svoju ideju</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="page-hero">
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="hero-h1">
       <div class="container page-hero-inner">
         <nav class="breadcrumb" aria-label="Putanja">
-          <a href="../index.html">Početna</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <a href="../index.html#usluge">Usluge</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <span class="breadcrumb-current">SEO optimizacija</span>
+          <a href="../index.html">Početna</a><span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <a href="../index.html#usluge">Usluge</a><span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span class="breadcrumb-current" aria-current="page">SEO i AEO optimizacija</span>
         </nav>
-        <div class="page-tag">Usluga</div>
-        <h1 class="page-h1 animate-fade-up">
-          SEO optimizacija koja<br/><span class="text-gradient">donosi klijente, ne samo posete</span>
-        </h1>
-        <p class="page-intro animate-fade-up" style="animation-delay:0.1s">
-          SEO znači tehničke i sadržajne izmene na sajtu koje Google-u pomažu da razume o čemu se vaš sajt radi i da ga prikaže korisnicima koji aktivno traže vaše usluge. Nije reč o jednokratnoj usluzi, pretraga se stalno menja, konkurencija se prilagođava, i sajt zahteva kontinuiran rad da bi zadržao i unapredio poziciju.
-        </p>
-        <div class="page-hero-actions animate-fade-up" style="animation-delay:0.2s">
-          <a href="../index.html#kontakt" class="btn btn-primary">Zakažite besplatnu analizu <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <a href="../index.html#projekti" class="btn btn-secondary">Pogledajte projekte</a>
+        <div class="page-tag">SEO i AEO, bez žargona</div>
+        <h1 id="hero-h1" class="page-h1 animate-fade-up">Da te pronađu ljudi koji traže <span class="text-gradient">upravo ono što radiš.</span></h1>
+        <p class="page-intro animate-fade-up" style="animation-delay:.1s">SEO pomaže pretraživačima da razumeju i prikažu tvoj sajt. AEO pomaže sistemima za odgovaranje da razumeju tvoje informacije i odgovore. Oba su uključena od prvog dana u svaki Quantex sajt od €500, bez posebnih obaveznih paketa.</p>
+        <div class="page-hero-actions animate-fade-up" style="animation-delay:.2s">
+          <a href="../index.html#ideja" class="btn btn-primary">Pošalji ideju za sajt <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="aeo.html" class="btn btn-secondary">Detaljnije o AEO optimizaciji</a>
         </div>
       </div>
     </section>
 
-    <!-- What is included -->
-    <section class="content-section section-padding">
+    <section class="home-section" aria-labelledby="osnova-h2">
+      <div class="container home-split">
+        <div>
+          <div class="home-kicker">Osnova nije dodatak</div>
+          <h2 id="osnova-h2" class="home-h2">Prvo pravimo sajt koji ljudi i pretraživači <span>mogu da razumeju.</span></h2>
+          <p class="home-copy">Dobrog izgleda nije dovoljno ako posetilac ne može da nađe uslugu, cenu, lokaciju ili kontakt. Isto tako, pretraživač ne može korisno da prikaže stranicu ako ne razume o čemu se radi i kako se uklapa u ostatak sajta.</p>
+          <p class="home-copy">Zato SEO i AEO planiramo zajedno sa sadržajem i dizajnom. Ne dolaze naknadno kao skuplji paket i ne zavise od toga da li ćeš kasnije potpisati mesečnu saradnju.</p>
+          <a href="izrada-sajtova.html" class="home-text-link">Pogledaj kompletnu izradu sajta <span aria-hidden="true">→</span></a>
+        </div>
+        <aside class="home-price-card" aria-label="Cena standardnog poslovnog sajta">
+          <div class="home-kicker">Kompletan standardni poslovni sajt</div>
+          <h3>SEO i AEO uključeni od prvog dana</h3>
+          <div class="home-price">€500 <small>jednokratno</small></div>
+          <p>Dizajn, sadržaj, mobilni prikaz, CMS i tehnička osnova za klasičnu pretragu i sisteme za odgovaranje.</p>
+          <ul><li>Prva verzija za 7 dana</li><li>Bez obaveznih mesečnih paketa</li><li>Možeš sve da prepustiš nama</li><li>Dalji sadržaj i reklame samo po želji</li></ul>
+          <a href="../index.html#ideja" class="btn btn-primary">Pošalji svoju ideju</a>
+          <p class="home-price-note">Rok važi od dogovorenog obima i prijema osnovnih informacija.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="home-section home-section-alt" aria-labelledby="seo-h2">
       <div class="container">
+        <div class="home-section-head center">
+          <div class="home-kicker">Šta SEO radi</div>
+          <h2 id="seo-h2" class="home-h2">Od tehničke osnove do odgovora na <span>pravu nameru pretrage.</span></h2>
+          <p class="home-copy">SEO je postupak uređivanja sajta da bi pretraživači mogli da ga pronađu, indeksiraju i povežu sa relevantnim pitanjima korisnika. Nije trik sa ponavljanjem ključnih reči, već spoj tehnike, strukture i korisnog sadržaja.</p>
+        </div>
+        <div class="home-grid-3">
+          <article class="home-card"><span class="home-number">01 / TEHNIKA</span><h3>Tehnički SEO</h3><p>Postavljamo čitljive adrese stranica, ispravne naslove i meta podatke, mobilni prikaz, interne veze i osnovne performanse. Cilj je da stranice budu dostupne i razumljive bez tehničkih prepreka.</p></article>
+          <article class="home-card"><span class="home-number">02 / STRUKTURA</span><h3>Informacijska arhitektura</h3><p>Usluge, lokacije, cene, odgovori i kontakt dobijaju logično mesto. Posetilac ne luta, a pretraživač jasnije vidi odnos glavne ponude i pojedinačnih tema.</p></article>
+          <article class="home-card"><span class="home-number">03 / SADRŽAJ</span><h3>Namera pretrage</h3><p>Tekst odgovara na ono što čovek stvarno želi da sazna. Stranica o usluzi objašnjava ponudu i sledeći korak, dok edukativni tekst odgovara na pitanje bez prisilne prodaje.</p></article>
+          <article class="home-card"><span class="home-number">04 / LOKALNO</span><h3>Lokalna pretraga</h3><p>Kada radiš u određenom gradu ili području, jasno navodimo lokaciju, zonu rada, kontakt i relevantne usluge. Dosledni poslovni podaci pomažu i ljudima i lokalnim rezultatima pretrage.</p></article>
+          <article class="home-card"><span class="home-number">05 / INDEKSIRANJE</span><h3>Pristup stranicama</h3><p>Podešavamo mapu sajta, osnovna pravila za robote, kanonične adrese i status stranica kako bi važan sadržaj bio dostupan za indeksiranje, bez nepotrebnih duplikata.</p></article>
+          <article class="home-card"><span class="home-number">06 / ZNAČENJE</span><h3>Strukturirani podaci</h3><p>Odgovarajuće schema oznake opisuju biznis, usluge, putanju stranice i česta pitanja. One dodatno objašnjavaju sadržaj, ali ne predstavljaju garanciju posebnog prikaza.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="razlika-h2">
+      <div class="container">
+        <div class="home-section-head">
+          <div class="home-kicker">SEO i AEO zajedno</div>
+          <h2 id="razlika-h2" class="home-h2">Jedna dobra osnova. <span>Dva načina da dođeš do informacije.</span></h2>
+        </div>
         <div class="content-grid">
-          <div class="content-block animate-on-scroll">
-            <h2>Šta uključuje SEO optimizacija</h2>
-            <p>SEO optimizacija koju sprovodi Quantex pokriva tehnički, sadržajni i lokalni sloj vašeg sajta. Krećemo od dubinske analize postojećeg stanja: kako Google trenutno vidi sajt, gde gubite vidljivost i koje prilike su neiskorišćene.</p>
-            <p>Na osnovu te analize gradimo konkretan plan rada, tehničke popravke, optimizaciju postojećih stranica, izradu novog sadržaja i unapređenje lokalnog prisustva, u zavisnosti od toga šta donosi najviše vrednosti vašem biznisu.</p>
-            <p>Svaki mesec dobijate izveštaj sa jasnim pregledom šta je urađeno i kako se to odražava na pozicije i saobraćaj.</p>
-          </div>
-          <div class="feature-list animate-on-scroll" style="animation-delay:0.1s">
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
-              <div class="feature-text"><h3>Tehnička analiza i popravke</h3><p>Brzina učitavanja, indeksiranje, struktura URL-ova, mobilna prilagođenost i ostali faktori koji utiču na rangiranje.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
-              <div class="feature-text"><h3>Optimizacija sadržaja i ključnih reči</h3><p>Istraživanje pretraga koje vaši potencijalni klijenti zaista kucaju i prilagođavanje stranica tim pretragama.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-              <div class="feature-text"><h3>Lokalni SEO i Google Business Profile</h3><p>Postavljanje i optimizacija profila, konzistentnost podataka i lokalne ključne reči za grad ili opštinu.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
-              <div class="feature-text"><h3>Mesečno praćenje i izveštaj</h3><p>Redovan uvid u pozicije, saobraćaj i konverzije, sa jasnim planom za naredni mesec.</p></div>
-            </div>
-          </div>
+          <article class="content-block">
+            <h3>SEO povezuje pretragu i stranicu</h3>
+            <p>Kada neko traži uslugu, proizvod ili objašnjenje, SEO pomaže da relevantna stranica bude dostupna i jasna pretraživaču. Korisnik zatim može da otvori sajt, proveri detalje i kontaktira biznis.</p>
+            <ul><li>Tehnička dostupnost i indeksiranje</li><li>Sadržaj vezan za konkretnu pretragu</li><li>Jasne stranice o uslugama i lokaciji</li></ul>
+          </article>
+          <article class="content-block">
+            <h3>AEO povezuje pitanje i odgovor</h3>
+            <p>AEO oblikuje sadržaj tako da konkretno pitanje dobije jasan, proverljiv odgovor. Poslovne činjenice, česta pitanja i strukturirani podaci pomažu sistemima za odgovaranje da protumače šta biznis radi.</p>
+            <ul><li>Direktni odgovori u prirodnom jeziku</li><li>Činjenice usklađene na celom sajtu</li><li>Bez obećanja da će neki AI sistem citirati sajt</li></ul>
+            <a href="aeo.html" class="home-text-link">Pročitaj detaljan AEO vodič <span aria-hidden="true">→</span></a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Differentiation -->
-    <section class="content-section section-padding" style="background: var(--bg-elevated);">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">Razlika</div>
-          <h2 class="section-title animate-on-scroll">Zašto SEO nije <span class="text-gradient">jednokratan posao</span></h2>
+    <section class="home-section home-section-alt" aria-labelledby="rast-h2">
+      <div class="container home-split">
+        <div>
+          <div class="home-kicker">Nastavak je tvoj izbor</div>
+          <h2 id="rast-h2" class="home-h2">Kada osnova radi, rast možeš da podržiš <span>sadržajem ili reklamama.</span></h2>
+          <p class="home-copy">Novi sadržaj ima smisla kada odgovara na stvarno pitanje publike ili objašnjava deo ponude koji još nije pokriven. Ne moraš da objavljuješ svake nedelje i ne moraš da plaćaš mesečni paket da bi sajt ostao tvoj.</p>
+          <p class="home-copy">Reklame su drugi, opcioni način da dođeš do publike. Mogu da se koriste samostalno ili uz organsku vidljivost, uz budžet i obim koji se dogovore pre početka.</p>
         </div>
-        <div class="content-grid animate-on-scroll">
-          <div class="content-block">
-            <h3>Jednokratna SEO "popravka"</h3>
-            <p>Mnogi pristupi SEO-u svode se na jednokratnu intervenciju: postavi se meta opis, doda par ključnih reči, i time se smatra da je posao završen. Problem je što se algoritam pretrage, konkurencija i ponašanje korisnika neprestano menjaju.</p>
-            <p>Bez kontinuiranog rada, pozicije koje su jednom osvojene vremenom slabe, a konkurenti koji redovno objavljuju sadržaj i prate tehničko stanje sajta preuzimaju prostor koji ste izgradili.</p>
-            <ul>
-              <li>Jednokratna optimizacija bez praćenja rezultata</li>
-              <li>Nema prilagođavanja promenama algoritma</li>
-              <li>Pozicije vremenom stagniraju ili opadaju</li>
-            </ul>
-          </div>
-          <div class="content-block">
-            <h3>Kontinuiran SEO rad</h3>
-            <p>Quantex tretira SEO kao stalan proces: mesečno pratimo pozicije, saobraćaj i konverzije, redovno dodajemo i unapređujemo sadržaj i reagujemo na promene u algoritmu pre nego što utiču na vaše rezultate.</p>
-            <p>Ovaj pristup gradi trajniju vidljivost koja se ne gubi posle prve promene u pretrazi, već se kontinuirano jača kroz svaki naredni mesec rada.</p>
-            <ul>
-              <li>Mesečno praćenje pozicija i saobraćaja</li>
-              <li>Redovno objavljivanje i unapređenje sadržaja</li>
-              <li>Brzo prilagođavanje promenama algoritma</li>
-            </ul>
-          </div>
+        <div class="feature-list">
+          <article class="feature-item"><div class="feature-text"><span class="home-service-price">€12 po objavi</span><h3>Blog, carousel i caption</h3><p>Pišemo i postavljamo blog objavu na tvoj sajt, pripremamo carousel i caption za društvene mreže. Naručuješ jednu ili više, bez mesečne obaveze.</p><a href="sadrzaj.html" class="home-text-link">Više o sadržaju <span aria-hidden="true">→</span></a></div></article>
+          <article class="feature-item"><div class="feature-text"><span class="home-service-price">Opciono</span><h3>Google i Meta reklame</h3><p>Kada želiš dodatan kanal, dogovaramo kampanje prema cilju i budžetu. Vođenje reklama nije uslov za SEO, AEO niti dalje korišćenje sajta.</p><a href="reklame.html" class="home-text-link">Više o reklamama <span aria-hidden="true">→</span></a></div></article>
         </div>
       </div>
     </section>
 
-    <!-- Use Cases -->
-    <section class="content-section section-padding">
+    <section class="home-section" aria-labelledby="proces-h2">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">Primene</div>
-          <h2 class="section-title animate-on-scroll">Za koga je <span class="text-gradient">SEO optimizacija</span></h2>
-        </div>
-        <div class="use-cases-grid">
-          <div class="use-case-card animate-on-scroll">
-            <div class="use-case-industry">Lokalni biznis</div>
-            <h3>Zanatske usluge, ordinacije, lokalni servisi</h3>
-            <p>Kada korisnik traži uslugu "u blizini" ili sa nazivom svog grada, lokalni SEO i Google Business Profile odlučuju ko će se pojaviti prvi na mapi i u pretrazi.</p>
-            <div class="use-case-result">Vidljivost za pretrage koje dovode kupce iz vašeg grada</div>
-          </div>
-          <div class="use-case-card animate-on-scroll" style="animation-delay:0.08s">
-            <div class="use-case-industry">E-commerce</div>
-            <h3>Online prodavnice sa širokim asortimanom</h3>
-            <p>Optimizacija kategorija i proizvoda za pretrage sa namerom kupovine, uz tehničku strukturu koja Google-u olakšava indeksiranje velikog broja stranica.</p>
-            <div class="use-case-result">Bolja pozicija za pretrage koje vode direktno ka kupovini</div>
-          </div>
-          <div class="use-case-card animate-on-scroll" style="animation-delay:0.16s">
-            <div class="use-case-industry">B2B i uslužne firme</div>
-            <h3>Konsultantske, IT i profesionalne usluge</h3>
-            <p>Sadržaj koji odgovara na konkretna pitanja potencijalnih klijenata pozicionira vas kao stručnjaka u svojoj oblasti i privlači upite koji su spremni za razgovor.</p>
-            <div class="use-case-result">Kvalifikovaniji upiti kroz organsku pretragu</div>
-          </div>
+        <div class="home-section-head center"><div class="home-kicker">Bez tehničkog znanja s tvoje strane</div><h2 id="proces-h2" class="home-h2">Ti objasniš biznis. <span>Mi preuzimamo digitalni deo.</span></h2><p class="home-copy">Možeš da učestvuješ u svakoj odluci ili samo da odobriš dogovoreni smer. Ne moraš da znaš šta su schema, kanonična adresa ili mapa sajta.</p></div>
+        <div class="home-steps">
+          <article class="home-step"><h3>Razumemo ponudu</h3><p>Prolazimo kroz usluge, publiku, lokaciju i pitanja koja klijenti postavljaju pre kontakta.</p></article>
+          <article class="home-step"><h3>Dogovorimo strukturu</h3><p>Određujemo stranice, sadržaj i obim. Cena i rok se potvrđuju pre početka rada.</p></article>
+          <article class="home-step"><h3>Pišemo i postavljamo</h3><p>Ugrađujemo SEO i AEO zajedno sa dizajnom, tekstom i tehničkom izradom sajta.</p></article>
+          <article class="home-step"><h3>Ti biraš sledeći korak</h3><p>Posle lansiranja možeš da nastaviš samostalno ili povremeno naručiš samo ono što ti treba.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- How it works -->
-    <section class="content-section section-padding">
+    <section class="page-faq section-padding home-section-alt" aria-labelledby="faq-h2">
       <div class="container">
-        <div class="content-grid reverse animate-on-scroll">
-          <div class="content-block">
-            <h2>Kako radimo SEO optimizaciju</h2>
-            <p>Proces počinje detaljnim audit-om sajta: tehničkim pregledom, analizom postojećeg sadržaja i istraživanjem ključnih reči relevantnih za vašu delatnost i lokaciju.</p>
-            <p>Na osnovu audit-a gradimo strategiju sa jasnim prioritetima, šta se popravlja prvo, koji sadržaj se dodaje i kojim redosledom se radi na lokalnom SEO-u. Zatim sledi implementacija: tehničke izmene, optimizacija postojećih stranica i izrada novog sadržaja.</p>
-            <p>Nakon lansiranja, rad se ne zaustavlja. Svaki mesec pratimo rezultate i prilagođavamo strategiju na osnovu podataka.</p>
-            <ul>
-              <li>Pozicije za ključne pretrage koje pratimo za vaš sajt</li>
-              <li>Organski saobraćaj i njegov trend iz meseca u mesec</li>
-              <li>Konverzije koje dolaze iz organske pretrage</li>
-              <li>Tehničko zdravlje sajta i eventualne nove greške</li>
-            </ul>
-          </div>
-          <div class="feature-list animate-on-scroll" style="animation-delay:0.1s">
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
-              <div class="feature-text"><h3>Audit</h3><p>Tehnički i sadržajni pregled trenutnog stanja sajta.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-              <div class="feature-text"><h3>Strategija</h3><p>Prioritetni plan rada zasnovan na nalazima audit-a.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-              <div class="feature-text"><h3>Mesečno praćenje</h3><p>Redovan izveštaj i prilagođavanje strategije na osnovu rezultata.</p></div>
-            </div>
-          </div>
+        <div class="section-header"><div class="section-tag">Česta pitanja</div><h2 id="faq-h2" class="section-title">SEO i AEO, <span class="text-gradient">jasno i bez obećanja koja ne možemo da dokažemo.</span></h2></div>
+        <div class="faq-grid">
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq1">Da li su SEO i AEO zaista uključeni u cenu sajta?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq1" hidden><p>Da. Tehnički SEO, struktura stranica, osnovni sadržaj, podešavanje indeksiranja, strukturirani podaci i AEO osnove ulaze u svaki standardni poslovni sajt od €500. Ne kupuješ poseban SEO ili AEO paket da bi osnova bila urađena.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq2">Koja je razlika između SEO-a i AEO-a?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq2" hidden><p>SEO pomaže pretraživačima da pronađu, indeksiraju i razumeju stranice sajta. AEO dodatno oblikuje informacije kao jasne odgovore na pitanja, uz poslovne činjenice i strukturirane podatke koje sistemi za odgovaranje mogu da protumače. Jedno dopunjuje drugo.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq3">Da li garantujete prvu poziciju na Googleu?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq3" hidden><p>Ne. Pozicije zavise od pretrage, konkurencije, lokacije, kvaliteta celokupnog prisustva i odluka samog pretraživača. Zato ne obećavamo određeni rang, već jasno definisanu tehničku i sadržajnu osnovu bez lažnih garancija.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq4">Šta ako već imam sajt?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq4" hidden><p>Najpre proveravamo šta postojeći sajt radi dobro, a šta otežava pretragu ili korišćenje. Ako je potrebno digitalno preuređenje, predlažemo konkretan obim pre početka. Ne moraš unapred da odlučiš da li ti treba nova izrada ili samo izmene.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq5">Moram li kasnije da naručujem objave svakog meseca?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq5" hidden><p>Ne. Objave su potpuno opcione i naručuješ ih po potrebi. Za €12 po objavi dobijaš blog tekst postavljen na sajt, carousel i caption. Nema obaveznog mesečnog broja objava ni ugovora.</p></div></div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq6">Da li moram da razumem tehnički deo?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq6" hidden><p>Ne. Možeš da učestvuješ u odlukama koliko želiš ili da ceo digitalni deo prepustiš nama. Od tebe tražimo samo informacije o biznisu koje ne možemo da znamo bez tebe i odobrenje dogovorenog sadržaja.</p></div></div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="page-faq section-padding" aria-labelledby="faq-h2">
+    <section class="page-cta" aria-labelledby="cta-h2">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">FAQ</div>
-          <h2 id="faq-h2" class="section-title animate-on-scroll">Česta pitanja o <span class="text-gradient">SEO optimizaciji</span></h2>
-        </div>
-        <div class="faq-grid animate-on-scroll">
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq1">Šta je SEO i zašto je važan za moj biznis?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq1" hidden><p>SEO (Search Engine Optimization) je skup tehničkih i sadržajnih izmena na sajtu koje pomažu Google-u da razume o čemu se sajt radi i da ga rangira više za relevantne pretrage. Za lokalni biznis to znači da vas pronalaze kupci koji već traže vaše usluge u vašem gradu, bez plaćanja za svaki klik.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq2">Koliko dugo traje da se vide rezultati SEO optimizacije?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq2" hidden><p>Prve promene u indeksiranju i tehničkom zdravlju sajta su vidljive u prvih nekoliko nedelja. Pomeranje pozicija u pretrazi obično počinje posle 6 do 12 nedelja, a stabilan rast traje kontinuirano dok se sadržaj i autoritet sajta grade.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq3">Da li garantujete prvu poziciju na Google-u?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq3" hidden><p>Nijedna agencija ne može iskreno garantovati tačnu poziciju, jer algoritam pretrage ne kontroliše nijedna treća strana. Ono što možemo da garantujemo je tehnički zdrav sajt, relevantan sadržaj i doslednu SEO strategiju, pristup koji smo primenili kod klijenta angelicphoto.rs, gde smo postigli prvu poziciju za sve ključne usluge u Pančevu.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq4">Koja je razlika između SEO-a i plaćenih oglasa (Google Ads)?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq4" hidden><p>Plaćeni oglasi donose posete dok plaćate za svaki klik i prestaju čim obustavite budžet. SEO gradi trajniju vidljivost, jednom kada sajt postigne dobru poziciju, saobraćaj nastavlja da dolazi bez direktnog troška po klik. Najbolji rezultati dolaze iz kombinacije oba pristupa, ali SEO je dugoročno isplativiji kanal.</p></div></div>
-          <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq5">Da li je lokalni SEO drugačiji od standardnog SEO-a?<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer" id="faq5" hidden><p>Lokalni SEO dodaje set specifičnih koraka standardnoj optimizaciji: Google Business Profile, lokalne ključne reči vezane za grad ili opštinu, konzistentnost naziva, adrese i telefona (NAP) na svim izvorima i prikupljanje recenzija. Za firme koje uslužuju određeno geografsko područje ovo je često najvažniji deo SEO strategije.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cenovnik -->
-    <section class="content-section section-padding" style="background: var(--bg-elevated);">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag animate-on-scroll">Cenovnik</div>
-          <h2 class="section-title animate-on-scroll">Transparentne cene bez <span class="text-gradient">skrivenih troškova</span></h2>
-          <p class="section-sub animate-on-scroll">Svaki paket uključuje postavljanje i mesečni rad na optimizaciji. Mesečna naknada pokriva praćenje pozicija, tekuće izmene i redovan izveštaj.</p>
-        </div>
-        <div class="pricing-grid">
-          <div class="pricing-card animate-on-scroll">
-            <div class="pricing-tier">Starter</div>
-            <div>
-              <span class="pricing-setup">€390 postavljanje</span>
-              <div class="pricing-monthly">
-                <span class="pricing-amount">€99</span>
-                <span class="pricing-period">/mesec</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Osnovna on-page i tehnička SEO optimizacija</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Prilagođeno malim, lokalnim sajtovima</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Osnovna postavka Google Business Profile-a</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Mesečni izveštaj o pozicijama</li>
-            </ul>
-            <a href="../index.html#kontakt" class="btn btn-secondary pricing-btn">Zakažite razgovor</a>
-          </div>
-          <div class="pricing-card pricing-card-featured animate-on-scroll" style="animation-delay:0.08s">
-            <div class="pricing-badge">Najpopularnije</div>
-            <div class="pricing-tier">Pro</div>
-            <div>
-              <span class="pricing-setup">€690 postavljanje</span>
-              <div class="pricing-monthly">
-                <span class="pricing-amount">€179</span>
-                <span class="pricing-period">/mesec</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Puna tehnička i sadržajna SEO optimizacija</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Kompletan lokalni SEO i optimizacija profila</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Izrada i optimizacija sadržaja mesečno</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Detaljan mesečni izveštaj sa preporukama</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Praćenje konkurencije</li>
-            </ul>
-            <a href="../index.html#kontakt" class="btn btn-primary pricing-btn">Zakažite razgovor</a>
-          </div>
-          <div class="pricing-card animate-on-scroll" style="animation-delay:0.16s">
-            <div class="pricing-tier">Enterprise</div>
-            <div>
-              <span class="pricing-setup">Prilagođena cena</span>
-              <div class="pricing-monthly">
-                <span class="pricing-amount" style="font-size:1.5rem">Po dogovoru</span>
-              </div>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Veći sajtovi i sajtovi sa više lokacija</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Optimizacija u konkurentnim industrijama</li>
-              <li class="pricing-feature"><svg class="pricing-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Prilagođena strategija i tim po meri obima posla</li>
-            </ul>
-            <a href="../index.html#kontakt" class="btn btn-secondary pricing-btn">Kontaktirajte nas</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="page-cta">
-      <div class="container">
-        <h2 class="page-cta-title">Spremni da vas klijenti konačno pronađu?</h2>
-        <p class="page-cta-sub">Zakažite besplatnu analizu i pokazaćemo vam konkretno gde vaš sajt gubi vidljivost na Google-u i šta je potrebno da to promenite.</p>
-        <div class="page-cta-actions">
-          <a href="../index.html#kontakt" class="btn btn-primary">Zakažite besplatnu analizu <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <a href="../index.html#projekti" class="btn btn-secondary">Pogledajte projekte</a>
-        </div>
+        <h2 id="cta-h2" class="page-cta-title">Reci nam šta radiš ili šta želiš da pokreneš.</h2>
+        <p class="page-cta-sub">Predložićemo prvi korak i jasan obim. Sajt dobija SEO i AEO osnovu, a sve ostalo biraš samo ako ti zatreba.</p>
+        <div class="page-cta-actions"><a href="../index.html#ideja" class="btn btn-primary">Pošalji svoju ideju <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><a href="izrada-sajtova.html" class="btn btn-secondary">Šta ulazi u izradu sajta</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="../index.html" class="nav-logo footer-logo"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a>
-          <p class="footer-tagline">SEO, AEO i izrada web sajtova i aplikacija prilagođenih vašem poslovnom modelu.</p>
-          <address class="footer-contact"><a href="mailto:office@quantex.rs" class="footer-contact-link">office@quantex.rs</a></address>
-        </div>
-        <nav class="footer-nav" aria-label="Usluge">
-          <h4 class="footer-nav-title">Usluge</h4>
-          <ul role="list">
-            <li><a href="seo.html" class="footer-link">SEO optimizacija</a></li>
-            <li><a href="aeo.html" class="footer-link">AEO optimizacija</a></li>
-            <li><a href="izrada-sajtova.html" class="footer-link">Izrada web sajtova</a></li>
-            <li><a href="web-aplikacije.html" class="footer-link">Izrada web aplikacija</a></li>
-          </ul>
-        </nav>
-        <nav class="footer-nav" aria-label="Ostalo">
-          <h4 class="footer-nav-title">Ostalo</h4>
-          <ul role="list">
-            <li><a href="../index.html#proces" class="footer-link">Naš Proces</a></li>
-            <li><a href="../blog/index.html" class="footer-link">Blog</a></li>
-            <li><a href="../index.html#projekti" class="footer-link">Naši projekti</a></li>
-            <li><a href="../index.html#kontakt" class="footer-link">Kontakt</a></li>
-          </ul>
-        </nav>
+        <div class="footer-brand"><a href="../index.html" class="nav-logo footer-logo" aria-label="Quantex početna"><img src="../assets/quantex-logo.svg" alt="Quantex" class="nav-logo-img" /></a><p class="footer-tagline">Digitalni partner za ljude koji žele da rade i zarađuju od onoga što vole. Sajt, SEO, AEO, sadržaj i reklame, bez nepotrebnih obaveza.</p><address class="footer-contact"><a href="mailto:office@quantex.rs" class="footer-contact-link">office@quantex.rs</a></address></div>
+        <nav class="footer-nav" aria-label="Usluge"><h4 class="footer-nav-title">Usluge</h4><ul role="list"><li><a href="izrada-sajtova.html" class="footer-link">Izrada sajta</a></li><li><a href="sadrzaj.html" class="footer-link">Sadržaj</a></li><li><a href="reklame.html" class="footer-link">Reklame</a></li><li><a href="plan-i-identitet.html" class="footer-link">Plan i identitet</a></li><li><a href="web-aplikacije.html" class="footer-link">Aplikacije</a></li></ul></nav>
+        <nav class="footer-nav" aria-label="Navigacija"><h4 class="footer-nav-title">Quantex</h4><ul role="list"><li><a href="../index.html#kako-radimo" class="footer-link">Kako radimo</a></li><li><a href="../index.html#projekti" class="footer-link">Projekti</a></li><li><a href="../cenovnik.html" class="footer-link">Cenovnik</a></li><li><a href="../blog/index.html" class="footer-link">Blog</a></li><li><a href="../vodic.html" class="footer-link">Besplatni vodič</a></li><li><a href="../index.html#ideja" class="footer-link">Pošalji ideju</a></li></ul></nav>
+        <div class="footer-legal"><h4 class="footer-nav-title">Pravno</h4><ul role="list"><li><a href="../politika-privatnosti.html" class="footer-link">Politika privatnosti</a></li><li><a href="../uslovi-koriscenja.html" class="footer-link">Uslovi korišćenja</a></li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-copyright">&copy; <span id="copyright-year"></span> Quantex. Sva prava zadržana.</p>
-        <p class="footer-location">Beograd, Srbija</p>
-      </div>
+      <div class="footer-bottom"><p class="footer-copyright">&copy; <span id="copyright-year"></span> Quantex. Sva prava zadržana.</p><p class="footer-location">Beograd • Radimo širom Balkana</p></div>
     </div>
   </footer>
-
+  <button class="back-to-top" id="backToTop" aria-label="Povratak na vrh strane" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg></button>
   <script src="../js/animations.js" defer></script>
   <script src="../js/main.js" defer></script>
 </body>

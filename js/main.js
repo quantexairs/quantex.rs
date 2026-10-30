@@ -234,9 +234,10 @@
     if (!form) return;
 
     const fields = {
-      name:    { el: document.getElementById('cf-name'),    msg: 'Unesite vaše ime i prezime.' },
-      company: { el: document.getElementById('cf-company'), msg: 'Unesite naziv vaše kompanije.' },
-      email:   { el: document.getElementById('cf-email'),   msg: 'Unesite ispravnu email adresu.' }
+      name:  { el: document.getElementById('cf-name'),  msg: 'Unesite vaše ime i prezime.' },
+      email: { el: document.getElementById('cf-email'), msg: 'Unesite ispravnu email adresu.' },
+      stage: { el: document.getElementById('cf-stage'), msg: 'Izaberite u kojoj fazi je vaš biznis.' },
+      idea:  { el: document.getElementById('cf-idea'),  msg: 'Ukratko opišite svoju ideju ili potrebu.' }
     };
 
     function validateEmail(email) {
@@ -297,7 +298,7 @@
         `;
       } else {
         btn.disabled = false;
-        btn.innerHTML = btn.dataset.originalText || 'Zakažite razgovor';
+        btn.innerHTML = btn.dataset.originalText || 'Pošalji svoju ideju';
       }
     }
 
@@ -333,7 +334,7 @@
             if (typeof window.gtag === 'function') {
               window.gtag('event', 'contact_form_submit', {
                 event_category: 'conversion',
-                event_label: 'schedule_meeting'
+                event_label: 'business_idea_submit'
               });
             }
           } else {

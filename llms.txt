@@ -1,67 +1,59 @@
 # Quantex
 
-> Quantex je agencija za SEO, AEO i izradu web sajtova i web aplikacija. Sedište je u Beogradu, Srbija. Usluge su dostupne kompanijama u celoj Srbiji i regionu.
+> Quantex je digitalni partner za ljude koji žele da rade, zarađuju i žive od onoga što vole. Pomažemo osobama sa idejom, novim i postojećim malim biznisima širom Balkana da dobiju jasan sajt, koristan sadržaj i reklame, bez obaveznih paketa i mesečnih ugovora.
 
-Quantex ne prodaje gotove šablone niti generičke SEO pakete. Svaki projekat počinje analizom postojećeg sajta, konkurencije i ključnih pretraga klijenta, a završava se merljivim poboljšanjem vidljivosti na Google-u i u AI pretragama (ChatGPT, Perplexity, Google AI Overviews).
+Quantex preuzima digitalni deo rada kako bi se klijent bavio svojim zanatom, sportom, kreativnim radom, uslugom ili proizvodom. Klijent može da učestvuje u odlukama ili da ceo proces prepusti timu.
 
-## Usluge
+## Osnovna ponuda
 
-- [SEO optimizacija](https://quantex.rs/usluge/seo.html): Tehnička i sadržajna SEO optimizacija koja podiže poziciju sajta na Google-u za pretrage koje donose klijente. Uključuje tehničku analizu, optimizaciju sadržaja, lokalni SEO i mesečno praćenje pozicija.
-- [AEO optimizacija](https://quantex.rs/usluge/aeo.html): Optimizacija sadržaja i strukture sajta (strukturirani podaci, jasna FAQ struktura) da vas prepoznaju i citiraju AI asistenti poput ChatGPT-a, Perplexity-ja i Google AI Overviews.
-- [Izrada web sajtova](https://quantex.rs/usluge/izrada-sajtova.html): Dizajn i izrada modernih, brzih sajtova prilagođenih brendu klijenta, sa SEO temeljima ugrađenim od prvog dana.
-- [Izrada web aplikacija](https://quantex.rs/usluge/web-aplikacije.html): Razvoj prilagođenih web aplikacija, interni alati, korisnički portali i sistemi po meri poslovnog procesa klijenta.
+- [Izrada sajta](https://quantex.rs/usluge/izrada-sajtova.html): Standardni poslovni sajt košta €500 jednokratno. Obuhvata dogovorenu strukturu i sadržaj, dizajn, mobilni prikaz, CMS, tehnički SEO i AEO osnove. Prva verzija je spremna za 7 dana od dogovorenog obima i prijema osnovnih informacija. Plaćanje je 50% na početku i 50% pred lansiranje.
+- [SEO i AEO](https://quantex.rs/usluge/seo.html): SEO i AEO su uključeni u svaki sajt od prvog dana. Sajt treba da bude pregledan za čoveka, razumljiv za pretraživače i koristan kao izvor jasnih odgovora za AI sisteme.
+- [Objašnjenje AEO optimizacije](https://quantex.rs/usluge/aeo.html): AEO obuhvata jasne činjenice o biznisu, direktne odgovore, FAQ sadržaj i strukturirane podatke. Ne garantujemo citiranje u AI odgovorima ni određenu poziciju u pretrazi.
 
-## Proces rada
+## Opcione, modularne usluge
 
-1. Besplatna analiza i razgovor (45 do 60 minuta): Pregled postojećeg sajta ili ideje, konkurencije i ključnih pretraga u delatnosti klijenta.
-2. SEO i tehnička analiza (3 do 5 dana): Mapiranje tehničkog stanja sajta, ključnih reči i konkurencije.
-3. Plan, dizajn i strategija (5 do 7 dana): Predlog dizajna, strukture i SEO/AEO strategije na uvid pre početka izrade.
-4. Izrada i optimizacija (2 do 5 sedmica): Gradnja sajta ili aplikacije u fazama uz SEO/AEO optimizaciju i redovne prikaze napretka.
-5. Praćenje i unapređenje (tekuće): Mesečno praćenje pozicija i saobraćaja, kontinuirano unapređenje sadržaja i tehnike.
+- [Sadržaj za sajt i društvene mreže](https://quantex.rs/usluge/sadrzaj.html): €12 po objavi. Klijent dobija blog tekst napisan i postavljen na njegov sajt, carousel od 5 do 7 slika i caption za Instagram, Facebook i LinkedIn. Preporučen ritam je 2 do 4 objave mesečno radi kontinuiranog SEO, AEO i sadržaja za klijente, ali objave se naručuju bez ikakve obaveze.
+- [Vođenje reklama](https://quantex.rs/usluge/reklame.html): €100 mesečno za vođenje dogovorenih Google ili Meta kampanja. Budžet za prikazivanje oglasa je odvojen i klijent ga plaća direktno platformi. Nema garancije broja klijenata ili zarade.
+- [Plan i vizuelni identitet](https://quantex.rs/usluge/plan-i-identitet.html): Opciona pomoć oko oblikovanja ponude, publike, konkurencije, praktičnog plana za prvih 90 dana, osnovnog logotipa i vizuelnih smernica. Foto i video produkcija dostupna je preko partnerskog tima. Cena zavisi od obima.
+- [Web aplikacije i automatizacija](https://quantex.rs/usluge/web-aplikacije.html): Zakazivanje, korisnički nalozi, interni alati, integracije i AI automatizacija samo kada biznis ima konkretnu potrebu. Cena i rok zavise od obima.
 
 ## Principi saradnje
 
-- Fiksne, pisane cene: bez procena "po dogovoru" nakon razgovora
-- Mesečni izveštaj o napretku (pozicije, saobraćaj, upiti)
-- Sajt i kod pripadaju klijentu, bez zaključanih platformi
-- Lokalni tim u Beogradu, direktna komunikacija
+- Sajt je prvi proizvod, sve ostalo se dodaje samo po potrebi.
+- Nema obaveznog mesečnog održavanja, paketa ni ugovora.
+- Pre početka klijent dobija pisan obim, cenu i rok.
+- Klijent može da bude potpuno neuključen u tehničke i kreativne odluke.
+- Ne obećavamo prvu poziciju na Google-u, citiranje u AI sistemima, broj klijenata niti zaradu.
+- Koristimo stvarne projekte kao dokaz rada, bez izmišljenih rezultata i recenzija.
 
-## Ključne činjenice
+## Za koga radimo
 
-- Lokacija: Beograd, Srbija
-- Tržište: Srbija i region
-- Jezik usluge: Srpski i engleski
-- Tipično trajanje izrade manjeg sajta: 2 do 4 nedelje
-- Tipično trajanje SEO rezultata: prve promene za nekoliko nedelja, pomeranje pozicija posle 6 do 12 nedelja
+- Osobe koje imaju ideju, još nemaju registrovanu firmu i žele da pokrenu samostalan biznis.
+- Nove biznise kojima je potrebna profesionalna digitalna osnova.
+- Postojeće male biznise kojima je potrebno digitalno preuređenje.
+- Salone, masažne i druge studije, kreativce, stručnjake, zanate, servise, lokalne usluge i druge vrste samostalnog rada.
+- Tržište: Srbija i ostale zemlje bivše Jugoslavije, odnosno Balkan.
 
-## Česta pitanja
+## Projekti
 
-**Šta je SEO i zašto je važan za moj biznis?**
-SEO (Search Engine Optimization) je skup tehničkih i sadržajnih izmena na sajtu koje pomažu Google-u da razume o čemu se sajt radi i da ga rangira više za relevantne pretrage. Za lokalni biznis to znači da vas pronalaze kupci koji već traže vaše usluge u vašem gradu.
+- [AngelicPhoto](https://angelicphoto.rs): Dizajn, izrada i SEO sajta za fotografski studio.
+- [Relaxa Massage](https://relaxamassage.rs): Dizajn, izrada i SEO sajta za masažni studio.
+- [AutoKodiranje](https://autokodiranje.rs): Dizajn, izrada i SEO sajta za VAG dijagnostiku i kodiranje vozila.
+- [The Free Security](https://thefreesecurity.com): Dizajn, izrada i SEO poslovnog sajta.
+- [Antique Croatia](https://antiquecroatia.com): Dizajn, izrada i SEO sajta za mladinsku organizaciju iz Zagreba.
 
-**Šta je AEO i po čemu se razlikuje od SEO-a?**
-AEO (Answer Engine Optimization) je optimizacija sadržaja tako da ga AI asistenti poput ChatGPT-a, Perplexity-ja i Google AI Overviews prepoznaju i citiraju kao izvor odgovora. SEO cilja listu rezultata pretrage; AEO cilja direktan odgovor koji korisnik dobija od AI sistema.
+Pregled projekata: https://quantex.rs/case-studies.html
 
-**Treba mi nov sajt ili je dovoljna optimizacija postojećeg?**
-Zavisi od stanja postojećeg sajta. Ako je tehnički zdrav ali slabo pozicioniran, često je dovoljna SEO/AEO optimizacija. Ako je sajt zastareo ili slabo konvertuje posetioce, redizajn i nova izrada donose bolji dugoročni rezultat.
+## Praktični sadržaj
 
-**Koja je razlika između sajta i web aplikacije?**
-Sajt prvenstveno predstavlja informacije i brend. Web aplikacija ima interaktivnu funkcionalnost: korisničke naloge, obradu podataka, interne alate ili sisteme koje koriste zaposleni ili klijenti.
-
-**Da li garantujete prvu poziciju na Google-u?**
-Nijedna agencija ne može iskreno garantovati tačnu poziciju, jer algoritam pretrage ne kontroliše nijedna treća strana. Garantujemo tehnički zdrav sajt, relevantan sadržaj i doslednu SEO/AEO strategiju, pristup primenjen kod klijenta angelicphoto.rs, gde je postignuta prva pozicija za sve ključne usluge u Pančevu.
-
-## Realizovani projekti
-
-- [angelicphoto.rs](https://angelicphoto.rs): Izrada sajta, dizajn i SEO optimizacija. Prva pozicija na Google-u za sve usluge u Pančevu, među prvima i u Novom Sadu i Beogradu.
-- [relaxamassage.rs](https://relaxamassage.rs): Izrada sajta, dizajn i SEO optimizacija.
-- [thefreesecurity.com](https://thefreesecurity.com): Izrada sajta, dizajn i SEO optimizacija.
-- [antiquecroatia.com](https://antiquecroatia.com): Izrada sajta, dizajn i SEO optimizacija.
-
-Puna lista projekata: [Naši projekti](https://quantex.rs/#projekti)
+- [Cenovnik](https://quantex.rs/cenovnik.html)
+- [Vodič od ideje do sajta](https://quantex.rs/vodic.html)
+- [Blog za male i samostalne biznise](https://quantex.rs/blog/)
 
 ## Kontakt
 
 - Web: https://quantex.rs
 - Email: office@quantex.rs
-- Zakazivanje besplatne analize: https://quantex.rs/#kontakt
+- Slanje ideje: https://quantex.rs/#ideja
+- Lokacija tima: Beograd, Srbija
+- Jezik aktivne verzije sajta: srpski

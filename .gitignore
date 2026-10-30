@@ -5,4 +5,7 @@ node_modules/
 
 # Interni alati — ne ide na GitHub
 tools/
+__pycache__/
+*.pyc
+.env
 
