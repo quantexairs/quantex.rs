@@ -17,6 +17,8 @@ Ciljna publika:
 - saloni i rad po terminima, kreativci, strucnjaci, zanati, servisi i drugi samostalni rad
 - Srbija i zemlje bivse Jugoslavije, odnosno Balkan
 
+Teziste ponude, odluka korisnika od 15. novembra 2026: sajtovi sa punom analitikom (kako posetioci koriste sajt), najbolji moguci SEO i AEO, vodjenje drustvenih mreza, pravljenje i vodjenje reklama.
+
 Ton je topao, ljudski, ambiciozan i konkretan. Ne obecavati zaradu, prvu poziciju, AI citiranje, broj klijenata niti rezultate koje ne mozemo da kontrolisemo. Koristiti samo stvarne projekte i proverljive rezultate.
 
 ## Ponuda i cene
@@ -47,13 +49,17 @@ Glavni CTA: **Pošalji svoju ideju**, forma na `/#ideja`. Ne traziti naziv firme
 - `css/style.css`, `pages.css`, `responsive.css`, `animations.css`: osnovni stilovi
 - `css/brand.css`: aktuelni svetli identitet i novi home layout, ucitava se poslednji
 - `js/main.js`: navigacija, FAQ, forma i slideri
-- `tools/`: lokalni generator sadrzaja, git-ignored
+- `js/analytics.js`: baner za pristanak, GA4 i PostHog, svi dogadjaji. Ucitan na svakoj stranici pre `animations.js`
+- `social/`: slike i video odobrenih Instagram objava, javno jer ih Meta preuzima sa sajta
+- `tools/`: interni alati, git-ignored. Remotion studio za carousel i reels, Instagram objava, provera sajta, nedeljni izvestaj. Pocni od `tools/README.md`
 
 ## Vizuelni identitet
 
 Svetli, cist studio izgled sa stvarnim projektima i ljudima, bez genericnih AI grafika. Osnovne boje su u `css/brand.css`: pozadina `#fbfbf8`, tekst `#182235`, akcent `#2859d7`, sekundarni akcent `#0c8e99`. Footer je taman.
 
 Logo je `assets/quantex-logo.svg`, tagline "DIGITALNI PARTNER". Ne vracati "AI AUTOMATION AGENCY".
+
+Puni brand guidelines su u `tools/docs/brand.md`, a boje i fontovi za objave u `tools/brand/tokens.json`. Kada se promeni boja u `css/brand.css`, promeniti je i tamo.
 
 ## Pisanje sadrzaja
 
@@ -67,11 +73,19 @@ Logo je `assets/quantex-logo.svg`, tagline "DIGITALNI PARTNER". Ne vracati "AI A
 - Svaka stranica treba da ima jedinstven title, description, canonical, OG podatke i odgovarajuci JSON-LD.
 - FAQ schema mora da odgovara vidljivom FAQ sadrzaju.
 
-## Generator sadrzaja u tools/
+## Analitika
 
-Generator pravi jednu modularnu objavu: blog tekst za sajt, carousel od 5 do 7 slika i caption. Ne generisati stare teme o AI automatizaciji kao glavnoj ponudi. Teme treba da odgovaraju na stvarna pitanja malih biznisa o pokretanju, sajtu, SEO-u, AEO-u, sadrzaju, reklamama i digitalnom rastu.
+Nista se ne ucitava pre pristanka posetioca (Google Consent Mode v2, baner iz `js/analytics.js`). Ne vracati inline GA4 kod u `<head>`. Novi dogadjaj ide kroz `window.qxTrack` ili `data-track`. Spisak dogadjaja i podesavanje PostHog-a su u `tools/docs/runbooks/analytics.md`. Kada se promeni sta se meri, azurirati `politika-privatnosti.html`.
 
-Ne pokretati automatsko objavljivanje na drustvenim mrezama bez eksplicitne saglasnosti korisnika. Proveriti lokalno generisani sadrzaj pre objave.
+## Sadrzaj za mreze i automatizacija u tools/
+
+Sadrzaj objava je u `tools/studio/src/content/carousels.js` i `reels.js`, pise ga Claude u sesiji, bez LLM poziva iz skripti. `node render.mjs` pravi slike i video u novom identitetu i stavku u redu objava sa `"approved": false`. Stari Python generator je u `tools/legacy/`.
+
+Teme treba da odgovaraju na stvarna pitanja malih biznisa o pokretanju, sajtu, analitici, SEO-u, AEO-u, sadrzaju, reklamama i digitalnom rastu. Ne vracati teme o AI automatizaciji kao glavnoj ponudi.
+
+Objava ide samo preko zvanicnog Instagram API-ja, nikad kroz automatizaciju pregledaca. Nista se ne objavljuje bez `"approved": true`, a to postavlja samo korisnik. Posle promene cene, roka ili obima na sajtu ponovo renderovati neobjavljene stavke.
+
+Zakazani poslovi (autopost, provera sajta, nedeljni izvestaj, ntfy obavestenja) rade na Kali serveru u Tailscale mrezi, `~/Projects/quantex.rs/tools`. Posle izmene u `tools/` pokrenuti `bash tools/scripts/ops/sync-server.sh`. Cron se ne instalira na laptopu. Uputstvo: `tools/docs/runbooks/automation.md`.
 
 ## Provere pre zavrsetka izmene
 
@@ -80,6 +94,6 @@ Ne pokretati automatsko objavljivanje na drustvenim mrezama bez eksplicitne sagl
 - Proveriti desktop i mobilni prikaz u Playwright-u.
 - Proveriti da kontakt forma radi sa imenom, email-om, fazom i opisom ideje.
 - Proveriti da se cene i rokovi ne razlikuju izmedju stranica.
-- Proveriti da nove stranice imaju `brand.css` posle `pages.css`.
+- Proveriti da nove stranice imaju `brand.css` posle `pages.css` i `js/analytics.js` pre `js/animations.js`.
 - Ne dodavati englesku verziju dok korisnik ne zatrazi njen povratak.
 - Ne raditi commit ni push bez eksplicitnog zahteva korisnika.

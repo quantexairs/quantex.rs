@@ -202,3 +202,17 @@ body { background: var(--bg-base); color: var(--text-primary); }
   .hero-showcase-row .hero-showcase-caption > span { display: none; }
   .home-step { padding: 1.2rem .4rem; }
 }
+
+/* Consent banner (js/analytics.js) */
+.consent { position: fixed; z-index: 1200; left: 0; right: 0; bottom: 0; padding: 1rem; pointer-events: none; }
+.consent[hidden] { display: none; }
+.consent-inner { pointer-events: auto; max-width: 44rem; margin-left: auto; display: grid; gap: 1rem; padding: 1.25rem 1.4rem; background: var(--bg-card); border: 1px solid var(--border-hover); border-radius: 18px; box-shadow: var(--shadow-lg); }
+.consent-copy h2 { font-size: 1rem; font-weight: 700; color: var(--text-primary); margin: 0 0 .3rem; letter-spacing: -.01em; }
+.consent-copy p { font-size: .9rem; line-height: 1.5; color: var(--text-secondary); margin: 0; }
+.consent-copy a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.consent-actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+.consent-actions .btn { flex: 1 1 auto; justify-content: center; padding: .7rem 1.1rem; font-size: .9rem; }
+@media (min-width: 640px) {
+  .consent-actions { justify-content: flex-end; }
+  .consent-actions .btn { flex: none; }
+}

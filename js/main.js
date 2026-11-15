@@ -331,10 +331,10 @@
             setTimeout(() => {
               if (successMsg) successMsg.setAttribute('hidden', '');
             }, 6000);
-            if (typeof window.gtag === 'function') {
-              window.gtag('event', 'contact_form_submit', {
-                event_category: 'conversion',
-                event_label: 'business_idea_submit'
+            if (typeof window.qxTrack === 'function') {
+              window.qxTrack('idea_submitted', {
+                stage: formData.get('stage') || '',
+                needs: formData.get('needs') || ''
               });
             }
           } else {
