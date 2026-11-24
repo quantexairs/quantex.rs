@@ -39,7 +39,7 @@ Glavni CTA: **Pošalji svoju ideju**, forma na `/#ideja`. Ne traziti naziv firme
 - `index.html`: pocetna i kontakt forma
 - `usluge/`: izrada sajta, SEO, AEO, sadrzaj, reklame, plan i identitet, aplikacije
 - `cenovnik.html`: modularne cene i obim
-- `case-studies.html`: stranica "Projekti" sa pet stvarnih projekata
+- `case-studies.html`: stranica "Projekti" sa osam stvarnih projekata
 - `vodic.html`: besplatan vodic dostupan odmah, bez lead forme
 - `blog/`: novi prakticni tekstovi za male biznise
 - `politika-privatnosti.html`, `uslovi-koriscenja.html`: pravne stranice

@@ -12,6 +12,8 @@
  *   outbound_click     any other external link; props: host
  *   contact_click      mailto or tel link; props: kind
  *   faq_open           a FAQ question was opened; props: question
+ *   video_play         an explainer video was started (once per page view); props: video (seo, aeo)
+ *   video_complete     an explainer video played to the end; props: video
  * Any element can also carry data-track="event_name" and data-track-foo="bar".
  */
 (function () {
@@ -21,7 +23,7 @@
   var POSTHOG_KEY = 'phc_CYzhzujpWmHTDUmM9HpnciskRa5xi6rKEFC3vD3U6gMS'; // project API key (phc_...), public by design. Empty: PostHog is not loaded.
   var POSTHOG_HOST = 'https://eu.i.posthog.com';
   var SESSION_REPLAY = true; // recordings start only after consent; every input is masked
-  var PROJECTS = ['angelicphoto.rs', 'relaxamassage.rs', 'autokodiranje.rs', 'thefreesecurity.com', 'antiquecroatia.com'];
+  var PROJECTS = ['3dlaboratorija.rs', 'angelicphoto.rs', 'relaxamassage.rs', 'autokodiranje.rs', 'thefreesecurity.com', 'antiquecroatia.com', 'elektricarpancevo.rs', 'astro7spell.in.rs'];
   var KEY = 'qx-consent';
   var LOCAL = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) || location.protocol === 'file:';
 
@@ -185,6 +187,19 @@
       if (PROJECTS.indexOf(host) >= 0) window.qxTrack('project_click', { project: host });
       else window.qxTrack('outbound_click', { host: host });
     }
+  }, true);
+
+  // Explainer videos: play and end do not bubble, so listen in the capture phase.
+  var videoPlayed = {};
+  document.addEventListener('play', function (e) {
+    var v = e.target, id = v && v.getAttribute && v.getAttribute('data-video');
+    if (!id || videoPlayed[id]) return;
+    videoPlayed[id] = true;
+    window.qxTrack('video_play', { video: id });
+  }, true);
+  document.addEventListener('ended', function (e) {
+    var v = e.target, id = v && v.getAttribute && v.getAttribute('data-video');
+    if (id) window.qxTrack('video_complete', { video: id });
   }, true);
 
   function ready() {

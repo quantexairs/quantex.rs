@@ -9,6 +9,8 @@ Quantex preuzima digitalni deo rada kako bi se klijent bavio svojim zanatom, spo
 - [Izrada sajta](https://quantex.rs/usluge/izrada-sajtova.html): Standardni poslovni sajt košta €500 jednokratno. Obuhvata dogovorenu strukturu i sadržaj, dizajn, mobilni prikaz, CMS, tehnički SEO i AEO osnove. Prva verzija je spremna za 7 dana od dogovorenog obima i prijema osnovnih informacija. Plaćanje je 50% na početku i 50% pred lansiranje.
 - [SEO i AEO](https://quantex.rs/usluge/seo.html): SEO i AEO su uključeni u svaki sajt od prvog dana. Sajt treba da bude pregledan za čoveka, razumljiv za pretraživače i koristan kao izvor jasnih odgovora za AI sisteme.
 - [Objašnjenje AEO optimizacije](https://quantex.rs/usluge/aeo.html): AEO obuhvata jasne činjenice o biznisu, direktne odgovore, FAQ sadržaj i strukturirane podatke. Ne garantujemo citiranje u AI odgovorima ni određenu poziciju u pretrazi.
+- [Video: SEO objašnjen bez žargona](https://quantex.rs/assets/videos/quantex-seo.mp4): 31 sekunda, bez zvuka, sa tekstom na ekranu. Na primeru fotografa iz Pančeva objašnjava kako Google može jasnije da razume šta radiš, gde si i zašto si dobar izbor. Ilustrativan primer, bez garancije pozicije.
+- [Video: AEO objašnjen bez žargona](https://quantex.rs/assets/videos/quantex-aeo.mp4): 31 sekunda, bez zvuka, sa tekstom na ekranu. Na primeru fotografa iz Pančeva objašnjava kako AI asistenti mogu lakše da razumeju ponudu. Ilustrativan primer, bez garancije preporuke.
 
 ## Opcione, modularne usluge
 
@@ -36,11 +38,14 @@ Quantex preuzima digitalni deo rada kako bi se klijent bavio svojim zanatom, spo
 
 ## Projekti
 
+- [3D Laboratorija](https://3dlaboratorija.rs): Dizajn, izrada, SEO, AEO i analitika sajta za 3D štampu po narudžbini, na srpskom, engleskom i ruskom.
 - [AngelicPhoto](https://angelicphoto.rs): Dizajn, izrada i SEO sajta za fotografski studio.
 - [Relaxa Massage](https://relaxamassage.rs): Dizajn, izrada i SEO sajta za masažni studio.
 - [AutoKodiranje](https://autokodiranje.rs): Dizajn, izrada i SEO sajta za VAG dijagnostiku i kodiranje vozila.
 - [The Free Security](https://thefreesecurity.com): Dizajn, izrada i SEO poslovnog sajta.
 - [Antique Croatia](https://antiquecroatia.com): Dizajn, izrada i SEO sajta za mladinsku organizaciju iz Zagreba.
+- [Električar Pančevo](https://elektricarpancevo.rs): Dizajn, izrada i SEO sajta za lokalnog električara iz Pančeva.
+- [Astro7Spells](https://astro7spell.in.rs): Dizajn, izrada i SEO sajta astrologa sa besplatnim kalkulatorom natalne karte i zakazivanjem tumačenja.
 
 Pregled projekata: https://quantex.rs/case-studies.html
 
