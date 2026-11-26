@@ -6,7 +6,7 @@ Quantex preuzima digitalni deo rada kako bi se klijent bavio svojim zanatom, spo
 
 ## Osnovna ponuda
 
-- [Izrada sajta](https://quantex.rs/usluge/izrada-sajtova.html): Standardni poslovni sajt košta €500 jednokratno. Obuhvata dogovorenu strukturu i sadržaj, dizajn, mobilni prikaz, CMS, tehnički SEO i AEO osnove. Prva verzija je spremna za 7 dana od dogovorenog obima i prijema osnovnih informacija. Plaćanje je 50% na početku i 50% pred lansiranje.
+- [Izrada sajta](https://quantex.rs/usluge/izrada-sajtova.html): Standardni poslovni sajt košta €500 jednokratno. Obuhvata dogovorenu strukturu i sadržaj, dizajn, mobilni prikaz, CMS, tehnički SEO i AEO osnove, kao i besplatan hosting zauvek (bez godišnje ni mesečne naknade za hosting). Prva verzija je spremna za 7 dana od dogovorenog obima i prijema osnovnih informacija. Plaćanje je 50% na početku i 50% pred lansiranje.
 - [SEO i AEO](https://quantex.rs/usluge/seo.html): SEO i AEO su uključeni u svaki sajt od prvog dana. Sajt treba da bude pregledan za čoveka, razumljiv za pretraživače i koristan kao izvor jasnih odgovora za AI sisteme.
 - [Objašnjenje AEO optimizacije](https://quantex.rs/usluge/aeo.html): AEO obuhvata jasne činjenice o biznisu, direktne odgovore, FAQ sadržaj i strukturirane podatke. Ne garantujemo citiranje u AI odgovorima ni određenu poziciju u pretrazi.
 - [Video: SEO objašnjen bez žargona](https://quantex.rs/assets/videos/quantex-seo.mp4): 31 sekunda, bez zvuka, sa tekstom na ekranu. Na primeru fotografa iz Pančeva objašnjava kako Google može jasnije da razume šta radiš, gde si i zašto si dobar izbor. Ilustrativan primer, bez garancije pozicije.
