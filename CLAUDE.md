@@ -25,7 +25,7 @@ Ton je topao, ljudski, ambiciozan i konkretan. Ne obecavati zaradu, prvu pozicij
 
 Sajt je prvi proizvod. Sve ostalo je modularno i neobavezno.
 
-- **Standardni poslovni sajt: €500 jednokratno.** Sadrzaj i struktura po dogovoru, mobilni prikaz, CMS, tehnicki SEO i AEO od prvog dana. Besplatan hosting zauvek je ukljucen u cenu (domen se placa posebno registraru). Prva verzija za 7 dana od dogovorenog obima i prijema osnovnih informacija. Placanje 50% na pocetku i 50% pred lansiranje.
+- **Standardni poslovni sajt: €500 jednokratno.** Sadrzaj i struktura po dogovoru, mobilni prikaz, tehnicki SEO i AEO od prvog dana. Nema CMS-a: klijent javi izmenu, mi je uradimo, manje izmene (nekoliko minuta) su besplatne, vece se cene prema obimu. Besplatan hosting zauvek je ukljucen u cenu (domen se placa posebno registraru). Prva verzija za 7 dana od dogovorenog obima i prijema osnovnih informacija. Placanje 50% na pocetku i 50% pred lansiranje.
 - **Sadrzaj: €12 po objavi.** Blog tekst napisan i postavljen na sajt klijenta, carousel od 5 do 7 slika i caption za Instagram, Facebook i LinkedIn. Preporuka je 2 do 4 objave mesecno, ali nema obaveze.
 - **Vodjenje reklama: €100 mesecno.** Dogovorene Google ili Meta kampanje. Budzet za oglase je poseban i klijent ga placa direktno platformi.
 - **Plan, osnovni identitet, foto, video, aplikacije i automatizacija:** opciono, cena i rok prema obimu.
