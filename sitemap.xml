@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://quantex.rs/</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://quantex.rs/cenovnik.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://quantex.rs/cenovnik.html</loc><lastmod>2026-11-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://quantex.rs/case-studies.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantex.rs/vodic.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantex.rs/usluge/izrada-sajtova.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -11,6 +11,7 @@
   <url><loc>https://quantex.rs/usluge/reklame.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://quantex.rs/usluge/plan-i-identitet.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantex.rs/usluge/web-aplikacije.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://quantex.rs/usluge/ai-asistent-za-poruke.html</loc><lastmod>2026-11-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantex.rs/blog/</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantex.rs/blog/kako-pokrenuti-biznis-od-onoga-sto-volis.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://quantex.rs/blog/sta-dobar-sajt-treba-da-uradi-za-mali-biznis.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>

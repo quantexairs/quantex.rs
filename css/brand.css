@@ -109,6 +109,7 @@ body { background: var(--bg-base); color: var(--text-primary); }
 .home-price-card h3 { margin: .8rem 0 .4rem; font-size: 1.35rem; }
 .home-price { margin: .6rem 0 1rem; font-size: clamp(3.5rem,6vw,5rem); line-height: 1; font-weight: 850; letter-spacing: -.06em; }
 .home-price small { font-size: 1rem; font-weight: 500; letter-spacing: 0; color: #b9c5d6; }
+.price-old { font-size: .45em; font-weight: 600; letter-spacing: 0; color: #8d9bb0; text-decoration-thickness: 2px; margin-right: .3rem; }
 .home-price-card p { color: #c2cddd; line-height: 1.7; }
 .home-price-card ul { display: grid; gap: .7rem; margin: 1.5rem 0; }
 .home-price-card li { display: flex; gap: .6rem; color: #e5eaf1; font-size: .9rem; }

@@ -186,7 +186,17 @@
     });
   }
 
+  // Svaki odgovor ima najviše jedan slušalac kraja animacije. Stari slušalac
+  // se uklanja pre novog, inače zaostali "zatvori" zatvara tek otvoreni odgovor.
+  function clearPendingEnd(el) {
+    if (el._qxEnd) {
+      el.removeEventListener('transitionend', el._qxEnd);
+      el._qxEnd = null;
+    }
+  }
+
   function expandAnswer(el) {
+    clearPendingEnd(el);
     el.removeAttribute('hidden');
     el.classList.add('opening');
 
@@ -200,16 +210,21 @@
       el.style.height = targetH + 'px';
     });
 
-    el.addEventListener('transitionend', function handler() {
+    el._qxEnd = function (e) {
+      if (e.target !== el) return;
+      clearPendingEnd(el);
       el.style.height = '';
       el.style.overflow = '';
       el.style.transition = '';
       el.classList.remove('opening');
-      el.removeEventListener('transitionend', handler);
-    });
+    };
+    el.addEventListener('transitionend', el._qxEnd);
   }
 
   function collapseAnswer(el) {
+    // Već zatvoren odgovor nema šta da animira, pa ne ostavljamo slušalac.
+    if (el.hasAttribute('hidden')) return;
+    clearPendingEnd(el);
     el.style.height = el.scrollHeight + 'px';
     el.style.overflow = 'hidden';
     el.style.transition = 'height 0.25s ease';
@@ -218,13 +233,15 @@
       el.style.height = '0';
     });
 
-    el.addEventListener('transitionend', function handler() {
+    el._qxEnd = function (e) {
+      if (e.target !== el) return;
+      clearPendingEnd(el);
       el.setAttribute('hidden', '');
       el.style.height = '';
       el.style.overflow = '';
       el.style.transition = '';
-      el.removeEventListener('transitionend', handler);
-    });
+    };
+    el.addEventListener('transitionend', el._qxEnd);
   }
 
   /* ── Contact Form ───────────────────────────────────────── */

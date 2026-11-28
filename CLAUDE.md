@@ -28,6 +28,7 @@ Sajt je prvi proizvod. Sve ostalo je modularno i neobavezno.
 - **Standardni poslovni sajt: €500 jednokratno.** Sadrzaj i struktura po dogovoru, mobilni prikaz, tehnicki SEO i AEO od prvog dana. Nema CMS-a: klijent javi izmenu, mi je uradimo, manje izmene (nekoliko minuta) su besplatne, vece se cene prema obimu. Besplatan hosting zauvek je ukljucen u cenu (domen se placa posebno registraru). Prva verzija za 7 dana od dogovorenog obima i prijema osnovnih informacija. Placanje 50% na pocetku i 50% pred lansiranje.
 - **Sadrzaj: €12 po objavi.** Blog tekst napisan i postavljen na sajt klijenta, carousel od 5 do 7 slika i caption za Instagram, Facebook i LinkedIn. Preporuka je 2 do 4 objave mesecno, ali nema obaveze.
 - **Vodjenje reklama: €100 mesecno.** Dogovorene Google ili Meta kampanje. Budzet za oglase je poseban i klijent ga placa direktno platformi.
+- **AI asistent za Instagram poruke: €70 mesecno** (akcija do 31. decembra 2026, redovna cena €150 mesecno). Odgovara na poruke umesto vlasnika, dogovara termine, cuva upite. Bez cene postavljanja i bez ugovora, otkazivanje kad klijent zeli. Opcioni dodatak, ne glavna ponuda. Stranica `usluge/ai-asistent-za-poruke.html`. Posle 31. decembra 2026 skloniti precrtanu cenu i akciju sa sajta.
 - **Plan, osnovni identitet, foto, video, aplikacije i automatizacija:** opciono, cena i rok prema obimu.
 
 Nema obaveznog mesecnog odrzavanja, paketa, broja objava ni dugorocnog ugovora. Klijent moze sve da prepusti timu ili da ucestvuje u odobravanjima koliko zeli.
@@ -37,7 +38,7 @@ Glavni CTA: **Pošalji svoju ideju**, forma na `/#ideja`. Ne traziti naziv firme
 ## Struktura
 
 - `index.html`: pocetna i kontakt forma
-- `usluge/`: izrada sajta, SEO, AEO, sadrzaj, reklame, plan i identitet, aplikacije
+- `usluge/`: izrada sajta, SEO, AEO, sadrzaj, reklame, plan i identitet, aplikacije, AI asistent za poruke
 - `cenovnik.html`: modularne cene i obim
 - `case-studies.html`: stranica "Projekti" sa osam stvarnih projekata
 - `vodic.html`: besplatan vodic dostupan odmah, bez lead forme

@@ -18,6 +18,7 @@ Quantex preuzima digitalni deo rada kako bi se klijent bavio svojim zanatom, spo
 - [Vođenje reklama](https://quantex.rs/usluge/reklame.html): €100 mesečno za vođenje dogovorenih Google ili Meta kampanja. Budžet za prikazivanje oglasa je odvojen i klijent ga plaća direktno platformi. Nema garancije broja klijenata ili zarade.
 - [Plan i vizuelni identitet](https://quantex.rs/usluge/plan-i-identitet.html): Opciona pomoć oko oblikovanja ponude, publike, konkurencije, praktičnog plana za prvih 90 dana, osnovnog logotipa i vizuelnih smernica. Foto i video produkcija dostupna je preko partnerskog tima. Cena zavisi od obima.
 - [Web aplikacije i automatizacija](https://quantex.rs/usluge/web-aplikacije.html): Zakazivanje, korisnički nalozi, interni alati, integracije i AI automatizacija samo kada biznis ima konkretnu potrebu. Cena i rok zavise od obima.
+- [AI asistent za Instagram poruke](https://quantex.rs/usluge/ai-asistent-za-poruke.html): Mesečna usluga koja odgovara na Instagram poruke klijenata na osnovu podataka o biznisu (usluge, cene, radno vreme, česta pitanja), dogovara termine, šalje potrebne informacije i čuva podatke o upitima. Akcijska cena €70 mesečno do 31. decembra 2026, redovna cena €150 mesečno. Nema cene postavljanja ni ugovora na određeni period, otkazivanje kad klijent želi. Potreban je Instagram nalog Business ili Creator povezan sa Facebook stranicom. Nema garancije broja upita, termina ili zarade.
 
 ## Principi saradnje
 
